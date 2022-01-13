@@ -65,10 +65,12 @@
 				                           </div><!-- .header-bar-search -->
 				                           
 				                           <div class="header-bar-menu">
+				                           	<div class="row">
 				                                	<ul class="flex justify-content-center align-items-center py-2 pt-md-0">
 				                                    	<li><a href="#">Login</a></li>
 				                                    	<li><a href="#">Register</a></li>
 				                                	</ul>
+				                            </div>
 				                          </div><!-- .header-bar-menu -->  
 				              
 				                   </div> <!-- .row -->
