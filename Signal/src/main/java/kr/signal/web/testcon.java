@@ -10,6 +10,16 @@ public class testcon {
 		return "index";
 	}
 	
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+	
+	@GetMapping("/signup")
+	public String signup() {
+		return "signup";
+	}
+	
 	@GetMapping("/about")
 	public String about() {
 		return "about";

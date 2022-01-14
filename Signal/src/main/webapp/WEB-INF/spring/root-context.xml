@@ -8,13 +8,12 @@
   http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<!--  DB연결에 필요한 API설정(HikariCP) -->
-	<!--  bean 객체 생성 
-					java코드가 아니기 때문에 태그로 객체 생성-->
+	<!--  bean 객체 생성 java코드가 아니기 때문에 태그로 객체 생성-->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 	<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-	<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/bigdata"/>
-	<property name="username" value="root"/>
-	<property name="password" value="12345"/>
+	<property name="jdbcUrl" value="jdbc:mysql://project-db-stu.ddns.net:3307/bridge"/>
+	<property name="username" value="bridge"/>
+	<property name="password" value="bridge"/>
 	</bean>
 		
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
