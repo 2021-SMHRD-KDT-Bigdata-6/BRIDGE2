@@ -39,7 +39,7 @@
     <div id="login">
     <div id="login_form"><!--로그인 폼-->
     <form>
-        <h3 class="login" style="letter-spacing:-1px;">Sign up to Web</h3>
+        <h3 class="login" style="letter-spacing:-1px;">회원가입</h3>
 
         <!-- <p>
             <input type="submit" value="Sign in with Google" class="btn" style="background-color:#217Af0">
@@ -86,7 +86,7 @@
 
     <br>
         <p>
-            <input type="submit" value="Create Acoout" class="btn">
+            <input type="submit" value="가입하기" class="btn">
             
         </p>
     </form>

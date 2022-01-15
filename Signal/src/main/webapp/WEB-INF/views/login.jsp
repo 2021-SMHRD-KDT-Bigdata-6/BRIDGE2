@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script type="text/javascript">
+
 
     <title>Hello World</title>
 
@@ -34,6 +34,8 @@
     
     <!-- Login CSS -->
     <link rel="stylesheet" href="resources/css/login.css">
+    
+<script type="text/javascript">
 
     
     	function loginFn(){
@@ -65,10 +67,12 @@
            <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
         </h3>
 
-        <p>
+        <!--<p>
             <input type="submit" value=" 간편로그인 Kakao" class="btn" style="background-color:#19c880">
             <input type="submit" value=" 간편로그인 Naver" class="btn" style="background-color:#19c880">
         </p>
+        
+        -->
 
         <hr>
         <label>
