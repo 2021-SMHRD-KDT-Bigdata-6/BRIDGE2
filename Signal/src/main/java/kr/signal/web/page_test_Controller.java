@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import kr.signal.Service.loginService;
 import kr.signal.domain.t_user;
-import kr.signal.service.loginService;
 
 @Controller
 public class page_test_Controller {
