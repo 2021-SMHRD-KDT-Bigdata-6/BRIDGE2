@@ -49,7 +49,7 @@
 
                             <div class="header-bar-menu">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="login">로그인</a></li>
+                                    <li><a href="login_test">로그인</a></li>
                                     <li><a href="signup">회원가입</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->

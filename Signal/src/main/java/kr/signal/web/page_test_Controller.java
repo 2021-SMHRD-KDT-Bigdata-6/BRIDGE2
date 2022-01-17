@@ -1,18 +1,40 @@
 package kr.signal.web;
 
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import kr.signal.domain.t_user;
+import kr.signal.service.loginService;
 
 @Controller
-public class testcon {
+public class page_test_Controller {
+	
+	
+	// kr.signal.service 패키지 - loginService.java 불러오기
+	@Autowired
+	loginService service;
+	
 	@GetMapping("/")
 	public String main() { // Http://127.0.0.1:8081/web/
 		return "index";
 	}
+	@RequestMapping("/login_test")
+	public String login_test(){
+		return "login_test";
+	}
 	
-	@GetMapping("/login")
-	public String login() {
-		return "login";
+	@PostMapping("/loginGO")
+	public String login(t_user vo, HttpSession session) {
+		t_user users = service.login_test(vo);
+		if(users != null) { // 회원인증 성공
+			session.setAttribute("users", users);
+		}
+		return "redirect:/";
 	}
 	
 	@GetMapping("/signup")
