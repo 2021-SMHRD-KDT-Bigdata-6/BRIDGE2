@@ -24,6 +24,6 @@
 		<!--  DispatcherServlet-POJO(Controller) -->
 	<context:component-scan base-package="kr.signal.web" />
 	<!--  Service Layer를 메모리에 로딩 -->
-	<context:component-scan base-package="kr.signal.service"/>
+	<context:component-scan base-package="kr.signal.Service"/>
 	
 </beans:beans>

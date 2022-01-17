@@ -14,7 +14,7 @@ import kr.signal.domain.t_user;
 @Controller
 public class page_test_Controller {
 	
-	
+	// 수정 제바아알
 	// kr.signal.service 패키지 - loginService.java 불러오기
 	@Autowired
 	loginService service;
