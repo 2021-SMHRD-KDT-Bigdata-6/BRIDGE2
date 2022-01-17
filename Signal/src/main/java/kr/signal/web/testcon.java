@@ -20,19 +20,19 @@ public class testcon {
 		return "signup";
 	}
 	
-	@GetMapping("/about")
-	public String about() {
-		return "about";
+	@GetMapping("/js_page")
+	public String js_page() {
+		return "js_page";
 	}
 	
-	@GetMapping("/blog")
-	public String blog() {
-		return "blog";
+	@GetMapping("/myclass")
+	public String myclass() {
+		return "myclass";
 	}
 	
-	@GetMapping("/contact")
-	public String contact() {
-		return "contact";
+	@GetMapping("/java_page")
+	public String java_page() {
+		return "java_page";
 	}
 	
 	@GetMapping("/courses")
