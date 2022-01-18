@@ -76,6 +76,10 @@ public class page_test_Controller {
 	public String post() {
 		return "single-post";
 	}
+	@GetMapping("/detailpage")
+	public String detailpage() {
+		return "detailpage";
+	}
 	
 	@GetMapping("/java_page")
 	public String java_page() {
