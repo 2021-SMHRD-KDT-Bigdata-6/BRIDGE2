@@ -49,7 +49,7 @@
 
                             <div class="header-bar-menu">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="login">로그인</a></li>
+                                    <li><a href="login_test">로그인</a></li>
                                     <li><a href="signup">회원가입</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
@@ -72,8 +72,8 @@
                             <nav class="site-navigation flex justify-content-around align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
                                     <li class="current-menu-item"><a href="index.html">Home</a></li>
-                                    <li><a href="#">Myclass</a></li>
-                                    <li><a href="#"></a></li>
+                                    <li><a href="myclass">Myclass</a></li>
+                                    <li><a href="#">Course</a></li>
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
@@ -223,92 +223,6 @@
         </div><!-- .container-fluid -->
     </div><!-- .icon-boxes -->
 
-    <section class="featured-courses horizontal-column courses-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <header class="heading flex justify-content-between align-items-center">
-                        <h2 class="entry-title">번역된 코딩 강의</h2>
-
-                        <a class="btn mt-4 mt-sm-0" href="#">view all</a>
-                    </header><!-- .heading -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6">
-                    <div class="course-content flex flex-wrap justify-content-between align-content-lg-stretch">
-                        <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/1.jpg" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <div class="course-ratings flex align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(4 votes)</span>
-                                </div><!-- .course-ratings -->
-
-                                <h2 class="entry-title"><a href="#">The Complete Android Developer Course</a></h2>
-
-                                <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="course-author"><a href="#">Ms. Lara Croft </a></div>
-
-                                    <div class="course-date">July 21, 2018</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                    <span class="free-cost">Free</span>
-                                </div><!-- .course-cost -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6">
-                    <div class="course-content flex flex-wrap justify-content-between align-content-lg-stretch">
-                        <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/2.jpg" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <div class="course-ratings flex align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(4 votes)</span>
-                                </div><!-- .course-ratings -->
-
-                                <h2 class="entry-title"><a href="#">Learn Photoshop, Web Design & Profitable</a></h2>
-
-                                <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="course-author"><a href="#">Mr. John Wick</a></div>
-
-                                    <div class="course-date">Aug 21, 2018</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                    $32 <span class="price-drop">$59</span>
-                                </div><!-- .course-cost -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .courses-wrap -->
-
     <section class="about-section">
         <div class="container">
             <div class="row">
@@ -366,11 +280,11 @@
 
                         <nav class="courses-menu mt-3 mt-lg-0">
                             <ul class="flex flex-wrap justify-content-md-end align-items-center">
-                                <li class="active"><a href="#">All</a></li>
-                                <li><a href="#">Python</a></li>
-                                <li><a href="#">Java</a></li>
-                                <li><a href="#">C</a></li>
-                                <li><a href="#">Machine Learning</a></li>
+                                <li class="active"><a href="java_page">자바</a></li>
+                                <li><a href="js_page">자바스크립트</a></li>
+                                <li><a href="#">파이썬</a></li>
+                                <li><a href="#">머신러닝</a></li>
+                                <li><a href="#">딥러닝</a></li>
                             </ul>
                         </nav><!-- .courses-menu -->
                     </header><!-- .heading -->
@@ -379,23 +293,23 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/1.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/java/java_thumbnail01.jpg" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">The Complete Android Developer Course</a></h2>
+                                <h2 class="entry-title"><a href="java_page">[자바] NO.1 환경구축 및 간단한 사용법</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">Ms. Lara Croft </a></div>
+                                    <div class="course-author"><a href="#">채수민 연구원 </a></div>
 
-                                    <div class="course-date">July 21, 2018</div>
+                                    <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->
                             </header><!-- .entry-header -->
 
                             <footer class="entry-footer flex justify-content-between align-items-center">
                                 <div class="course-cost">
-                                    $45 <span class="price-drop">$68</span>
+                                     <span class="price-drop"></span>
                                 </div><!-- .course-cost -->
 
                                 <div class="course-ratings flex justify-content-end align-items-center">
@@ -405,7 +319,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star-o"></span>
 
-                                    <span class="course-ratings-count">(4 votes)</span>
+                                    <span class="course-ratings-count">(좋아요 4)</span>
                                 </div><!-- .course-ratings -->
                             </footer><!-- .entry-footer -->
                         </div><!-- .course-content-wrap -->
@@ -415,23 +329,23 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/2.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/java/java02.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">The Ultimate Drawing Course Beginner to Advanced</a></h2>
+                                <h2 class="entry-title"><a href="#">[자바] NO.2 변수와 자료형</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">Michelle Golden</a></div>
+                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
 
-                                    <div class="course-date">Mar 14, 2018</div>
+                                    <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->
                             </header><!-- .entry-header -->
 
                             <footer class="entry-footer flex justify-content-between align-items-center">
                                 <div class="course-cost">
-                                    <span class="free-cost">Free</span>
+                                    <span class="free-cost"></span>
                                 </div><!-- .price-drop -->
 
                                 <div class="course-ratings flex justify-content-end align-items-center">
@@ -441,7 +355,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star-o"></span>
 
-                                    <span class="course-ratings-count">(4 votes)</span>
+                                    <span class="course-ratings-count">(좋아요 4)</span>
                                 </div><!-- .course-ratings -->
                             </footer><!-- .entry-footer -->
                         </div><!-- .course-content-wrap -->
@@ -451,12 +365,12 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/3.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/java/java03.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">The Complete Digital Marketing Course</a></h2>
+                                <h2 class="entry-title"><a href="#">[자바] NO.3 연산자 6가지!</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">Ms. Lucius</a></div>
@@ -487,23 +401,23 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/4.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/java/java04.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">The Unreal Engine Developer Course</a></h2>
+                                <h2 class="entry-title"><a href="#">[자바] NO.4 입출력 </a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">Mr. John Wick</a></div>
+                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
 
-                                    <div class="course-date">Otc 17, 2018</div>
+                                    <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->
                             </header><!-- .entry-header -->
 
                             <footer class="entry-footer flex justify-content-between align-items-center">
                                 <div class="course-cost">
-                                    <span class="free-cost">Free</span>
+                                    <span class="free-cost"></span>
                                 </div><!-- .course-cost -->
 
                                 <div class="course-ratings flex justify-content-end align-items-center">
@@ -513,7 +427,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star-o"></span>
 
-                                    <span class="course-ratings-count">(4 votes)</span>
+                                    <span class="course-ratings-count">(좋아요 4)</span>
                                 </div><!-- .course-ratings -->
                             </footer><!-- .entry-footer -->
                         </div><!-- .course-content-wrap -->
@@ -523,23 +437,23 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/5.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/java/java05.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">Progressive Web Apps (PWA) - The Complete Guide</a></h2>
+                                <h2 class="entry-title"><a href="#">[자바] NO.5 단순if문 & if-else문</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">Mr. Tom Redder</a></div>
+                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
 
-                                    <div class="course-date">Sep 14, 2018</div>
+                                    <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->
                             </header><!-- .entry-header -->
 
                             <footer class="entry-footer flex justify-content-between align-items-center">
                                 <div class="course-cost">
-                                    $38 <span class="price-drop">$48</span>
+                                     <span class="price-drop"></span>
                                 </div><!-- .course-cost -->
 
                                 <div class="course-ratings flex justify-content-end align-items-center">
@@ -549,7 +463,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star-o"></span>
 
-                                    <span class="course-ratings-count">(4 votes)</span>
+                                    <span class="course-ratings-count">(좋아요 4)</span>
                                 </div><!-- .course-ratings -->
                             </footer><!-- .entry-footer -->
                         </div><!-- .course-content-wrap -->
@@ -559,23 +473,23 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/6.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/java/java05.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">Cryptocurrency Investment Course 2018</a></h2>
+                                <h2 class="entry-title"><a href="#">[자바] NO.6 반복문(for문) </a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">Russell Stephens</a></div>
+                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
 
-                                    <div class="course-date">Nov 06, 2018</div>
+                                    <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->
                             </header><!-- .entry-header -->
 
                             <footer class="entry-footer flex justify-content-between align-items-center">
                                 <div class="course-cost">
-                                    <span class="free-cost">Free</span>
+                                    <span class="free-cost"></span>
                                 </div><!-- .course-cost -->
 
                                 <div class="course-ratings flex justify-content-end align-items-center">
@@ -585,7 +499,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star-o"></span>
 
-                                    <span class="course-ratings-count">(4 votes)</span>
+                                    <span class="course-ratings-count">(좋아요 4)</span>
                                 </div><!-- .course-ratings -->
                             </footer><!-- .entry-footer -->
                         </div><!-- .course-content-wrap -->
@@ -598,94 +512,8 @@
             </div><!-- .row -->
         </div><!-- .container -->
     </section><!-- .courses-wrap -->
-
-    <section class="latest-news-events">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <header class="heading flex justify-content-between align-items-center">
-                        <h2 class="entry-title">Latest News & Events</h2>
-                    </header><!-- .heading -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6">
-                    <div class="featured-event-content">
-                        <figure class="event-thumbnail position-relative m-0">
-                            <a href="#"><img src="resources/images/event-1.jpg" alt=""></a>
-
-                            <div class="posted-date position-absolute">
-                                <div class="day">23</div>
-                                <div class="month">mar</div>
-                            </div><!-- .posted-date -->
-                        </figure><!-- .event-thumbnail -->
-
-                        <header class="entry-header flex flex-wrap align-items-center">
-                            <h2 class="entry-title"><a href="#">The Complete Financial Analyst Training & Investing Course</a></h2>
-
-                            <div class="event-location"><i class="fa fa-map-marker"></i>40 Baria Sreet 133/2 NewYork City, US</div>
-
-                            <div class="event-duration"><i class="fa fa-calendar"></i>10 Dec - 12 dec</div>
-                        </header><!-- .entry-header -->
-                    </div><!-- .featured-event-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
-                        <figure class="event-thumbnail">
-                            <a href="#"><img src="resources/images/event-2.jpg" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="event-content-wrap">
-                            <header class="entry-header">
-                                <div class="posted-date">
-                                    <i class="fa fa-calendar"></i> 22 Mar 2018
-                                </div><!-- .posted-date -->
-
-                                <h2 class="entry-title"><a href="#">Personalized online learning experience</a></h2>
-
-                                <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="post-author"><a href="#">Ms. Lara Croft </a></div>
-
-                                    <div class="post-comments">02 Comments  </div>
-                                </div><!-- .entry-meta -->
-                            </header><!-- .entry-header -->
-
-                            <div class="entry-content">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-                            </div><!-- .entry-content -->
-                        </div><!-- .event-content-wrap -->
-                    </div><!-- .event-content -->
-
-                    <div class="event-content flex flex-wrap justify-content-between align-content-lg-stretch">
-                        <figure class="event-thumbnail">
-                            <a href="#"><img src="resources/images/event-3.jpg" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="event-content-wrap">
-                            <header class="entry-header">
-                                <div class="posted-date">
-                                    <i class="fa fa-calendar"></i> 22 Mar 2018
-                                </div><!-- .posted-date -->
-
-                                <h2 class="entry-title"><a href="#">Which investment project should my company choose?</a></h2>
-
-                                <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="post-author"><a href="#">Ms. Lara Croft </a></div>
-
-                                    <div class="post-comments">02 Comments  </div>
-                                </div><!-- .entry-meta -->
-                            </header><!-- .entry-header -->
-
-                            <div class="entry-content">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-                            </div><!-- .entry-content -->
-                        </div><!-- .event-content-wrap -->
-                    </div><!-- .event-content -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .latest-news-events -->
-
+    
+   
     <div class="clients-logo">
         <div class="container">
             <div class="row">
@@ -722,11 +550,7 @@
                         <div class="foot-about">
                             <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
 
-                            <p></p>
 
-                            <p class="footer-copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div><!-- .foot-about -->
                     </div><!-- .col -->
 

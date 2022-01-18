@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
 
+
     <title>Hello World</title>
 
     <!-- Required meta tags -->
@@ -33,6 +34,26 @@
     
     <!-- Login CSS -->
     <link rel="stylesheet" href="resources/css/login.css">
+    
+<script type="text/javascript">
+
+    
+    	function loginFn(){
+  		var u_id=$("#u_id").val();
+  		if(u_id==""){
+  			alert("아이디를 입력하세요");
+  			$("#u_id").focus();
+  			return false;
+  		}
+  		var u_pwd=$("#u_pwd").val();
+  		if(u_pwd==""){
+  			alert("패스워드를 입력하세요");
+  			$("#u_pwd").focus();
+  			return false;
+  		}
+  		$("#frm").submit();
+  	}
+</script>  	
 </head>
 <body>
 
@@ -41,29 +62,31 @@
     <div id="login_form"><!--로그인 폼-->
     
     <c:if test="${empty users}">
-    <form>
+    <form action="loginGO" method="post">
         <h3 class="login" style="letter-spacing:-1px;">
            <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
         </h3>
 
-        <p>
+        <!--<p>
             <input type="submit" value=" 간편로그인 Kakao" class="btn" style="background-color:#19c880">
             <input type="submit" value=" 간편로그인 Naver" class="btn" style="background-color:#19c880">
         </p>
+        
+        -->
 
         <hr>
         <label>
         <!-- <span>ID</span> -->
-        <p style="text-align: left; font-size:12px; color:#666">Username</p>
-        <input type="text" placeholder="아이디 입력" class="size">
+        <p style="text-align: left; font-size:12px; color:#666" for="u_id">Username</p>
+        <input type="text" placeholder="아이디 입력" class="size" name="u_id" id="u_id">
         <!-- <input type="submit" value="확인"> -->
         <p></p>
         </label>
 
         <label>
         <!-- <span>PW</span> -->
-        <p style="text-align: left; font-size:12px; color:#666">Password </p>
-        <input type="text" placeholder="비밀번호" class="size">
+        <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">Password </p>
+        <input type="text" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
         <!-- <input type="submit" value="확인"> -->
         </label>
 
@@ -72,7 +95,7 @@
         </p>
     </form>
     </c:if>
-     
+   
     <hr>
     <p class="find">
         <span><a href="">아이디 찾기</a></span>
@@ -87,5 +110,22 @@
 	<script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
 	<script type='text/javascript' src='resources/js/custom.js'></script>
 
+<!--  <script>
+        function submitCheck() {
+            let u_id  = $('#u_id' ).val() ;
+            let u_pwd = $('#u_pwd').val() ;
+            $.ajax({
+                type : "POST",
+                url: 'login_test',
+                data: {u_id:u_id, u_pwd:u_pwd},
+                success: function(data) {
+                    if(data == "false")
+                        alert('잘못된 아이디이거나, 비밀번호가 틀렸습니다.') ;
+                    else
+                        location.href="index" ; // home.do로 돌아가시면 됩니다.
+                }
+            }) ;
+        }
+        </script>-->
 </body>
 </html>
