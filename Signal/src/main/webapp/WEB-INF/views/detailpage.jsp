@@ -29,6 +29,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="resources/css/style.css">
+    
+    <!--glyphicons-->
+    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
      <style>
          .video-wrap {position:relative; padding-bottom:37.5%; padding-top:30px; height:0; overflow:hidden;}
@@ -36,8 +39,13 @@
         .video-wrap object,
         .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
+         .video-wrap {position:relative; padding-bottom:37.5%; padding-top:30px; height:0; overflow:hidden;}
+        .video-wrap iframe,
+        .video-wrap object,
+        .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+
          .hvideo{
-             background-color: rgb(253, 206, 206);
+             background-color: #19c880;
              height: 100%;
              left: 10px;
          }
@@ -50,10 +58,21 @@
          }
          .thumbnail{
             margin-top: 10px;
-            background-color: rgb(189, 189, 189);
+            background-color: #19c880;
          }
          hr{
              background-color: black;
+         }
+         body{
+             font-size: 1.65rem;
+         }
+         .nickname{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+         }
+                  .form-control{
+             border: aliceblue;
          }
 
      </style>
@@ -94,6 +113,9 @@
                 <strong style="color:white">번역 영상 출력</strong><br>
                 <strong style="color:white">00 : 03</strong>
                 <strong style="color:white">번역 영상 출력</strong><br>
+            <!-- 자동 스크롤 -->
+			<!--  <div style="text-align: center;margin: auto; padding-top: 10px"></div>-->
+			<!--  자동 스크롤 끝 -->
             </div>
         </div>
     </div>
@@ -121,7 +143,7 @@
                     <br><br>
                 </b>
             </div>
-            <div class="col-lg-3 thumbnail">
+            <div class="col-lg-3 thumbnail" style="left: 10px; style="left: 10px; padding-right: 0px; padding-left: 0px;">
                 <div>
                     <img src="python.jpg">
                 </div>
@@ -139,19 +161,43 @@
     </div>
     <!-- 상세 내용  + 썸네일 존 끝-->
 
+
+    <!-- 댓글 존-->
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <hr class="col-lg-12">
                 <div>
-                    <h3>댓글</h3>
-                    <strong> 닉네임</strong>
+                    <hr>
+                    <h2>댓글 5개</h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 nickname">
+                <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 2rem;"></span>
+                <span>닉네임</span>
+            </div>
+            <div class="col-lg-8" style="padding-top: 10px;">
+                <input class="form-control" placeholder="댓글을 입력해 주세요." style="height: 30px; font-size: 1.65rem;">
+            </div>
+            <div class="col-lg-2">
+                <button type="text" path="content" class="btn btn-link" type="button" style="font-size: 2rem;">등록</button>
+            </div>
+        </div>
+    </div>
+    <!-- 댓글 존-->
+    
+
+    
+    <!-- category.jsp -->
+      <div>
+   <%@include file="includes/category.jsp" %>
+	</div>
+	<!-- category.jsp -->
+
 
 
 
@@ -160,6 +206,7 @@
    <%@include file="includes/footer.jsp" %>
 </div>
 <!-- footer -->
+
 	<script type='text/javascript' src='resources/js/jquery.js'></script>
 	<script type='text/javascript' src='resources/js/swiper.min.js'></script>
 	<script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>

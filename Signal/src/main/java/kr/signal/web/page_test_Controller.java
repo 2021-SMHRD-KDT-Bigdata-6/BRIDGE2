@@ -89,6 +89,10 @@ public class page_test_Controller {
 	public String index() {
 		return "index";
 	}
+	@GetMapping("/js_page")
+	public String js_page() {
+		return "js_page";
+	}
 	
 	
 	
