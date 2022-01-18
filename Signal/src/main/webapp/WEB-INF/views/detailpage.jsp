@@ -38,7 +38,8 @@
 
          .hvideo{
              background-color: rgb(253, 206, 206);
-             height: 469px;
+             height: 100%;
+             left: 10px;
          }
          .detail{
              height: 20%;
@@ -71,13 +72,14 @@
     <div class="container">
         <div class="row">
             <!-- hr : 한줄 긋기-->
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="padding-left: 0px;">
             	<hr class="col-lg-12">
             </div>
             
         </div>
     </div>
     
+
 
     <!-- 영상 존-->
     <div class="container">
@@ -86,11 +88,17 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-lg-3 hvideo">
-                <strong style="color:white">번역 영상 출력~~~~~~</strong>
+                <strong style="color:white">00 : 03</strong>
+                <strong style="color:white">번역 영상 출력</strong><br>
+                <strong style="color:white">00 : 03</strong>
+                <strong style="color:white">번역 영상 출력</strong><br>
+                <strong style="color:white">00 : 03</strong>
+                <strong style="color:white">번역 영상 출력</strong><br>
             </div>
         </div>
     </div>
     <!-- 영상 존 끝-->
+
 
     <!-- 상세 내용  + 썸네일 존-->
     <div class="container">
@@ -134,7 +142,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <hr>
+                <hr class="col-lg-12">
                 <div>
                     <h3>댓글</h3>
                     <strong> 닉네임</strong>

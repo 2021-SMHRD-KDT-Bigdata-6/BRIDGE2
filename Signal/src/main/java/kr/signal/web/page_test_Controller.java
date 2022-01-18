@@ -85,6 +85,10 @@ public class page_test_Controller {
 	public String java_page() {
 		return "java_page";
 	}
+	@GetMapping("/index")
+	public String index() {
+		return "index";
+	}
 	
 	
 	

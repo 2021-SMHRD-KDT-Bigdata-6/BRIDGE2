@@ -39,7 +39,7 @@
                     <div class="row">
                         <div class="col-9 col-lg-3">
                             <div class="site-branding">
-                                <h1 class="site-title"><a href="index.html" rel="home">Signal<span></span></a></h1>
+                                <h1 class="site-title"><a href="index" rel="home">Signal<span></span></a></h1>
                               
                             </div><!-- .site-branding -->
                         </div><!-- .col -->
