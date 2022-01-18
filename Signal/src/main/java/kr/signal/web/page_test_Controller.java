@@ -77,4 +77,11 @@ public class page_test_Controller {
 		return "single-post";
 	}
 	
+	@GetMapping("/java_page")
+	public String java_page() {
+		return "java_page";
+	}
+	
+	
+	
 }

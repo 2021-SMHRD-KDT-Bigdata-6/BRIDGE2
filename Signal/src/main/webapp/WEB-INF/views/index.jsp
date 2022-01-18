@@ -519,7 +519,7 @@
             <div class="row">
                 <div class="col-12 flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
                     <div class="logo-wrap">
-                        <img src="resources/images/logo-1.png" alt="">
+                        <img src="resources/images/signal1.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
