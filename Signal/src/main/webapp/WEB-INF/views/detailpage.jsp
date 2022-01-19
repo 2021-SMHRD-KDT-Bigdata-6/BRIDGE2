@@ -12,14 +12,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+    <!-- FontAwesome CSS 
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">-->
 
     <!-- ElegantFonts CSS -->
     <link rel="stylesheet" href="resources/css/elegant-fonts.css"> 
         
     <!-- InfinitySans-fonts CSS 메인폰트 -->
-    <link rel="stylesheet" href="resources/css/InfinitySans-fonts.css">
+    <link rel="stylesheet" href="resources/css/InfinitySans-fonts.css" type="text/css">
 
     <!-- themify-icons CSS -->
     <link rel="stylesheet" href="resources/css/themify-icons.css">
@@ -39,15 +39,12 @@
         .video-wrap object,
         .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
-         .video-wrap {position:relative; padding-bottom:37.5%; padding-top:30px; height:0; overflow:hidden;}
-        .video-wrap iframe,
-        .video-wrap object,
-        .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
-
          .hvideo{
-             background-color: #19c880;
+             border-radius: 1px;
              height: 100%;
              left: 10px;
+             border-radius: 10px;
+             border: rgb(139, 139, 139) solid 0.5px;
          }
          .detail{
              height: 20%;
@@ -58,7 +55,8 @@
          }
          .thumbnail{
             margin-top: 10px;
-            background-color: #19c880;
+            background-color: rgb(231, 231, 231);
+            border: black solid 0.5px;
          }
          hr{
              background-color: black;
@@ -71,9 +69,31 @@
             padding-top: 10px;
             padding-bottom: 10px;
          }
-                  .form-control{
+         .form-control{
              border: aliceblue;
+             border-bottom: black solid 0.3px;
          }
+
+         /*Object-fit 속성으로
+fill = 가로 세로를 크기에 맞게 꽉채운다(비율무시)
+contain = 지정한 크기에 맞게 비율을 유지한채 꽉 채운다
+cover = 비율을 유지한채 가로와 세로가 꽉차도록 확대된다 
+none = 원본 크기 상관없이 가운데 정렬된다.
+scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진다. */
+
+         .thumnbailPython {
+             width:100%;
+            height:100%;
+            border:1px solid #ccc;}
+         
+
+.thumnbailPython{object-fit:contain;}
+
+/*
+.img2{object-fit:fill;}
+.img3{object-fit:cover;}
+.img4{object-fit:none;}
+.img5{object-fit:scale-down;}*/
 
      </style>
 </head>
@@ -107,12 +127,12 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-lg-3 hvideo">
-                <strong style="color:white">00 : 03</strong>
-                <strong style="color:white">번역 영상 출력</strong><br>
-                <strong style="color:white">00 : 03</strong>
-                <strong style="color:white">번역 영상 출력</strong><br>
-                <strong style="color:white">00 : 03</strong>
-                <strong style="color:white">번역 영상 출력</strong><br>
+                <strong>00 : 03</strong>
+                <strong>번역 영상 출력</strong><br>
+                <strong>00 : 03</strong>
+                <strong>번역 영상 출력</strong><br>
+                <strong>00 : 03</strong>
+                <strong>번역 영상 출력</strong><br>
             <!-- 자동 스크롤 -->
 			<!--  <div style="text-align: center;margin: auto; padding-top: 10px"></div>-->
 			<!--  자동 스크롤 끝 -->
@@ -145,7 +165,7 @@
             </div>
             <div class="col-lg-3 thumbnail" style="left: 10px; style="left: 10px; padding-right: 0px; padding-left: 0px;">
                 <div>
-                    <img src="python.jpg">
+                    <img src="resources/images/thumbnail/miniThumbnail/pythonmini1.jpg"  class="thumnbailPython">
                 </div>
                 <div>
                     <h5>[자바스크립트] No. 17-1 좋아요 개수 반환1</h5>
