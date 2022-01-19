@@ -10,7 +10,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="resources/css/font-awesome.min.css">
 
@@ -59,7 +59,7 @@
     <div id="login_form"><!--로그인 폼-->
     
     <c:if test="${empty users}">
-    <form>
+    <form action="loginGO" method="post">
         <h3 class="login" style="letter-spacing:-1px;">
            <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
         </h3>
@@ -74,16 +74,16 @@
         <hr>
         <label>
         <!-- <span>ID</span> -->
-        <p style="text-align: left; font-size:12px; color:#666">Username</p>
-        <input type="text" placeholder="아이디 입력" class="size">
+        <p style="text-align: left; font-size:12px; color:#666" for="u_id">Username</p>
+        <input type="text" placeholder="아이디 입력" class="size" name="u_id" id="u_id">
         <!-- <input type="submit" value="확인"> -->
         <p></p>
         </label>
 
         <label>
         <!-- <span>PW</span> -->
-        <p style="text-align: left; font-size:12px; color:#666">Password </p>
-        <input type="text" placeholder="비밀번호" class="size">
+        <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">Password </p>
+        <input type="text" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
         <!-- <input type="submit" value="확인"> -->
         </label>
 
@@ -107,5 +107,22 @@
 	<script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
 	<script type='text/javascript' src='resources/js/custom.js'></script>
 
+<!--  <script>
+        function submitCheck() {
+            let u_id  = $('#u_id' ).val() ;
+            let u_pwd = $('#u_pwd').val() ;
+            $.ajax({
+                type : "POST",
+                url: 'login_test',
+                data: {u_id:u_id, u_pwd:u_pwd},
+                success: function(data) {
+                    if(data == "false")
+                        alert('잘못된 아이디이거나, 비밀번호가 틀렸습니다.') ;
+                    else
+                        location.href="index" ; // home.do로 돌아가시면 됩니다.
+                }
+            }) ;
+        }
+        </script>-->
 </body>
 </html>
