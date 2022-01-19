@@ -30,9 +30,9 @@ public class page_test_Controller {
 	
 	@PostMapping("/loginGO")
 	public String login(t_user vo, HttpSession session) {
-		t_user users = service.login_test(vo);
-		if(users != null) { // 회원인증 성공
-			session.setAttribute("users", users);
+		t_user t_user = service.login_test(vo);
+		if(t_user != null) { // 회원인증 성공
+			session.setAttribute("t_user", t_user);
 		}
 		return "redirect:/";
 	}
@@ -93,7 +93,16 @@ public class page_test_Controller {
 	public String js_page() {
 		return "js_page";
 	}
-	
-	
-	
+	@GetMapping("/logoutdo")
+	public String logoutdo(HttpSession session) {
+		// HttpSession session=request.getSession()
+		session.invalidate(); // 세션무효화, 로그아웃
+		
+		return "redirect:/";
+	}
+	@GetMapping("/members")
+	public String members() {
+		return "members";
+	}
+
 }
