@@ -27,10 +27,89 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="resources/css/swiper.min.css">
 
-    <!-- Styles -->
+    <!-- Style CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
+     
+    <!-- Modal CSS --> 
+    <link rel="stylesheet" href="resources/css/modal.css">
+    
+    <script type="text/javascript">
+    	function loginFn(){
+  		var u_id=$("#u_id").val();
+  		if(u_id==""){
+  			alert("아이디를 입력하세요");
+  			$("#u_id").focus();
+  			return false;
+  		}
+  		var u_pwd=$("#u_pwd").val();
+  		if(u_pwd==""){
+  			alert("패스워드를 입력하세요");
+  			$("#u_pwd").focus();
+  			return false;
+  		}
+  		$("#frm").submit();
+  	}
+   </script>  	
+    
+
+    
 </head>
+
 <body>
+
+	<div class="black-background">
+		<div class="white-modal" id="modal-setStyle">
+			 <div id="login_form"><!--로그인 폼-->
+    
+			    <c:if test="${empty users}">
+			    <form action="loginGO" method="post">
+			        <h3 class="login" style="letter-spacing:-1px;">
+			           <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
+			        </h3>
+			
+			        <!--<p>
+			            <input type="submit" value=" 간편로그인 Kakao" class="btn" style="background-color:#19c880">
+			            <input type="submit" value=" 간편로그인 Naver" class="btn" style="background-color:#19c880">
+			        </p>
+			        
+			        -->
+			
+			        <hr>
+			        <label>
+			        <!-- <span>ID</span> -->
+			        <p style="text-align: left; font-size:12px; color:#666" for="u_id">Username</p>
+			        <input type="text" placeholder="아이디 입력" class="size" name="u_id" id="u_id">
+			        <!-- <input type="submit" value="확인"> -->
+			        <p></p>
+			        </label>
+			
+			        <label>
+			        <!-- <span>PW</span> -->
+			        <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">Password </p>
+			        <input type="text" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
+			        <!-- <input type="submit" value="확인"> -->
+			        </label>
+			
+			        <p>
+			            <input type="submit" value="로그인" class="btn">
+			        </p>
+			    </form>
+			    </c:if>
+			   
+			    <hr>
+			    <p class="find">
+			        <span><a href="">아이디 찾기</a></span>
+			        <span><a href="">비밀번호 찾기</a></span>
+			        <span><a href="signup" >회원가입</a></span>
+			    </p>
+			    </div>
+			
+		</div>
+	
+	</div>
+
+
+
 <!-- 헤더 -->
 <div>
    <%@include file="includes/header.jsp" %>
@@ -467,6 +546,23 @@
 	<script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
 	<script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
 	<script type='text/javascript' src='resources/js/custom.js'></script>
+	<script type='text/javascript' src='resources/js/modal.js'></script>
+	
+	<script>
+    var login = document.querySelector('.login-modal')
+	var background = document.querySelector('.black-background')
+	login.addEventListener('click',function(){
+		background.style.display = "block";
+	})
+	
+	background.addEventListener('click',function(e){
+		if(e.target == e.currentTarget){
+			background.style.display = 'none';
+		}
+	})
+	</script>
+	 
+	
 
 </body>
 </html>
