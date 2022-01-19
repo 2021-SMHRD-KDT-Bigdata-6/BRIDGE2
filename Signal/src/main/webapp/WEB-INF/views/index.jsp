@@ -241,7 +241,7 @@
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="java_page">[자바] NO.1 환경구축 및 간단한 사용법</a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.1 환경구축 및 간단한 사용법</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원 </a></div>
