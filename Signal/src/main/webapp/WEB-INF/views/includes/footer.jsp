@@ -12,23 +12,23 @@
             <div class="row">
                 <div class="col-12 flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
                     <div class="logo-wrap">
-                        <img src="resources/images/logo-1.png" alt="">
+                        <img src="resources/images/signal_removebg.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="resources/images/logo-2.png" alt="">
+                        <img src="resources/images/smhrd.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="resources/images/logo-3.png" alt="">
+                        <img src="resources/images/korean.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="resources/images/logo-4.png" alt="">
+                        <img src="resources/images/sl.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="resources/images/logo-5.png" alt="">
+                        <img src="resources/images/aihub.png" alt="">
                     </div><!-- .logo-wrap -->
                 </div><!-- .col -->
             </div><!-- .row -->
