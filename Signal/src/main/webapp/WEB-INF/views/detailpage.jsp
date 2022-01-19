@@ -5,6 +5,8 @@
 <head>
     <title>상세페이지</title>
 
+    <!--glyphicons-->
+    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,8 +32,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="resources/css/style.css">
     
-    <!--glyphicons-->
-    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 
      <style>
          .video-wrap {position:relative; padding-bottom:37.5%; padding-top:30px; height:0; overflow:hidden;}
@@ -57,9 +58,12 @@
             margin-top: 10px;
             background-color: rgb(231, 231, 231);
             border: black solid 0.5px;
+            left: 10px; 
+            padding-right: 0px; 
+            padding-left: 0px;
          }
          hr{
-             background-color: black;
+             background-color: gray;
          }
          body{
              font-size: 1.65rem;
@@ -73,6 +77,8 @@
              border: aliceblue;
              border-bottom: black solid 0.3px;
          }
+
+
 
          /*Object-fit 속성으로
 fill = 가로 세로를 크기에 맞게 꽉채운다(비율무시)
@@ -111,8 +117,8 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <div class="container">
         <div class="row">
             <!-- hr : 한줄 긋기-->
-            <div class="col-lg-12" style="padding-left: 0px;">
-            	<hr class="col-lg-12">
+            <div class="col-lg-12">
+            	<hr class="col-lg-12" style="padding-left: 0px;">
             </div>
             
         </div>
@@ -163,7 +169,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
                     <br><br>
                 </b>
             </div>
-            <div class="col-lg-3 thumbnail" style="left: 10px; style="left: 10px; padding-right: 0px; padding-left: 0px;">
+            <div class="col-lg-3 thumbnail">
                 <div>
                     <img src="resources/images/thumbnail/miniThumbnail/pythonmini1.jpg"  class="thumnbailPython">
                 </div>
@@ -187,7 +193,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
         <div class="row">
             <div class="col-lg-12">
                 <div>
-                    <hr>
+                    <hr class="col-lg-12" style="padding-left: 0px;">
                     <h2>댓글 5개</h2>
                 </div>
             </div>
@@ -197,7 +203,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <div class="container">
         <div class="row">
             <div class="col-lg-2 nickname">
-                <span class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 2rem;"></span>
+                <i class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 2rem;"></i>
                 <span>닉네임</span>
             </div>
             <div class="col-lg-8" style="padding-top: 10px;">
