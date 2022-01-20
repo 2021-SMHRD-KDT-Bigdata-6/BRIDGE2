@@ -47,7 +47,7 @@
   			$("#u_pwd").focus();
   			return false;
   		}
-  		$("#frm").submit();
+  		$("#login").submit();
   	}
    </script>  	
     
@@ -56,6 +56,11 @@
 </head>
 
 <body>
+<!-- 헤더 -->
+<div>
+   <%@include file="includes/header.jsp" %>
+</div>
+<!-- 헤더 끝 -->
 
 	<div class="black-background">
 		<div class="white-modal" id="modal-setStyle">
@@ -91,7 +96,7 @@
 			        </label>
 			
 			        <p>
-			            <input type="submit" value="로그인" class="btn">
+			            <input type="submit" value="로그인" class="btn" onclick="loginFn()">
 			        </p>
 			    </form>
 			    </c:if>
@@ -110,11 +115,7 @@
 
 
 
-<!-- 헤더 -->
-<div>
-   <%@include file="includes/header.jsp" %>
-</div>
-<!-- 헤더 끝 -->
+
 			<!--  <div class="container"> -->
 			<div class="slidebox"> 
 				 <div class="row">
