@@ -96,7 +96,7 @@
 			        </label>
 			
 			        <p>
-			            <input type="submit" value="로그인" class="btn" onclick="loginFn()">
+			            <input type="submit" value="로그인" class="btn" onclick="logindo()">
 			        </p>
 			    </form>
 			    </c:if>
