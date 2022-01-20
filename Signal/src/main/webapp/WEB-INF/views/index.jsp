@@ -177,7 +177,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Learn From The Experts</h2>
+                        <h2 class="entry-title">마이클래스</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -195,7 +195,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Book Library & Store</h2>
+                        <h2 class="entry-title">온라인 강의</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -213,7 +213,7 @@
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Best Course Online</h2>
+                        <h2 class="entry-title">게시판</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -224,14 +224,13 @@
                         <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
                     </footer><!-- .entry-footer -->
                 </div><!-- .icon-box -->
-
                 <div class="icon-box">
                     <div class="icon">
                         <span class="ti-world"></span>
                     </div><!-- .icon -->
 
                     <header class="entry-header">
-                        <h2 class="entry-title">Best Industry Leaders</h2>
+                        <h2 class="entry-title">문의하기</h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
@@ -246,6 +245,7 @@
         </div><!-- .container-fluid -->
     </div><!-- .icon-boxes -->
 
+	  <!-- #url 업로드 창 만들기-->
     <section class="about-section">
         <div class="container">
             <div class="row">
@@ -316,12 +316,12 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/java/java_thumbnail01.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.1 환경구축 및 간단한 사용법</a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.1 환경구축 및 사용법</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원 </a></div>
@@ -352,7 +352,7 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/java/java02.png" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java02.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
@@ -388,7 +388,7 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/java/java03.png" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java03.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
@@ -404,7 +404,7 @@
 
                             <footer class="entry-footer flex justify-content-between align-items-center">
                                 <div class="course-cost">
-                                    $55 <span class="price-drop">$78</span>
+                                    <span class="price-drop"></span>
                                 </div><!-- .course-cost -->
 
                                 <div class="course-ratings flex justify-content-end align-items-center">
@@ -424,7 +424,7 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/java/java04.png" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java04.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
@@ -460,12 +460,12 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/java/java05.png" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java05.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">[자바] NO.5 단순if문 & if-else문</a></h2>
+                                <h2 class="entry-title"><a href="#">[자바] NO.5 if문 & if-else문</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원</a></div>
@@ -496,7 +496,7 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/java/java05.png" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java06.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
@@ -530,7 +530,7 @@
                 </div><!-- .col -->
 
                 <div class="col-12 px-25 flex justify-content-center">
-                    <a class="btn" href="#">view all courses</a>
+                    <a class="btn" href="#">더보기</a>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
