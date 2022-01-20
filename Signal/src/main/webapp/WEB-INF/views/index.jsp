@@ -57,13 +57,13 @@
 
 <body>
 <!-- 헤더 -->
-<div>
-   <%@include file="includes/header.jsp" %>
-</div>
+		<div>
+		   <%@include file="includes/header.jsp" %>
+		</div>
 <!-- 헤더 끝 -->
 
-	<div class="black-background">
-		<div class="white-modal" id="modal-setStyle">
+      <div class="black-background">
+		<div class="white-modal">
 			 <div id="login_form"><!--로그인 폼-->
     
 			    <c:if test="${empty users}">
@@ -107,11 +107,11 @@
 			        <span><a href="">비밀번호 찾기</a></span>
 			        <span><a href="signup" >회원가입</a></span>
 			    </p>
-			    </div>
-			
+			    </div>	
 		</div>
-	
 	</div>
+	
+
 
 
 
@@ -549,6 +549,7 @@
 	<script type='text/javascript' src='resources/js/custom.js'></script>
 	<script type='text/javascript' src='resources/js/modal.js'></script>
 	
+	<!-- 로그인 모달 -->
 	<script>
     var login = document.querySelector('.login-modal')
 	var background = document.querySelector('.black-background')

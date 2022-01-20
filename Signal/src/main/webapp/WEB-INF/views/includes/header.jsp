@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Insert title here</title>    
 <script type="text/javascript">
 
 
@@ -32,7 +32,7 @@ function logoutdo(){
 </script>
 </head>
 <body>
-<div class="hero-content">
+ <div class="hero-content">
         <header class="site-header">
             <div class="top-header-bar">
                 <div class="container-fluid">
@@ -47,14 +47,16 @@ function logoutdo(){
                                     <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form>
                             </div><!-- .header-bar-search -->
+                            
 							<!-- 로그인 안 했을 때 -->
-							<c:if test="${empty t_user }"></c:if>
+							<c:if test="${empty t_user }">
                             <div class="header-bar-menu" id="logindo" action="logindo">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
                                     <li><a class='login-modal'>로그인</a></li>
                                     <li><a href="signup">회원가입</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
+                           </c:if>` 
 
                             
                            <!-- 로그인 했을 때 -->
@@ -106,6 +108,7 @@ function logoutdo(){
                 </div><!-- .container -->
             </div><!-- .nav-bar -->
         </header><!-- .site-header -->
+      </div>
     <!-- 헤더 끝-->
 </body>
 </html>
