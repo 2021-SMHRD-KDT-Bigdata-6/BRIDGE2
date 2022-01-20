@@ -61,7 +61,7 @@ function logoutdo(){
                            <c:if test="${!empty t_user }">
                            <div class="header-bar-menu" id="logoutdo" type="submit"  method="get">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="members">${t_user.u_nickname}님</a></li>
+                                    <li><a href="userpage">${t_user.u_nickname}님</a></li>
  <li><button action="logoutdo" type="submit"  method="get" id="logout">로그아웃</button></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
@@ -85,9 +85,17 @@ function logoutdo(){
                         <div class="col-3 col-lg-9 flex justify-content-around align-content-center">
                             <nav class="site-navigation flex justify-content-around align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
-                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
-                                    <li><a href="myclass">Myclass</a></li>
-                                    <li><a href="#">Course</a></li>
+                                    <li class="current-menu-item"><a href="index.html">홈</a></li>
+                                    <li><a href="myclass">마이클래스</a></li>
+                                    <li><a href="#">강의</a>
+                                    	<ul class="dropdown">
+                                        	<li><a href="#">자바</a></li>
+                                            <li><a href="#">자바스크립트</a></li>
+                                            <li><a href="#">파이썬</a></li>
+                                            <li><a href="#">머신러닝</a></li>
+                                            <li><a href="#">딥러닝</a></li>
+                                    	</ul>
+                                    </li>
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
@@ -108,5 +116,21 @@ function logoutdo(){
         </header><!-- .site-header -->
       </div>
     <!-- 헤더 끝-->
+    
+    	<!-- 로그인 모달 -->
+	<script>
+    var login = document.querySelector('.login-modal')
+	var background = document.querySelector('.black-background')
+	login.addEventListener('click',function(){
+		background.style.display = "block";
+	})
+	
+	background.addEventListener('click',function(e){
+		if(e.target == e.currentTarget){
+			background.style.display = 'none';
+		}
+	})
+	</script>
+	
 </body>
 </html>

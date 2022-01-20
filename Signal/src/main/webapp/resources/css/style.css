@@ -11,6 +11,14 @@ img {
     vertical-align: baseline;
 }
 
+.dropdown{
+	position: relative;
+	display: inline-block;
+	
+}
+.dropdown:hover .dropdown-content {display: block;}
+
+
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
