@@ -3,7 +3,7 @@ select * from t_academy_video;
 select * from t_academy;
 select * from t_comment_video;
 select * from t_community;
-select * from t_qna
+select * from t_qna;
 select * from t_user_video;
 select * from t_write;
 

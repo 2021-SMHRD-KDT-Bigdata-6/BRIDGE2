@@ -13,4 +13,18 @@
         values(#{u_id}, #{u_pwd}, #{u_name}, #{u_nickname}, #{u_phone}, #{u_email}, #{u_addr}, #{u_joindate}, 'n')
     </insert>
     
+    <select id="t_userqna" resultType="kr.signal.domain.t_qna">
+        select * from t_qna where u_id=#{u_id}
+    </select>
+    
+    
+    
+    <!-- 
+    <select id="t_userqna" resultType="kr.signal.domain.t_qna" parameterType="kr.signal.domain.t_user">
+            select * from t_qna where u_id = (select u_id=#{u_id} 
+                									from t_user 
+                										where u_id=#{u_id});
+    </select>
+     -->
+
 </mapper>

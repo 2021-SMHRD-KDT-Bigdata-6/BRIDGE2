@@ -1,5 +1,7 @@
 package kr.signal.web;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.signal.Service.loginService;
+import kr.signal.domain.t_qna;
 import kr.signal.domain.t_user;
 
 @Controller
@@ -100,9 +103,14 @@ public class page_test_Controller {
 		
 		return "redirect:/";
 	}
-	@GetMapping("/members")
-	public String members() {
-		return "members";
+	@GetMapping("/userpage")
+	public String userpage() {
+		return "userpage";
+	}
+	@RequestMapping("/t_userqna")
+	public String t_userqna(t_qna t_qna){
+		List<t_qna> list = service.t_userqna();
+		return "t_userqna()";
 	}
 
 	
