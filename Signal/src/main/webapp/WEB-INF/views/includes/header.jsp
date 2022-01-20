@@ -1,10 +1,35 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+
+
+function logindo(){
+	let loginGO;
+	if(loginGO != null) { // 회원인증 성공
+		$("#logindo").style.display("none");
+	}else{
+		$("#logindo").style.display("block");
+		}
+	
+}
+
+function logoutdo(){
+	let loginGO;
+	if(loginGO != null) { // 회원인증 성공
+		$("#logoutdo").style.display("block");
+	}else{
+		$("#logoutdo").style.display("none");
+		}
+	
+}
+
+</script>
 </head>
 <body>
 <div class="hero-content">
@@ -22,13 +47,26 @@
                                     <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form>
                             </div><!-- .header-bar-search -->
-
-                            <div class="header-bar-menu">
+							<!-- 로그인 안 했을 때 -->
+							<c:if test="${empty t_user }"></c:if>
+                            <div class="header-bar-menu" id="logindo" action="logindo">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
                                     <li><a class='login-modal'>로그인</a></li>
                                     <li><a href="signup">회원가입</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
+
+                            
+                           <!-- 로그인 했을 때 -->
+                           <c:if test="${!empty t_user }">
+                           <div class="header-bar-menu" id="logoutdo" type="submit"  method="get">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <li><a href="members">${t_user.u_nickname}님</a></li>
+                                    <li><button action="logoutdo" type="submit"  method="get" id="logout">로그아웃</button></li>
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                           </c:if>
+                            
                         </div><!-- .col -->
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->

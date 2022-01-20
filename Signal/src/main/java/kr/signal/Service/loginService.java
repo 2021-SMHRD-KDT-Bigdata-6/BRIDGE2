@@ -14,7 +14,7 @@ public class loginService {
 	
 	
 	public t_user login_test(t_user vo) {
-		t_user users = mapper.login_test(vo);
-		return users;
+		t_user t_user = mapper.login_test(vo);
+		return t_user;
 	}
 }

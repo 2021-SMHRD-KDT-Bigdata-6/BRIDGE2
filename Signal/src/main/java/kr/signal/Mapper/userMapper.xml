@@ -8,4 +8,9 @@
     	select * from t_user
     </select>
     
+    <insert id="joinInsert" parameterType="kr.signal.domain.t_user">
+        insert into t_user(u_id, u_pwd, u_name, u_nickname, u_phone, u_email, u_addr, u_joindate, admin_y)
+        values(#{u_id}, #{u_pwd}, #{u_name}, #{u_nickname}, #{u_phone}, #{u_email}, #{u_addr}, #{u_joindate}, 'n')
+    </insert>
+    
 </mapper>
