@@ -61,7 +61,7 @@ function logoutdo(){
                            <c:if test="${!empty t_user }">
                            <div class="header-bar-menu" id="logoutdo" type="submit"  method="get">
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="userpage">${t_user.u_nickname}님</a></li>
+                                    <li><a href="userpage" method="get">${t_user.u_nickname}님</a></li>
  <li><button action="logoutdo" type="submit"  method="get" id="logout">로그아웃</button></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->

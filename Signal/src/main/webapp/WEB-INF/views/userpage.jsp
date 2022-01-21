@@ -64,10 +64,10 @@
             <div>
                 <table>
                         <tr>
-                            <th><button class="button">${t_qna.qna_subject}</button></th>
+                            <th><button class="button">${t_qnd.qna_subject}</button></th>
                         </tr>
                         <tr>
-                            <th><button class="button">${t_qna.qna_subject}</button></th>
+                            <th><button class="button">${t_pna.qna_subject}</button></th>
                         </tr>
                         <tr>
                             <th><button class="button">${t_qna.qna_subject}</button></th>

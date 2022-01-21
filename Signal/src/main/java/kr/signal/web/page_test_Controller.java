@@ -107,7 +107,7 @@ public class page_test_Controller {
 	public String userpage() {
 		return "userpage";
 	}
-	@RequestMapping("/t_userqna")
+	@GetMapping("/t_userqna")
 	public String t_userqna(t_qna t_qna){
 		List<t_qna> list = service.t_userqna();
 		return "t_userqna()";
