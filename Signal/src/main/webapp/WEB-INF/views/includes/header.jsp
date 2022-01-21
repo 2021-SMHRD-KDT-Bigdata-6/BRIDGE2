@@ -43,16 +43,16 @@
                             
                            <!-- 로그인 했을 때 -->
                            <c:if test="${!empty t_user }">
-                           <form type="submit"  method="get">
-                           <div class="header-bar-menu" id="logoutdo" >
-                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="userpage" method="get">${t_user.u_nickname}님</a></li>
- 									<li><button action="logoutdo" id="logout">로그아웃</button></li>
-                                </ul>
-                            </div><!-- .header-bar-menu -->
-                            </form>
+                           <form action="logoutdo" method='get'>
+                              <div class="header-bar-menu" id="logoutdo">
+                                   <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                       <li><a href="userpage">${t_user.u_nickname}님</a></li>
+                                       <li><button type="submit" id="logout">로그아웃</button></li>
+                                   </ul>
+                               </div><!-- .header-bar-menu -->
+                          </form>
                            </c:if>
-                            
+                           
                         </div><!-- .col -->
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->
