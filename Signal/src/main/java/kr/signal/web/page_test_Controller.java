@@ -40,6 +40,14 @@ public class page_test_Controller {
 		return "redirect:/";
 	}
 	
+	@GetMapping("/logoutdo")
+	public String logoutdo(HttpSession session) {
+		// HttpSession session=request.getSession()
+		System.out.println("dfef");
+		session.invalidate(); // 세션무효화, 로그아웃
+		System.out.println("dfdf");
+		return "redirect:/";
+	}
 	@GetMapping("/signup")
 	public String signup() {
 		return "signup";
@@ -96,13 +104,7 @@ public class page_test_Controller {
 	public String js_page() {
 		return "js_page";
 	}
-	@GetMapping("/logoutdo")
-	public String logoutdo(HttpSession session) {
-		// HttpSession session=request.getSession()
-		session.invalidate(); // 세션무효화, 로그아웃
-		
-		return "redirect:/";
-	}
+	
 	@GetMapping("/userpage")
 	public String userpage() {
 		return "userpage";
