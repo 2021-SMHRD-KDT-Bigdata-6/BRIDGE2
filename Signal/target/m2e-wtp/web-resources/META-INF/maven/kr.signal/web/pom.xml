@@ -191,14 +191,13 @@
 <!-- jackson -->
 
 
-<!-- lombok -->
-    <dependency>
-           <groupId>org.projectlombok</groupId>
-           <artifactId>lombok</artifactId>
-           <version>1.18.12</version>
-           <scope>provided</scope>
+ <!-- getter setter tostring Constructor 생성 api -->
+	  <dependency>
+	  	<groupId>org.projectlombok</groupId>
+	  	<artifactId>lombok</artifactId>
+	  	<version>1.18.12</version>
+	  	<scope>provided</scope>
       </dependency>
-<!-- lombok -->
 
 
    

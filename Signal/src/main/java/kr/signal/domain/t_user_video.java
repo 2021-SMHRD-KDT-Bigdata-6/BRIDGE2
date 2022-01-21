@@ -1,5 +1,8 @@
 package kr.signal.domain;
 
+import lombok.Data;
+
+@Data
 public class t_user_video {
 // 유저 영상 저장
 	private String uv_seq; // 영상 순번

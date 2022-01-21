@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,11 +42,42 @@
             text-align: center;
             margin: 0 auto;
         }
-
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(()=> {
+  		// 게시판 리스트 가져오기
+  		loadList()
+  	})
+    	function loadList(){
+    	
+    		$.ajax({
+    			url:'t_userqna',
+    			type:'post',
+    			data:{u_id:"${t_user.u_id}"},
+    			dataType:'json',
+    			success:viewList,
+    			error:function(){
+    				console.log('fail')
+    			}
+    		})
+    	}
+    
+    function viewList(list){
+    	let qna = "<table>"
+    	$.each(list,(index,obj)=>{
+    		qna +="<tr>"
+    		qna +="<td>"
+    		qna+="<th><button class='button'>"+obj.qna_subject+"</button></th>"
+    		qna +="</tr>"
+    	})
+    	qna+="</table>"
+    	
+    	$('#view').html(qna)
+    }
+    </script>
 </head>
 <body>
-    <form>
         <div class="userbox">
         <div  class="content">
             <div>
@@ -61,41 +93,20 @@
                 <button class="button"><h3>더 보기 > </h3></button>
             </div>
             <c:if test="${!empty t_user }">
-            <div>
-                <table>
-                        <tr>
-                            <th><button class="button">${t_qnd.qna_subject}</button></th>
-                        </tr>
-                        <tr>
-                            <th><button class="button">${t_pna.qna_subject}</button></th>
-                        </tr>
-                        <tr>
-                            <th><button class="button">${t_qna.qna_subject}</button></th>
-                        </tr>
-                            <tr>
-                            <th><button class="button">${t_qna.qna_subject}</button></th>
-                        	</tr>
-                </table>
+            <div id="view">
+                
             </div>
             </c:if>
-            
-            
             <c:if test="${empty t_user}">
-					<table>
+				<table>
                         <tr>
                             <th><button class="button">작성된 게시글이 없습니다.</button></th>
                         </tr> 
                 </table>
                 </c:if>
         </div>
-
-        
-        
-        
-        
-
         </div>
         </div>
-    </form>
 </body>
+
 </html>

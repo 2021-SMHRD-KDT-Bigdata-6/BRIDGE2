@@ -1,3 +1,4 @@
+
 package kr.signal.Mapper;
 
 import java.util.List;
@@ -12,7 +13,7 @@ public interface userMapper {
 	public List<t_user> userlist();
 	
 	// 문의 내역 리스트 불러오기
-	public List<t_qna> t_userqna();
+	public List<t_qna> t_userqna(String u_id);
 	
 	public void joinInsert(t_user vo);
 	public t_user t_userlogin(int idx);   // SQL select, where ~~~

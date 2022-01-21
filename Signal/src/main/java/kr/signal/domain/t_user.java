@@ -3,6 +3,7 @@ package kr.signal.domain;
 import kr.signal.domain.t_user;
 import lombok.Data;
 
+
 //사용자(Object) -> t_user 테이블 [[회원관리]]
 @Data
 public class  t_user {

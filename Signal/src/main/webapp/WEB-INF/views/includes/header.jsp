@@ -5,12 +5,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>    
+<title>Insert title here</title>
+<script type="text/javascript" src=""></script>
 <script type="text/javascript">
-
-
-
-
+function logindo(){
+		if(${!empty t_user}) { // 회원인증 성공
+			$("#logindo").style.display("none");
+		}else{
+		$("#logindo").style.display("block");
+		}
+	
+}
+function logoutdo(){
+		if(${!empty t_user}) { // 회원인증 성공
+			$("#logoutdo").style.display("block");
+		}else{
+			$("#logoutdo").style.display("none");
+		}
+	
+}
 </script>
 </head>
 <body>
@@ -44,15 +57,15 @@
                            <!-- 로그인 했을 때 -->
                            <c:if test="${!empty t_user }">
                            <form action="logoutdo" method='get'>
-                              <div class="header-bar-menu" id="logoutdo">
-                                   <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                       <li><a href="userpage">${t_user.u_nickname}님</a></li>
-                                       <li><button type="submit" id="logout">로그아웃</button></li>
-                                   </ul>
-                               </div><!-- .header-bar-menu -->
-                          </form>
+	                           <div class="header-bar-menu" id="logoutdo">
+	                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+	                                    <li><a href="userpage?u_id=${t_user.u_id}">${t_user.u_nickname}님</a></li>
+	                                    <li><button type="submit" id="logout">로그아웃</button></li>
+	                                </ul>
+	                            </div><!-- .header-bar-menu -->
+	                       </form>
                            </c:if>
-                           
+                            
                         </div><!-- .col -->
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->
