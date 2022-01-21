@@ -60,14 +60,14 @@
                 <button class="button"><h3>문의내역 확인하기 💡✔</h3></button>
                 <button class="button"><h3>더 보기 > </h3></button>
             </div>
-            <c:if test="${!empty t_user }">
+            <c:if test="${!empty t_qna}">
             <div>
                 <table>
                         <tr>
-                            <th><button class="button">${t_qnd.qna_subject}</button></th>
+                            <th><button class="button">${t_qna.qna_subject}</button></th>
                         </tr>
                         <tr>
-                            <th><button class="button">${t_pna.qna_subject}</button></th>
+                            <th><button class="button">${t_qna.qna_subject}</button></th>
                         </tr>
                         <tr>
                             <th><button class="button">${t_qna.qna_subject}</button></th>
@@ -80,7 +80,7 @@
             </c:if>
             
             
-            <c:if test="${empty t_user}">
+            <c:if test="${empty t_qna}">
 					<table>
                         <tr>
                             <th><button class="button">작성된 게시글이 없습니다.</button></th>

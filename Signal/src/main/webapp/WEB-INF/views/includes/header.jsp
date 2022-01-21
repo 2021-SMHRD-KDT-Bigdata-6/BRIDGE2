@@ -46,7 +46,7 @@
                            <form action="logoutdo" method='get'>
                               <div class="header-bar-menu" id="logoutdo">
                                    <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                       <li><a href="userpage">${t_user.u_nickname}님</a></li>
+                                       <li><a href="userpage?t_userqna()=${u_id}">${t_user.u_nickname}님</a></li>
                                        <li><button type="submit" id="logout">로그아웃</button></li>
                                    </ul>
                                </div><!-- .header-bar-menu -->
