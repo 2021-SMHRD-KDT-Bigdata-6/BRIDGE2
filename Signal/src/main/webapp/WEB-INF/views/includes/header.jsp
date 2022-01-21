@@ -8,8 +8,6 @@
 <title>Insert title here</title>
 <script type="text/javascript" src=""></script>
 <script type="text/javascript">
-
-
 function logindo(){
 		if(${!empty t_user}) { // 회원인증 성공
 			$("#logindo").style.display("none");
@@ -18,7 +16,6 @@ function logindo(){
 		}
 	
 }
-
 function logoutdo(){
 		if(${!empty t_user}) { // 회원인증 성공
 			$("#logoutdo").style.display("block");
@@ -27,7 +24,6 @@ function logoutdo(){
 		}
 	
 }
-
 </script>
 </head>
 <body>
