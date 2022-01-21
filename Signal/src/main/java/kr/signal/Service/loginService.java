@@ -22,8 +22,10 @@ public class loginService {
 	}
 	
 	
-	public List<t_qna> t_userqna(){
-		List<t_qna> qna = mapper.t_userqna();
-		return t_userqna();
+	public List<t_qna> t_userqna(String u_id){
+		System.out.println("Service");
+		System.out.println(u_id);
+		List<t_qna> list = mapper.t_userqna(u_id);
+		return list;
 	}
 }
