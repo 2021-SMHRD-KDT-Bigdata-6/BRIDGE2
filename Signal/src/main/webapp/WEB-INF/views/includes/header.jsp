@@ -9,23 +9,7 @@
 <script type="text/javascript">
 
 
-function logindo(){
-		if(${!empty t_user}) { // 회원인증 성공
-		$("#logindo").style.display("none");
-	}else{
-		$("#logindo").style.display("block");
-		}
-	
-}
 
-function logoutdo(){
-		if(${!empty t_user}) { // 회원인증 성공
-		$("#logoutdo").style.display("block");
-	}else{
-		$("#logoutdo").style.display("none");
-		}
-	
-}
 
 </script>
 </head>
@@ -59,12 +43,14 @@ function logoutdo(){
                             
                            <!-- 로그인 했을 때 -->
                            <c:if test="${!empty t_user }">
-                           <div class="header-bar-menu" id="logoutdo" type="submit"  method="get">
+                           <form type="submit"  method="get">
+                           <div class="header-bar-menu" id="logoutdo" >
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
                                     <li><a href="userpage" method="get">${t_user.u_nickname}님</a></li>
- <li><button action="logoutdo" type="submit"  method="get" id="logout">로그아웃</button></li>
+ 									<li><button action="logoutdo" id="logout">로그아웃</button></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
+                            </form>
                            </c:if>
                             
                         </div><!-- .col -->
