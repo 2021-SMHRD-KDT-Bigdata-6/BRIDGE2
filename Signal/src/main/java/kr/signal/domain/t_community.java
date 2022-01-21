@@ -1,5 +1,8 @@
 package kr.signal.domain;
 
+import lombok.Data;
+
+@Data
 public class t_community {
 // 자유 게시판
 	private String commu__seq; // 게시글 순번

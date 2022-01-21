@@ -1,5 +1,8 @@
 package kr.signal.domain;
 
+import lombok.Data;
+
+@Data
 public class t_write {
 // 자유 게시판 댓글 불러오기
 	private String write_seq; // 댓글 순번
