@@ -245,54 +245,23 @@
         </div><!-- .container-fluid -->
     </div><!-- .icon-boxes -->
 
-	  <!-- #url 업로드 창 만들기-->
-    <section class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 align-content-lg-stretch">
-                    <header class="heading">
-                        <h2 class="entry-title">About Ezuca</h2>
+	<!-- url 업로드 창 -->
+    <section class ="section-padding-100">
 
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                    </header><!-- .heading -->
-
-                    <div class="entry-content ezuca-stats">
-                        <div class="stats-wrap flex flex-wrap justify-content-lg-between">
-                            <div class="stats-count">
-                                50<span>M+</span>
-                                <p>STUDENTS LEARNING</p>
-                            </div><!-- .stats-count -->
-
-                            <div class="stats-count">
-                                30<span>K+</span>
-                                <p>ACTIVE COURSES</p>
-                            </div><!-- .stats-count -->
-
-                            <div class="stats-count">
-                                340<span>M+</span>
-                                <p>INSTRUCTORS ONLINE</p>
-                            </div><!-- .stats-count -->
-
-                            <div class="stats-count">
-                                20<span>+</span>
-                                <p>Country Reached</p>
-                            </div><!-- .stats-count -->
-                        </div><!-- .stats-wrap -->
-                    </div><!-- .ezuca-stats -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-6 flex align-content-center mt-5 mt-lg-0">
-                    <div class="ezuca-video position-relative">
-                        <div class="video-play-btn position-absolute">
-                            <img src="resources/images/video-icon.png" alt="Video Play">
-                        </div><!-- .video-play-btn -->
-
-                        <img src="resources/images/video-screenshot.png" alt="">
-                    </div><!-- .ezuca-video -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .about-section -->
+		<div class="search-container">
+			<p class="search-title">수어 번역 서비스</p>
+			<form action="movieDetail.jsp">
+				<div class="search-box">
+					<a href="">
+					<input class="search-input" placeholder="url 주소 입력" name="search">
+						<button class="searchbtn" name = "click">
+						<img class="btn-img" src="">
+					</button>
+						</a>
+				</div>
+			</form>
+		</div>
+	</section>
 
     <section class="featured-courses vertical-column courses-wrap">
         <div class="container">
@@ -396,9 +365,9 @@
                                 <h2 class="entry-title"><a href="#">[자바] NO.3 연산자 6가지!</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">Ms. Lucius</a></div>
+                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
 
-                                    <div class="course-date">Dec 18, 2018</div>
+                                    <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->
                             </header><!-- .entry-header -->
 
