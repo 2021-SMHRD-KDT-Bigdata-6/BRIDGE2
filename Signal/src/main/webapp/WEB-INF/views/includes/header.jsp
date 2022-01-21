@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src=""></script>
 <script type="text/javascript">
+//삭제?
 function logindo(){
 		if(${!empty t_user}) { // 회원인증 성공
 			$("#logindo").style.display("none");
@@ -25,6 +25,28 @@ function logoutdo(){
 	
 }
 </script>
+<style type="text/css">
+.dropdown{
+  position : relative;
+  display : inline-block;
+}
+
+.dropdown-content{
+  display : none;
+  position : absolute;
+  z-index : 1; /*다른 요소들보다 앞에 배치*/
+}
+
+.dropdown-content a{
+  display : block;
+  scroll : no;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
 </head>
 <body>
  <div class="hero-content">
@@ -82,20 +104,25 @@ function logoutdo(){
                         </div><!-- .col -->
 
                         <div class="col-3 col-lg-9 flex justify-content-around align-content-center">
-                            <nav class="site-navigation flex justify-content-around align-items-center">
+                           
+                             <nav class="site-navigation flex justify-content-around align-items-center">
+                        
                                 <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
                                     <li class="current-menu-item"><a href="index.html">홈</a></li>
                                     <li><a href="myclass">마이클래스</a></li>
-                                    <li><a href="#">강의</a>
-                                    	<ul class="dropdown">
-                                        	<li><a href="#">자바</a></li>
-                                            <li><a href="#">자바스크립트</a></li>
-                                            <li><a href="#">파이썬</a></li>
-                                            <li><a href="#">머신러닝</a></li>
-                                            <li><a href="#">딥러닝</a></li>
-                                    	</ul>
-                                    </li>
-                                </ul>
+                                   <div class="dropdown">	
+                                    <li class="dropbtn"><a href="myclass">강의</a></li>
+									      <div class="dropdown-content">
+									        <li><a href="#">자바</a></li>
+									        <li><a href="#">자바스크립트</a></li>
+									        <li><a href="#">파이썬</a></li>
+									        <li><a href="#">머신러닝</a></li>
+									        <li><a href="#">딥러닝</a></li>
+									      </div>
+								</ul>
+									  
+									                                   
+                              
 
                                 <div class="hamburger-menu d-lg-none">
                                     <span></span>
@@ -104,16 +131,13 @@ function logoutdo(){
                                     <span></span>
                                 </div><!-- .hamburger-menu -->
 
-                                <div class="header-bar-cart">
-                                    <a href="#" class="flex justify-content-center align-items-center"><span aria-hidden="true" class="icon_bag_alt"></span></a>
-                                </div><!-- .header-bar-search -->
                             </nav><!-- .site-navigation -->
-                        </div><!-- .col -->
+                        </div><!-- .dropdown -->
                     </div><!-- .row -->
                 </div><!-- .container -->
             </div><!-- .nav-bar -->
-        </header><!-- .site-header -->
-      </div>
+  </header><!-- .site-header -->
+</div>
     <!-- 헤더 끝-->
     
     	<!-- 로그인 모달 -->
