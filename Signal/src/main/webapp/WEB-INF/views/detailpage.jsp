@@ -44,8 +44,8 @@
              border-radius: 1px;
              height: 100%;
              left: 10px;
-             border-radius: 10px;
              border: rgb(139, 139, 139) solid 0.5px;
+             background-color: white;
          }
          .detail{
              height: 20%;
@@ -79,7 +79,6 @@
          }
 
 
-
          /*Object-fit 속성으로
 fill = 가로 세로를 크기에 맞게 꽉채운다(비율무시)
 contain = 지정한 크기에 맞게 비율을 유지한채 꽉 채운다
@@ -87,13 +86,14 @@ cover = 비율을 유지한채 가로와 세로가 꽉차도록 확대된다
 none = 원본 크기 상관없이 가운데 정렬된다.
 scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진다. */
 
-         .thumnbailPython {
+         .thumbnailPython {
              width:100%;
             height:100%;
-            border:1px solid #ccc;}
-         
+            border:1px solid #ccc;
+            object-fit:contain;
+            }
 
-.thumnbailPython{object-fit:contain;}
+
 
 /*
 .img2{object-fit:fill;}
@@ -111,11 +111,20 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 	}
 .choice3 {
 	font-size : 20px;
-	float: right;
 	width:fit-content;
     margin:2.5px;
 
 }
+.card{
+	margin-bottom: 20px;
+}
+.handvideo{
+         
+             width:100%;
+            height:100%;
+            border:1px solid #ccc;
+            object-fit:contain;
+            }
 
 
      </style>
@@ -150,18 +159,26 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
             <div class="col-lg-9 video-wrap">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-3 hvideo">
-            <!-- 
-                <strong>00 : 03</strong>
-                <strong>번역 영상 출력</strong><br>
-                <strong>00 : 03</strong>
-                <strong>번역 영상 출력</strong><br>
-                <strong>00 : 03</strong>
-                <strong>번역 영상 출력</strong><br>  -->
-             <!-- 1. 반복문 테이블 만들기  / 2. 배열에 시간, 멘트 넣기 / 
-         3. 특정시간에 1줄 포인트 + 스크롤 +  상단고정(스크롤 범위때문에안됨) --> 
+            <div class="col-lg-3 hvideo" style="display: none; object-fit:contain;">
+					<video muted autoplay controls class="handvideo">
+						<source src="resources/pythonhvideo/pythonhvideo.mp4" type="video/mp4">
+					</video>
+		       
+            <!-- 자동 스크롤 -->
+			<!--  <div style="text-align: center;margin: auto; padding-top: 10px"></div>-->
+			<!--  자동 스크롤 끝 -->
+            </div>
+        </div>
+    </div>
+    <!-- 영상 존 끝-->
 
-	<div class="card">
+
+    <!-- 상세 내용  + 썸네일 존-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 detail">
+            	<div>
+            		<div class="card"  style="display: none;">
 	  <div class="card-body tableBox">
 	    <h4 class="card-title"> 한국어 스크립트 </h4>
 	    <table class="table table-hover " id="tableData" onload="startScroll()">
@@ -264,27 +281,14 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 	</tbody>
 </table>
   </div>
-</div>			  
-               
-                
-                
-            <!-- 자동 스크롤 -->
-			<!--  <div style="text-align: center;margin: auto; padding-top: 10px"></div>-->
-			<!--  자동 스크롤 끝 -->
-            </div>
-        </div>
-    </div>
-    <!-- 영상 존 끝-->
-
-
-    <!-- 상세 내용  + 썸네일 존-->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 detail">
+</div>	
+            	
+            	</div>
                 <Strong style = 'font-size : 25px'>[파이썬 기초] NO.3변수</Strong>
-                <button  type="button" class="choice3  btn btn-outline-success btn-lg"> 수어</button>
-                <button  type="button" class="choice3 btn btn-outline-success btn-lg"> 자막 </button>
-                <button  type="button" class="choice3 btn btn-outline-success btn-lg"> 수어+자막</button>
+                <button  type="button" class="choice3 button1 btn btn-outline-success btn-lg float-right"> 수어</button>
+                <button  type="button" class="choice3 button2 btn btn-outline-success btn-lg float-right"> 자막 </button>
+                <button  type="button" class="choice3 button3 btn btn-outline-success btn-lg float-right"> 수어+자막</button>
+                <button  type="button" class="choice3 button4 btn btn-outline-success btn-lg float-right"> 모두 닫기</button>
                 
                 <hr>
                 <b>
@@ -304,7 +308,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
             </div>
             <div class="col-lg-3 thumbnail">
                 <div>
-                    <img src="resources/images/thumbnail/miniThumbnail/pythonmini1.jpg"  class="thumnbailPython">
+                    <img src="resources/images/thumbnail/Python/python_03.jpg"  class="thumbnailPython">
                 </div>
                 <div>
                     <h5>[파이썬 기초] NO3.변수</h5>
@@ -337,7 +341,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
         <div class="row">
             <div class="col-lg-2 nickname">
                 <i class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 2rem;"></i>
-                <span>닉네임</span>
+                <span>${t_user.u_nickname}</span>
             </div>
             <div class="col-lg-8" style="padding-top: 10px;">
                 <input class="form-control" placeholder="댓글을 입력해 주세요." style="height: 30px; font-size: 1.65rem;">
@@ -350,12 +354,6 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <!-- 댓글 존-->
     
 
-    
-    <!-- category.jsp -->
-      <div>
-   <%@include file="includes/category.jsp" %>
-	</div>
-	<!-- category.jsp -->
 
 
 
@@ -367,10 +365,32 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 <!-- footer -->
 
 	<script type='text/javascript' src='resources/js/jquery.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type='text/javascript' src='resources/js/swiper.min.js'></script>
 	<script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
 	<script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
 	<script type='text/javascript' src='resources/js/custom.js'></script>
+    <script type="text/javascript">
+    
+    	$(".button1").on('click',function (){
+      	$(".hvideo").css('display', 'block');
+      	$(".card").css('display', 'none');
+      });
+    	
+    	$(".button2").on('click',function (){
+          	$(".card").css('display', 'block');
+          	$(".hvideo").css('display', 'none');
+          });
+    	
+    	$(".button3").on('click',function (){
+    		$(".hvideo").css('display', 'block');
+    		$(".card").css('display', 'block');
+          });
+    	$(".button4").on('click',function (){
+    		$(".hvideo").css('display', 'none');
+    		$(".card").css('display', 'none');
+          });
+    </script>
     
     
 </body>
