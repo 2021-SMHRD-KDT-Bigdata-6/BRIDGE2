@@ -10,7 +10,7 @@
     
     <insert id="joinInsert" parameterType="kr.signal.domain.t_user">
         insert into t_user(u_id, u_pwd, u_name, u_nickname, u_phone, u_email, u_addr, u_joindate, admin_y)
-        values(#{u_id}, #{u_pwd}, #{u_name}, #{u_nickname}, #{u_phone}, #{u_email}, #{u_addr}, #{u_joindate}, 'n')
+        values(#{u_id}, #{u_pwd}, #{u_name}, #{u_nickname}, #{u_phone}, #{u_email}, #{u_addr}, NOW(), 'n')
     </insert>
     
     <select id="t_userqna" resultType="kr.signal.domain.t_qna">

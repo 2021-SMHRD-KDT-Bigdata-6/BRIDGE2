@@ -92,7 +92,12 @@ public class page_test_Controller {
 		
 		return list;
 	}
-
+	
+	@PostMapping(value="/signup")
+	public String userlist(t_user vo) {
+		service.joinInsert(vo);
+		return "redirect:/";
+	}
 	
 
 }

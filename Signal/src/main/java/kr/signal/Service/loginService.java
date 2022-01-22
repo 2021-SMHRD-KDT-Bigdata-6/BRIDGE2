@@ -2,6 +2,7 @@ package kr.signal.Service;
 
 import java.util.List;
 
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,9 @@ public class loginService {
 	
 	@Autowired
 	userMapper mapper;
+	
+	private SqlSessionTemplate userSqlSession;
+
 	
 	
 	public t_user login_test(t_user vo) {
@@ -28,4 +32,9 @@ public class loginService {
 		List<t_qna> list = mapper.t_userqna(u_id);
 		return list;
 	}
+	
+	public void joinInsert(t_user vo) {
+		mapper.joinInsert(vo);
+	}
+
 }
