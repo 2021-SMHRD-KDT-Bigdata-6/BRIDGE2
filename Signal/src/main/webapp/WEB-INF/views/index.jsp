@@ -162,7 +162,7 @@
           </div><!-- .hero-content-hero-content-overlay -->
     </div><!-- .hero-content -->
       
-      
+
     <div class="icon-boxes">
         <div class="container-fluid">
             <div class="flex flex-wrap align-items-stretch">
@@ -239,24 +239,22 @@
             </div><!-- .row -->
         </div><!-- .container-fluid -->
     </div><!-- .icon-boxes -->
+ 
 
-    <!-- #url 업로드 창 만들기-->
-    <!-- url 업로드 창 -->
-    <section class ="section-padding-100">
-
-		<div class="search-container">
-			<p class="search-title">수어 번역 서비스</p>
-			<form action="movieDetail.jsp">
-				<div class="search-box">
-					<a href="">
-					<input class="search-input" placeholder="url 주소 입력" name="search">
-						<button class="searchbtn" name = "click">
-						<img class="btn-img" src="">
-					</button>
-						</a>
-				</div>
-			</form>
-		</div>
+  
+    <!-- # url 업로드 창 # -->
+   
+    <section class ="search">
+		<div class="container">
+			<h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
+			 <div class="bar-search">
+                                <form class="flex align-items-stretch">
+                                    <input type="search" placeholder="URL 주소 입력">
+                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
+                                </form>
+                            
+                            </div><!-- .header-bar-search -->
+			</div>			
 	</section>
   
     <section class="featured-courses vertical-column courses-wrap">
@@ -379,7 +377,7 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star-o"></span>
 
-                                    <span class="course-ratings-count">(4 votes)</span>
+                                    <span class="course-ratings-count">(좋아요 4)</span>
                                 </div><!-- .course-ratings -->
                             </footer><!-- .entry-footer -->
                         </div><!-- .course-content-wrap -->
