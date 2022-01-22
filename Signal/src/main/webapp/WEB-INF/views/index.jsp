@@ -242,7 +242,7 @@
  
 
   
-    <!-- # url 업로드 창 # -->
+    <!-- # url 업로드 창  -->
    
     <section class ="search">
 		<div class="container">
@@ -256,6 +256,7 @@
                             </div><!-- .header-bar-search -->
 			</div>			
 	</section>
+    <!-- # url 업로드 창 끝 -->
   
     <section class="featured-courses vertical-column courses-wrap">
         <div class="container">
@@ -266,11 +267,11 @@
 
                         <nav class="courses-menu mt-3 mt-lg-0">
                             <ul class="flex flex-wrap justify-content-md-end align-items-center">
-                                <li class="active"><a href="java_page">자바</a></li>
-                                <li><a href="js_page">자바스크립트</a></li>
-                                <li><a href="#">파이썬</a></li>
-                                <li><a href="#">머신러닝</a></li>
-                                <li><a href="#">딥러닝</a></li>
+                                <li class="active"><a href="#" data-filter="*">자바</a></li>
+                                <li><a href="js_page" data-filter=".자바스크립트">자바스크립트</a></li>
+                                <li><a href="#" data-filter=".파이썬">파이썬</a></li>
+                                <li><a href="#" data-filter=".머신러닝">머신러닝</a></li>
+                                <li><a href="#" data-filter=".딥러닝">딥러닝</a></li>
                             </ul>
                         </nav><!-- .courses-menu -->
                     </header><!-- .heading -->
