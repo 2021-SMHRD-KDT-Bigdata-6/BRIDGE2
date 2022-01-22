@@ -58,36 +58,6 @@ public class page_test_Controller {
 		return "signup";
 	}
 	
-	@GetMapping("/about")
-	public String about() {
-		return "about";
-	}
-	
-	@GetMapping("/blog")
-	public String blog() {
-		return "blog";
-	}
-	
-	@GetMapping("/contact")
-	public String contact() {
-		return "contact";
-	}
-	
-	@GetMapping("/courses")
-	public String courses() {
-		return "courses";
-	}
-	
-	@GetMapping("/home")
-	public String home() {
-		return "home";
-	}
-	
-	@GetMapping("/single-courses")
-	public String single() {
-		return "single-courses";
-	}
-	
 	@GetMapping("/single-post")
 	public String post() {
 		return "single-post";

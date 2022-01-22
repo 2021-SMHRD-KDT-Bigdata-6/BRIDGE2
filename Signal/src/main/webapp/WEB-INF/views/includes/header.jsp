@@ -58,12 +58,13 @@ function logoutdo(){
                         </div><!-- .col -->
 
                         <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                            <div class="header-bar-search">
+                            <!--  <div class="header-bar-search">
                                 <form class="flex align-items-stretch">
                                     <input type="search" placeholder="What would you like to learn?">
                                     <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form>
                             </div><!-- .header-bar-search -->
+                            
                             
 							<!-- 로그인 안 했을 때 -->
 							<c:if test="${empty t_user }">

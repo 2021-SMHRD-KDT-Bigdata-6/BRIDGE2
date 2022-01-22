@@ -111,11 +111,6 @@
       </div>
    </div>
    
-
-
-
-
-
          <!--  <div class="container"> -->
          <div class="slidebox"> 
              <div class="row">
@@ -286,8 +281,7 @@
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thum
-                            bnail/Java/java_thumbnail01.jpg" alt=""></a>
+                            <a href="#"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
