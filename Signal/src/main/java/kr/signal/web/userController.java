@@ -6,6 +6,6 @@ import kr.signal.Service.loginService;
 
 public class userController {
 	@Autowired
-	loginService sercive;
+	loginService sercive; // service 
 
 }
