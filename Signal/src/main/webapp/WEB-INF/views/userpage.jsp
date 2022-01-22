@@ -11,7 +11,12 @@
     <title>문의내역 확인하기</title>
     <style>
         body{
-            background-color: rgb(231, 231, 231);
+            background-color: rgb(231, 231, 231);   
+		    height: 100vh;
+		    margin: 0;
+		    padding: 20px 0;
+		    box-sizing: border-box;
+            
         }
         .userbox{
             background-color: white;
