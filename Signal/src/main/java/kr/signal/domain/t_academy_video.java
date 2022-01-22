@@ -1,5 +1,8 @@
 package kr.signal.domain;
 
+import lombok.Data;
+
+@Data
 public class t_academy_video {
 // 교육기관 교육 영상 정보
 	private String av_seq; // 교육영상 순번

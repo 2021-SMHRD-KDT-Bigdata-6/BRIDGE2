@@ -1,5 +1,8 @@
 package kr.signal.domain;
 
+import lombok.Data;
+
+@Data
 public class t_comment_video {
 // 교육 영상 댓글 코멘트
 	private String av_write_seq; // 교육영상 댓글 순번

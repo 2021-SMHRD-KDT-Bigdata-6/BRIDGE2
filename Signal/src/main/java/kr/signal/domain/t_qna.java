@@ -1,5 +1,8 @@
 package kr.signal.domain;
 
+import lombok.Data;
+
+@Data
 public class t_qna {
 	// 문의하기 P&A VO
 	private String qna_seq; // 게시글 순번
