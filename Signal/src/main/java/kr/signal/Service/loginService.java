@@ -36,5 +36,8 @@ public class loginService {
 	public void joinInsert(t_user vo) {
 		mapper.joinInsert(vo);
 	}
+	public void userUpdatedo(t_user vo) {
+		mapper.userUpdatedo(vo);
+	}
 
 }

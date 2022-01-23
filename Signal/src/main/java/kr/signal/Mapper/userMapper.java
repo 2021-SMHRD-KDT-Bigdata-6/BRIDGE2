@@ -23,6 +23,7 @@ public interface userMapper {
 	public t_user login_test(t_user vo);
 	
 	
+	public void userUpdatedo(t_user vo); // 회원정보수정
 	
 
 	
