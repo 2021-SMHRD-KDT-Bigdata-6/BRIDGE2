@@ -61,6 +61,7 @@
             left: 10px; 
             padding-right: 0px; 
             padding-left: 0px;
+            text-align: center;
          }
          hr{
              background-color: gray;
@@ -156,10 +157,10 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <div class="container"  style = "margin-bottom: 30px;" >
         <div class="row">
   			<!--  유투브 -->
-            <div class="col-lg-9 video-wrap">
+            <div class="col-lg-8 video-wrap">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-3 hvideo" style="display: none; object-fit:contain;">
+            <div class="col-lg-4 hvideo" style="display: none; object-fit:contain;">
 					<video muted autoplay controls class="handvideo">
 						<source src="resources/pythonhvideo/pythonhvideo.mp4" type="video/mp4">
 					</video>
@@ -176,7 +177,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <!-- 상세 내용  + 썸네일 존-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 detail">
+            <div class="col-lg-8 detail">
             	<div>
             		<div class="card"  style="display: none;">
 	  <div class="card-body tableBox">
@@ -306,7 +307,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
                     <br><br>
                 </b>
             </div>
-            <div class="col-lg-3 thumbnail">
+            <div class="col-lg-4 thumbnail">
                 <div>
                     <img src="resources/images/thumbnail/Python/python_03.jpg"  class="thumbnailPython">
                 </div>

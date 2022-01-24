@@ -28,3 +28,8 @@ alter table t_community modify column commu_file1 VARCHAR(200);
 
 alter table t_community modify column commu_file2 VARCHAR(200);
 
+-- 모든 제약조건 확인하는 코드
+select * from information_schema.table_constraints;
+
+ALTER TABLE t_qna MODIFY qna_seq INT NOT NULL AUTO_INCREMENT;
+
