@@ -7,28 +7,29 @@
    <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width">
-	      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-	      
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+         
 <style> 
 ol, ul {
-	padding-left: 0px;
+   padding-left: 0px;
 
 }    
 .modal{
-		position: fixed;
-	    right: 50%;
-	    top: 50%;
-	    transform: translate(0%, 15%);
-}          
-.quest {
-	    position: fixed;
-	    right: 5%;
-	    top: 80%;
-	    margin-right: 0%;
-	    text-align: center;
+      position: fixed;
+       right: 50%;
+       top: 50%;
+       transform: translate(0%, 15%);
 }
-	
+              
+.quest {
+       position: fixed;
+       right: 5%;
+       top: 80%;
+       margin-right: 0%;
+       text-align: center;
+}
+   
 #questimg{
    width: 120px;
    height:71.612;
@@ -71,7 +72,7 @@ content_icon{
 
 /* 문의 모달 end*/
 </style>
-		      
+            
    </head>
 <!-- 모달 head end-->   
 
@@ -126,21 +127,17 @@ content_icon{
    
    <script src="js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
    
-
-	   
-   
-   
    </style>
    
 </head>
 <body>
 <!-- 문의 모달 -->
-	   <div class="quest">
-	     <button type="button" id = "quest_btn" data-bs-toggle="modal" data-bs-target="#myModal">
-	     <img id = 'questimg' src="resources/images/q&a.png">  
-	     </button>
-	        
-	   </div>
+      <div class="quest">
+        <button type="button" id = "quest_btn" data-bs-toggle="modal" data-bs-target="#myModal">
+        <img id = 'questimg' src="resources/images/q&a.png">  
+        </button>
+           
+      </div>
 <!-- 문의 모달 end -->
 
 <!-- 헤더 -->
@@ -156,23 +153,25 @@ content_icon{
    
          <!-- Modal Header -->
          <div class="modal-header">
-           <h4 class="modal-title">문의하기</h4>
+           <h4 class="modal-title" style ="margin-left: 22px;">문의하기</h4>
            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
          </div>
         <!-- modal content -->
          <div class="modal-content">
-           <p>문의하실 내용을 적어주세요</p>
-           <form class="modal-form">
+           <form class="modal-form" style ="margin-left: 22px;">
              <div>
-               <label for="name">이름</label><br>
-               <input type="text" id="name" placeholder="이름을 입력해주세요" class="form-input" style="width:100%; height:100%;"><br>
+               <label for="name">제목</label><br>
+               <input type="text" id="name" placeholder="제목을 입력해주세요" class="form-input" style="width:90%; height:90%;"><br>
              </div>
              <div>
                <label for="email">문의내용<br></label><br>
-               <input type="text" id="content_icon" placeholder="문의할 내용을 입력해 주세요" class="form-input" style="width:100%; height:200px;">
+               <input type="text" id="content_icon" placeholder="문의할 내용을 입력해 주세요" class="form-input" style="width:90%; height:200px;">
              </div>
-   
-             
+            <div>
+               <label for="yn">공개여부 <br> </label>  Y 
+               <input type="checkbox" value="Y" class="yn-input" style="padding-right: 10px"> &nbsp; N
+               <input type="checkbox" value="Y" class="yn-input" style="padding-right: 10px">
+             </div>
            </form>
          </div>
    
@@ -182,8 +181,8 @@ content_icon{
    
          <!-- Modal footer -->
          <div class="modal-footer">
-            <input type="submit" class="btn btn-danger">
-           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">닫기</button>
+            <input type="submit" class="btn btn-outline-success">
+           <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">닫기</button>
 
          </button>
          </div>
@@ -293,126 +292,42 @@ content_icon{
           </div><!-- .hero-content-hero-content-overlay -->
     </div><!-- .hero-content -->
       
-
-    <div class="icon-boxes">
-        <div class="container-fluid">
-            <div class="flex flex-wrap align-items-stretch">
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-user"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">마이클래스</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-folder"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">온라인 강의</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-book"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">게시판</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-world"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">문의하기</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-            </div><!-- .row -->
-        </div><!-- .container-fluid -->
-    </div><!-- .icon-boxes -->
- 
-
-  
-    <!-- # url 업로드 창  --> 
+    <!-- # url 업로드 창 #  --> 
     <section class ="search">
-		<div class="url-container">
-			<h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
-			 <div class="bar-search">
-               <form action="http://221.156.142.104:3306/post" method='post' class="flex align-items-stretch" >
-                   <input type="search" name="link" placeholder="URL 주소 입력">
-                   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
-               </form>
+      <div class="url-container">
+         <h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
+          <div class="bar-search">
+                                <form class="flex align-items-stretch" action="urlPage">
+                                    <input type="search" placeholder="URL 주소 입력">
+                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
+                                </form>
                             
                             </div><!-- .header-bar-search -->
-			</div>			
-	</section>
-    <!-- # url 업로드 창 end -->
+         </div>         
+   </section>
+    <!-- # url 업로드 창 end # -->
     
-    <!-- #업로드 강의 -->
-		<section class="featured-courses vertical-column courses-wrap">
-		      <div class="container">
-		            <div class="row mx-m-25">
-		                <div class="col-12 px-25">
-		                    <header class="heading flex flex-wrap justify-content-between align-items-center">
-		                        <h2 class="entry-title">번역된 코딩강의</h2>
-		
-		                        <nav class="courses-menu mt-3 mt-lg-0">
-		                            <ul class="flex flex-wrap justify-content-md-end align-items-center">
-			       <li class="active"> 
-		 	       <a href="#" data-filter=".java">자바</a></li>  
-			          <li> <a href="#" data-filter=".js">자바스크립트</a></li>  
-		                           <li> <a href="#" data-filter=".python">파이썬</a></li>   
-		                           <li> <a href="#" data-filter=".machine">머신러닝</a>   </li>  
-			          <li> <a href="#" data-filter=".deep">딥러닝</a></li> 
-		                 	
-		                         </ul> 
-		                       </nav><!-- .courses-menu -->
-		                   </header><!-- .heading -->
-		               </div><!-- .col -->
-		 <div class="courses-item java">
-		       <div class="courses-item"> 
-				   <div class="col-12 col-md-6 col-lg-4 px-25">
-				    
+   <!-- ##### 강의 목록 ##### -->
+    <section class="featured-courses vertical-column courses-wrap">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                       <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">번역된 코딩강의</h2>
+                        <nav class="courses-menu mt-3 mt-lg-0">
+                            <ul class="flex flex-wrap justify-content-md-end align-items-center">   
+                           <li class="active"><a href="#" data-filter=".java">자바</a></li>
+                                   <li><a href="#" data-filter=".js">자바스크립트</a></li>
+                                   <li><a href="#" data-filter=".python">파이썬</a></li>
+                                   <li><a href="#" data-filter=".machine">머신러닝</a></li>
+                                   <li><a href="#" data-filter=".deep">딥러닝</a></li>
+                            </ul>
+                        </nav><!-- .courses-menu -->
+                    </header><!-- .heading -->
+                </div><!-- .col -->
+                 
+         <div class="col-12 col-md-6 col-lg-4 px-25">
+                
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a href="#"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
@@ -631,19 +546,20 @@ content_icon{
                 <div class="col-12 px-25 flex justify-content-center">
                     <a class="btn" href="#">더보기</a>
                 </div><!-- .col -->
-				
-				
-		                                   </div> 
-		                                   <div class="courses-item js"> 
-		                                   </div> 
-		                                   <div class="courses-item python"> 
-		                                   </div> 
-				 <div class="courses-item machine">  
-		                                   </div>
-				  <div class="courses-item deep"> 
-		                                   </div>  	
-		                      </div> 
-		</section>
+            
+            
+                                         </div> 
+                                         <div class="courses-item js"> 
+                                         </div> 
+                                         <div class="courses-item python"> 
+                                         </div> 
+             <div class="courses-item machine">  
+                                         </div>
+              <div class="courses-item deep"> 
+                                         </div>     
+                            </div> 
+      </section>
+ <!-- ##### 강의 목록 end ##### -->
 
     
    <!-- footer -->
@@ -653,39 +569,44 @@ content_icon{
    <!-- footer -->
 
    <script type='text/javascript' src='resources/js/jquery.js'></script>
-   <script type='text/javascript' src='resources/js/swiper.min.js'></script>
    <script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
    <script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
    <script type='text/javascript' src='resources/js/custom.js'></script>
    <script type='text/javascript' src='resources/js/modal.js'></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    
-   <!-- #로그인 모달 -->
-   <script>
-    var login = document.querySelector('.login-modal')
-   var background = document.querySelector('.black-background')
-   login.addEventListener('click',function(){
-      background.style.display = "block";
-   })
-   
-   background.addEventListener('click',function(e){
-      if(e.target == e.currentTarget){
-         background.style.display = 'none';
-      }
-   })
+<script type="text/javascript">
+
+
+<!-- 로그인 모달 -->
+
+      var login = document.querySelector('.login-modal')
+      var background = document.querySelector('.black-background')
+      login.addEventListener('click',function(){
+         background.style.display = "block";
+      })
+      
+      background.addEventListener('click',function(e){
+         if(e.target == e.currentTarget){
+            background.style.display = 'none';
+         }
+      })
+
    
    <!-- #데이터 필터-->
-	$(document).ready( function() { 
-	$('.featured-courses vertical-column courses-wrap').isotope({ 
-	       itemSelector: 'courses-item', 
-	}); 
-	// courses items on button click 
-	$('.flex flex-wrap justify-content-md-end align-items-center').on( 'click', 'li', function() { 
-	      var filterValue = $(this).children().attr('data-filter'); 
-	      $('.courses-item').isotope({ filter: filterValue });
-	      $('.flex flex-wrap justify-content-md-end align-items-center li').removeClass('on'); 
-	      $(this).addClass('on');
-	     });
-	 })
+      
+   $(document).ready( function() { 
+   $('.featured-courses vertical-column courses-wrap').isotope({ 
+          itemSelector: 'courses-item', 
+   }); 
+   // courses items on button click 
+   $('.flex flex-wrap justify-content-md-end align-items-center').on( 'click', 'li', function() { 
+         var filterValue = $(this).children().attr('data-filter'); 
+         $('.courses-item').isotope({ filter: filterValue });
+         $('.flex flex-wrap justify-content-md-end align-items-center li').removeClass('on'); 
+         $(this).addClass('on');
+        });
+    })
    </script>
     
    
