@@ -116,10 +116,6 @@ content_icon{
    
    <script src="js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
    
-
-	   
-   
-   
    </style>
    
 </head>
@@ -363,7 +359,7 @@ content_icon{
  
 
   
-    <!-- # url 업로드 창  --> 
+    <!-- # url 업로드 창 #  --> 
     <section class ="search">
 		<div class="url-container">
 			<h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
@@ -376,32 +372,28 @@ content_icon{
                             </div><!-- .header-bar-search -->
 			</div>			
 	</section>
-    <!-- # url 업로드 창 end -->
+    <!-- # url 업로드 창 end # -->
     
-    <!-- #업로드 강의 -->
-		<section class="featured-courses vertical-column courses-wrap">
-		      <div class="container">
-		            <div class="row mx-m-25">
-		                <div class="col-12 px-25">
-		                    <header class="heading flex flex-wrap justify-content-between align-items-center">
-		                        <h2 class="entry-title">번역된 코딩강의</h2>
-		
-		                        <nav class="courses-menu mt-3 mt-lg-0">
-		                            <ul class="flex flex-wrap justify-content-md-end align-items-center">
-			       <li class="active"> 
-		 	       <a href="#" data-filter=".java">자바</a></li>  
-			          <li> <a href="#" data-filter=".js">자바스크립트</a></li>  
-		                           <li> <a href="#" data-filter=".python">파이썬</a></li>   
-		                           <li> <a href="#" data-filter=".machine">머신러닝</a>   </li>  
-			          <li> <a href="#" data-filter=".deep">딥러닝</a></li> 
-		                 	
-		                         </ul> 
-		                       </nav><!-- .courses-menu -->
-		                   </header><!-- .heading -->
-		               </div><!-- .col -->
-		 <div class="courses-item java">
-		       <div class="courses-item"> 
-				   <div class="col-12 col-md-6 col-lg-4 px-25">
+   <!-- ##### 강의 목록 ##### -->
+    <section class="featured-courses vertical-column courses-wrap">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                       <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">번역된 코딩강의</h2>
+	                     <nav class="courses-menu mt-3 mt-lg-0">
+                            <ul class="flex flex-wrap justify-content-md-end align-items-center">	
+                        	<li class="active"><a href="#" data-filter=".java">자바</a></li>
+                                   <li><a href="#" data-filter=".js">자바스크립트</a></li>
+                                   <li><a href="#" data-filter=".python">파이썬</a></li>
+                                   <li><a href="#" data-filter=".machine">머신러닝</a></li>
+                                   <li><a href="#" data-filter=".deep">딥러닝</a></li>
+                            </ul>
+                        </nav><!-- .courses-menu -->
+                    </header><!-- .heading -->
+                </div><!-- .col -->
+                 
+			<div class="col-12 col-md-6 col-lg-4 px-25">
 				    
                     <div class="course-content">
                         <figure class="course-thumbnail">
@@ -634,6 +626,7 @@ content_icon{
 		                                   </div>  	
 		                      </div> 
 		</section>
+ <!-- ##### 강의 목록 end ##### -->
 
     
    <!-- footer -->
@@ -643,27 +636,32 @@ content_icon{
    <!-- footer -->
 
    <script type='text/javascript' src='resources/js/jquery.js'></script>
-   <script type='text/javascript' src='resources/js/swiper.min.js'></script>
    <script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
    <script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
    <script type='text/javascript' src='resources/js/custom.js'></script>
    <script type='text/javascript' src='resources/js/modal.js'></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    
-   <!-- #로그인 모달 -->
-   <script>
-    var login = document.querySelector('.login-modal')
-   var background = document.querySelector('.black-background')
-   login.addEventListener('click',function(){
-      background.style.display = "block";
-   })
-   
-   background.addEventListener('click',function(e){
-      if(e.target == e.currentTarget){
-         background.style.display = 'none';
-      }
-   })
+<script type="text/javascript">
+
+
+<!-- 로그인 모달 -->
+
+		var login = document.querySelector('.login-modal')
+		var background = document.querySelector('.black-background')
+		login.addEventListener('click',function(){
+			background.style.display = "block";
+		})
+		
+		background.addEventListener('click',function(e){
+			if(e.target == e.currentTarget){
+				background.style.display = 'none';
+			}
+		})
+
    
    <!-- #데이터 필터-->
+		
 	$(document).ready( function() { 
 	$('.featured-courses vertical-column courses-wrap').isotope({ 
 	       itemSelector: 'courses-item', 
