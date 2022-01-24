@@ -48,6 +48,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .flex {
     display: flex !important;
+    justify-content: center;
 }
 
 /*--------------------------------------------------------------
@@ -159,6 +160,7 @@ a:hover, a:active {
 .bar-search input[type="search"] {
     width: 1000px;
     padding: 5px;
+    magin-left: 425px;
     border: 1px solid rgba(29,192,120,.24);
     border-radius: 28px;
     line-height: 1;
@@ -318,7 +320,7 @@ a:hover, a:active {
     position: fixed;
     top: 0;
     left: -320px;
-    z-index: 9999;
+    z-index: 999;
     width: 320px;
     /* max-width: calc(100% - 120px); */
     height: 100%;
@@ -339,19 +341,22 @@ a:hover, a:active {
     text-decoration: none;
     text-transform: uppercase;
 }
-
+/* # 강의 드롭다운 # */
 @media screen and (min-width: 992px) {
     .site-navigation ul {
-        position: relative;
+        position: absolute;
         top: auto;
-        left: auto;
-        width: 100%;
+        left: 45%;
+        width: 50%;
         height: auto;
         padding: 0;
         /* overflow: auto; */
         background: transparent;
     }
 }
+
+
+
 
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {

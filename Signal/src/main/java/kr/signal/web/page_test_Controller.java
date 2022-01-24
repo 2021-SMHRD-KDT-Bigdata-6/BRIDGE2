@@ -111,5 +111,10 @@ public class page_test_Controller {
 		return "userUpdate";
 	}
 	
+	@GetMapping("/urlPage")
+	public String urlPage() {
+		return "urlPage";
+	}
+	
 
 }

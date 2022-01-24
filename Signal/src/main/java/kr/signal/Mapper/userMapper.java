@@ -25,7 +25,7 @@ public interface userMapper {
 	
 	public void userUpdatedo(t_user vo); // 회원정보수정
 	
-
+	public void qnaInsert(t_qna vo);  // 문의하기
 	
 	
 }
