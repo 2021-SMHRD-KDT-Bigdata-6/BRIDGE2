@@ -93,6 +93,9 @@ a:hover, a:active {
 /*
 # Header Bar Email
 --------------------------------*/
+
+
+
 .header-bar-email {
     padding-left: 16px;
     border-right: 1px solid #ebebeb;
@@ -484,7 +487,7 @@ label.right {
 /* 배너 사이즈 */
 .hero-content-wrap {  
     height: 600px;
-    padding-top: 130px;
+    padding-top: 0px;
 } 
 
 .hero-content-wrap h4 {
@@ -2859,9 +2862,13 @@ p.footer-copyright {
 }
 
 /* url 입력창 */
+.url-container{
+    padding-top: 0px;
+	margin-bottom:150px;
+}
 .container {
 	padding-top: 0px;
-	margin-bottom:150px;
+	margin-bottom:0px;
 }
 	.search-title{
 	font-size: 35px;
@@ -2922,4 +2929,7 @@ section#pg___main section.search .content .search_wrapper .input {
     height: auto;
     transition: all .2s ease;
 }
+
+
+ 
 	

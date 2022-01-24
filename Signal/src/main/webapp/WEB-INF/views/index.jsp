@@ -2,8 +2,71 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- 모달 head -->
+   <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+	      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	      
+<style>          
+.quest {
+	    position: fixed;
+	    right: 5%;
+	    top: 80%;
+	    margin-right: 0%;
+	    text-align: center;
+}
+	
+#questimg{
+   width: 120px;
+   height:71.612;
+}
+
+#quest_btn{
+   padding : 0px;
+   border: 0px;
+   outline: none;
+   box-sizing: content-box;
+   background: none;
+   
+}
+
+my_modal {
+    display: none;
+    width: 300px;
+    padding: 20px 60px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+   
+.id{
+   width: 100%;
+   
+}
+
+content_icon{
+  width:200px;
+  height:100px;
+  font-size:20px;
+}
+
+#modal-content{
+   top:50%;
+}
+
+
+
+/* 문의 모달 end*/
+</style>
+		      
+   </head>
+<!-- 모달 head end-->   
+
 <head>
-    <title>Hello World</title>
+    <title>Signal_mainpage</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -49,22 +112,81 @@
         }
         $("#login").submit();
      }
-   </script>     
-    
+   </script>   
+   
+   <script src="js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
+   
 
-    
+	   
+   
+   
+   </style>
+   
 </head>
 
 <body>
+<!-- 문의 모달 -->
+	   <div class="quest">
+	     <button type="button" id = "quest_btn" data-bs-toggle="modal" data-bs-target="#myModal">
+	     <img id = 'questimg' src="resources/images/q&a.png">  
+	     </button>
+	        
+	   </div>
+<!-- 문의 모달 end -->
+
 <!-- 헤더 -->
       <div>
          <%@include file="includes/header.jsp" %>
       </div>
 <!-- 헤더 끝 -->
 
+<!-- 문의 모달 -->
+   <div class="modal" id="myModal">
+     <div class="modal-dialog">
+       <div class="modal-content">
+   
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <h4 class="modal-title">문의하기</h4>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+        <!-- modal content -->
+         <div class="modal-content">
+           <p>문의하실 내용을 적어주세요</p>
+           <form class="modal-form">
+             <div>
+               <label for="name">이름</label><br>
+               <input type="text" id="name" placeholder="이름을 입력해주세요" class="form-input" style="width:100%; height:100%;"><br>
+             </div>
+             <div>
+               <label for="email">문의내용<br></label><br>
+               <input type="text" id="content_icon" placeholder="문의할 내용을 입력해 주세요" class="form-input" style="width:100%; height:200px;">
+             </div>
+   
+             
+           </form>
+         </div>
+   
+         <!-- Modal body -->
+         <div class="modal-body">
+         </div>
+   
+         <!-- Modal footer -->
+         <div class="modal-footer">
+            <input type="submit" class="btn btn-danger">
+           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">닫기</button>
+
+         </button>
+         </div>
+         
+       </div>
+     </div>
+   </div>
+<!-- 문의 모달 end -->
+
       <div class="black-background">
       <div class="white-modal">
-          <div id="login_form"><!--로그인 폼-->
+          <div id="login_form">  <!--로그인 폼-->
     
              <c:if test="${empty users}">
              <form action="loginGO" method="post">
@@ -242,10 +364,9 @@
  
 
   
-    <!-- # url 업로드 창  -->
-   
+    <!-- # url 업로드 창  --> 
     <section class ="search">
-		<div class="container">
+		<div class="url-container">
 			<h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
 			 <div class="bar-search">
                                 <form class="flex align-items-stretch">
@@ -256,28 +377,33 @@
                             </div><!-- .header-bar-search -->
 			</div>			
 	</section>
-    <!-- # url 업로드 창 끝 -->
-  
-    <section class="featured-courses vertical-column courses-wrap">
-        <div class="container">
-            <div class="row mx-m-25">
-                <div class="col-12 px-25">
-                    <header class="heading flex flex-wrap justify-content-between align-items-center">
-                        <h2 class="entry-title">번역된 코딩강의</h2>
-
-                        <nav class="courses-menu mt-3 mt-lg-0">
-                            <ul class="flex flex-wrap justify-content-md-end align-items-center">
-                                <li class="active"><a href="#" data-filter="*">자바</a></li>
-                                <li><a href="js_page" data-filter=".자바스크립트">자바스크립트</a></li>
-                                <li><a href="#" data-filter=".파이썬">파이썬</a></li>
-                                <li><a href="#" data-filter=".머신러닝">머신러닝</a></li>
-                                <li><a href="#" data-filter=".딥러닝">딥러닝</a></li>
-                            </ul>
-                        </nav><!-- .courses-menu -->
-                    </header><!-- .heading -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 px-25">
+    <!-- # url 업로드 창 end -->
+    
+    <!-- #업로드 강의 -->
+		<section class="featured-courses vertical-column courses-wrap">
+		      <div class="container">
+		            <div class="row mx-m-25">
+		                <div class="col-12 px-25">
+		                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+		                        <h2 class="entry-title">번역된 코딩강의</h2>
+		
+		                        <nav class="courses-menu mt-3 mt-lg-0">
+		                            <ul class="flex flex-wrap justify-content-md-end align-items-center">
+			       <li class="active"> 
+		 	       <a href="#" data-filter=".java">자바</a></li>  
+			          <li> <a href="#" data-filter=".js">자바스크립트</a></li>  
+		                           <li> <a href="#" data-filter=".python">파이썬</a></li>   
+		                           <li> <a href="#" data-filter=".machine">머신러닝</a>   </li>  
+			          <li> <a href="#" data-filter=".deep">딥러닝</a></li> 
+		                 	
+		                         </ul> 
+		                       </nav><!-- .courses-menu -->
+		                   </header><!-- .heading -->
+		               </div><!-- .col -->
+		 <div class="courses-item java">
+		       <div class="courses-item"> 
+				   <div class="col-12 col-md-6 col-lg-4 px-25">
+				    
                     <div class="course-content">
                         <figure class="course-thumbnail">
                             <a href="#"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
@@ -496,9 +622,20 @@
                 <div class="col-12 px-25 flex justify-content-center">
                     <a class="btn" href="#">더보기</a>
                 </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .courses-wrap -->
+				
+				
+		                                   </div> 
+		                                   <div class="courses-item js"> 
+		                                   </div> 
+		                                   <div class="courses-item python"> 
+		                                   </div> 
+				 <div class="courses-item machine">  
+		                                   </div>
+				  <div class="courses-item deep"> 
+		                                   </div>  	
+		                      </div> 
+		</section>
+
     
    <!-- footer -->
          <div>
@@ -513,7 +650,7 @@
    <script type='text/javascript' src='resources/js/custom.js'></script>
    <script type='text/javascript' src='resources/js/modal.js'></script>
    
-   <!-- 로그인 모달 -->
+   <!-- #로그인 모달 -->
    <script>
     var login = document.querySelector('.login-modal')
    var background = document.querySelector('.black-background')
@@ -526,6 +663,20 @@
          background.style.display = 'none';
       }
    })
+   
+   <!-- #데이터 필터-->
+	$(document).ready( function() { 
+	$('.featured-courses vertical-column courses-wrap').isotope({ 
+	       itemSelector: 'courses-item', 
+	}); 
+	// courses items on button click 
+	$('.flex flex-wrap justify-content-md-end align-items-center').on( 'click', 'li', function() { 
+	      var filterValue = $(this).children().attr('data-filter'); 
+	      $('.courses-item').isotope({ filter: filterValue });
+	      $('.flex flex-wrap justify-content-md-end align-items-center li').removeClass('on'); 
+	      $(this).addClass('on');
+	     });
+	 })
    </script>
     
    

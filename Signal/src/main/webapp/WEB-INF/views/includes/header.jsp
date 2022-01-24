@@ -26,7 +26,7 @@ function logoutdo(){
 }
 </script>
 <style type="text/css">
-.dropdown{
+/* .dropdown{
   position : relative;
   display : inline-block;
 }
@@ -37,7 +37,7 @@ function logoutdo(){
   z-index : 1; /*다른 요소들보다 앞에 배치*/
 }
 
-.dropdown-content a{
+/* .dropdown-content a{
   display : block;
   scroll : no;
 }
@@ -46,6 +46,12 @@ function logoutdo(){
   display: block;
 }
 
+/* 강의 드롭타운 css */ 
+.dropdown-menu{ display:none; position: absolute !important; }
+
+#s:hover .dropdown-menu { display: inline; background: white; }
+
+/* 강의 드롭타운 css 끝  */
 </style>
 </head>
 <body>
@@ -104,7 +110,7 @@ function logoutdo(){
                               
                             </div><!-- .site-branding -->
                         </div><!-- .col -->
-
+						<!-- 
                         <div class="col-3 col-lg-9 flex justify-content-around align-content-center">
                            
                              <nav class="site-navigation flex justify-content-around align-items-center">
@@ -121,8 +127,24 @@ function logoutdo(){
 									        <li><a href="#">머신러닝</a></li>
 									        <li><a href="#">딥러닝</a></li>
 									      </div>
-								</ul>
-									  
+								</ul>  -->
+								<!--  가영 드롭다운 제작  -->
+                     <div class="col-3 col-lg-9 flex justify-content-around align-content-center"> 
+                        <nav class="site-navigation flex justify-content-around align-items-center">
+                          <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
+                            <li class="current-menu-item"><a href="index.html">홈</a></li>
+                            <li><a href="myclass">마이클래스</a></li>
+                          	<li id = "s" class = data-bs-toggle="dropdown"><a href="#">강의</a>
+	                           <ul class="dropdown-menu">
+	                             <li><a href="#">자바</a></li>
+	                             <li><a href="#">자바스크립트</a></li>
+	                             <li><a href="#">파이썬</a></li>
+	                             <li><a  href="#">머신러닝</a></li>
+	                             <li><a href="#">딥러닝</a></li>
+	                           </ul>
+                           </li>
+                        </ul> 
+						<!--  가영 드롭다운 제작 끝 -->		  
 									                                   
                               
 
