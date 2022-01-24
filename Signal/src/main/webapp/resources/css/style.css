@@ -339,7 +339,6 @@ a:hover, a:active {
     text-decoration: none;
     text-transform: uppercase;
 }
-
 @media screen and (min-width: 992px) {
     .site-navigation ul {
         position: relative;
@@ -352,6 +351,9 @@ a:hover, a:active {
         background: transparent;
     }
 }
+
+
+
 
 .site-navigation ul li a:hover,
 .site-navigation ul li.current-menu-item a {

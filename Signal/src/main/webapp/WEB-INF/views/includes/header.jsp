@@ -47,6 +47,7 @@ function logoutdo(){
 }
 
 /* 강의 드롭타운 css */ 
+
 .dropdown-menu{ display:none; position: absolute !important; }
 
 #s:hover .dropdown-menu { display: inline; background: white; }
@@ -55,7 +56,7 @@ function logoutdo(){
 </style>
 </head>
 <body>
- <div class="hero-content">
+ <div class="hero-content login-modal" >
         <header class="site-header">
             <div class="top-header-bar">
                 <div class="container-fluid">
@@ -164,20 +165,7 @@ function logoutdo(){
 </div>
     <!-- 헤더 끝-->
     
-    	<!-- 로그인 모달 -->
-	<script>
-    var login = document.querySelector('.login-modal')
-	var background = document.querySelector('.black-background')
-	login.addEventListener('click',function(){
-		background.style.display = "block";
-	})
-	
-	background.addEventListener('click',function(e){
-		if(e.target == e.currentTarget){
-			background.style.display = 'none';
-		}
-	})
-	</script>
+
 	
 </body>
 </html>
