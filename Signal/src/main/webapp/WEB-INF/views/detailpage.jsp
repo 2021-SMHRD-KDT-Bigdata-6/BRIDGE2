@@ -322,8 +322,12 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
             </div>
         </div>
     </div>
+     
     <!-- 상세 내용  + 썸네일 존 끝-->
+	<video style="margin-left: 20%;" width="250px" height="250px" controls loop muted>
+           <source src="/pythonhvideo/${param.link }" type="video/mp4">
 
+      </video>
 
     <!-- 댓글 존-->
     <div class="container">
