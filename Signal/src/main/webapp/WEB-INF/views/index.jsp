@@ -10,7 +10,14 @@
 	      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	      
-<style>          
+<style>     
+.modal{
+		position: fixed;
+	    right: 50%;
+	    top: 50%;
+	    transform: translate(0%, 15%);
+}
+              
 .quest {
 	    position: fixed;
 	    right: 5%;
