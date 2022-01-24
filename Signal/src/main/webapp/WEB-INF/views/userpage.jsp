@@ -105,7 +105,7 @@
             <c:if test="${empty t_user}">
 				<table>
                         <tr>
-                            <th><button class="button">작성된 게시글이 없습니다.</button></th>
+                            <th>작성된 게시글이 없습니다.</th>
                         </tr> 
                 </table>
                 </c:if>

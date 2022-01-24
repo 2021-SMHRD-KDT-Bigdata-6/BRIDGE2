@@ -25,8 +25,8 @@
     
     
     <insert id="qnaInsert" parameterType="kr.signal.domain.t_qna">
-        insert into t_qna(qna_seq, qna_subject, qna_content, qna_date, qna_file1, qna_file2, u_id, qna_open_yn)
-        values(AUTO_INCREMENT, #{qna_subject}, 	NOW(), #{qna_date}, null, null, #{u_id}, #{u_qna_open_yn})
+        insert into t_qna(qna_subject, qna_date, qna_content,u_id, qna_open_yn)
+        values(#{qna_subject}, 	NOW(), #{qna_content}, #{u_id}, #{qna_open_yn})
     </insert>
     
     <!-- 
