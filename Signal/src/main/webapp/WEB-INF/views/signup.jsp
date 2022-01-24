@@ -51,7 +51,7 @@
 		<div>
 		<label>
         <!-- <span>ID</span> -->
-        <p style="text-align: left; font-size:12px; color:black;">username</p>
+        <p style="text-align: left; font-size:12px; color:black;">아이디</p>
         <input type="text" placeholder="아이디" class="size" name="u_id">
         <p></p> 
         </label>
@@ -63,7 +63,7 @@
 		<div>
         <label>
         <!-- <span>PW</span> -->
-        <p style="text-align: left; font-size:12px; color:black;">Password </p>
+        <p style="text-align: left; font-size:12px; color:black;">비밀번호 </p>
         <input type="password" placeholder="비밀번호" class="size" name="u_pwd">
         </label>
 		</div>
@@ -106,7 +106,7 @@
 		<div>
         <label>
             <!-- <span>PW</span> -->
-        <p style="text-align: left; font-size:12px; color:black;">Mobile Phone</p>
+        <p style="text-align: left; font-size:12px; color:black;">핸드폰번호</p>
               
             <!--<select class="size num1">
                 <option value="1" selected>SKT</option>
@@ -124,7 +124,7 @@
 		<div>
          <label>
                 <!-- <span>PW</span> -->
-            <p style="text-align: left; font-size:12px; color:#666">E-mail</p>
+            <p style="text-align: left; font-size:12px; color:#666">이메일</p>
                 <input type="text" placeholder="이메일" class="size" name="u_email">
         </label>   
 		</div>

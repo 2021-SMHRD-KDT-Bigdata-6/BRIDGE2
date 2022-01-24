@@ -108,8 +108,12 @@ content_icon{
      
     <!-- Modal CSS --> 
     <link rel="stylesheet" href="resources/css/modal.css">
-    
-    <script type="text/javascript">
+    <script type='text/javascript' src='resources/js/jquery.js'></script>
+   <script type='text/javascript' src='resources/js/swiper.js'></script>
+   <script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
+   <script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
+   <script type="text/javascript">
+    const $=jQuery.noConflict();
        function loginFn(){
         var u_id=$("#u_id").val();
         if(u_id==""){
@@ -127,7 +131,7 @@ content_icon{
      }
    </script>   
    
-   <script src="js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
+   <script src="resources/js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
    
    </style>
    
@@ -311,7 +315,7 @@ content_icon{
    </section>
     <!-- # url 업로드 창 end # -->
     
-   <!-- # 강의 목록 # -->
+     <!-- # 강의 목록 # -->
     <section class="featured-courses vertical-column courses-wrap">
         <div class="container">
             <div class="row mx-m-25">
@@ -552,18 +556,15 @@ content_icon{
                 </div><!-- .col -->
             
             
-                                         </div> 
-                                         <div class="courses-item js"> 
-                                         </div> 
-                                         <div class="courses-item python"> 
-                                         </div> 
-             <div class="courses-item machine">  
-                                         </div>
-              <div class="courses-item deep"> 
-                                         </div>     
-                            </div> 
+               </div> 
+           
+          </div> 
       </section>
- <!-- ##### 강의 목록 end ##### -->
+ <!-- # 강의 목록 end # -->
+    
+    
+    
+
 
     
    <!-- footer -->
@@ -572,47 +573,45 @@ content_icon{
 </div>
    <!-- footer -->
 
-   <script type='text/javascript' src='resources/js/jquery.js'></script>
-   <script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
-   <script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
+   
    <script type='text/javascript' src='resources/js/custom.js'></script>
-   <script type='text/javascript' src='resources/js/modal.js'></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
    
 <script type="text/javascript">
 		
 
 <!-- 로그인 모달 -->
 
-      var login = document.querySelector('.login-modal')
-      var background = document.querySelector('.black-background')
+      var login = document.querySelector('.login-modal');
+      var background = document.querySelector('.black-background');
       login.addEventListener('click',function(){
          background.style.display = "block";
-      })
+      });
       
       background.addEventListener('click',function(e){
          if(e.target == e.currentTarget){
             background.style.display = 'none';
          }
-      })
+      });
 
    
       
    $(document).ready( function() { 
-   $('.featured-courses vertical-column courses-wrap').isotope({ 
-          itemSelector: 'courses-item', 
+   $('.courses-item-wrap').isotope({ 
+          itemSelector: '.courses-item', 
    }); 
+   $('.featured-courses.vertical-column.courses-wrap').css({height:'unset'});
    // courses items on button click 
-   $('.flex flex-wrap justify-content-md-end align-items-center').on( 'click', 'li', function() { 
+   $('.flex.flex-wrap.justify-content-md-end.align-items-center').on( 'click', 'li', function() { 
          var filterValue = $(this).children().attr('data-filter'); 
-         $('.courses-item').isotope({ filter: filterValue });
-         $('.flex flex-wrap justify-content-md-end align-items-center li').removeClass('on'); 
+         $('.courses-item-wrap').isotope({ filter: filterValue });
+         $('.flex.flex-wrap.justify-content-md-end.align-items-center li').removeClass('on'); 
          $(this).addClass('on');
         });
-    })
+    });
    </script>
-    
-   
+  
 
 </body>
 </html>

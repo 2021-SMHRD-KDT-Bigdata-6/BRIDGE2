@@ -267,7 +267,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 
     
     function startScroll( ) {
-    setInterval("autoScroll()", 2000); //  일정시간 간격으로 함수 반복실행 - "코드", 시간간격(2초)
+    setInterval("autoScroll()", 4000); //  일정시간 간격으로 함수 반복실행 - "코드", 시간간격(2초)
     }
    	var num=0; // 높이 
     function autoScroll() { // 스크롤 내리는 코드 
