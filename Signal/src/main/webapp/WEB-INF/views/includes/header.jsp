@@ -67,7 +67,7 @@ function logoutdo(){
                         <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                             <div class="header-bar-search">
                                 <form class="flex align-items-stretch">
-                                    <input type="search" placeholder="What would you like to learn?">
+                                    <input type="search" placeholder="검색하려면 여기에 입력하세요.">
                                     <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form>
                             
