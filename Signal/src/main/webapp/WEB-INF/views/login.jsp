@@ -74,7 +74,7 @@
         <hr>
         <label>
         <!-- <span>ID</span> -->
-        <p style="text-align: left; font-size:12px; color:#666" for="u_id">Username</p>
+        <p style="text-align: left; font-size:12px; color:#666" for="u_id">아이디</p>
         <input type="text" placeholder="아이디 입력" class="size" name="u_id" id="u_id">
         <!-- <input type="submit" value="확인"> -->
         <p></p>
@@ -82,7 +82,7 @@
 
         <label>
         <!-- <span>PW</span> -->
-        <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">Password </p>
+        <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">비밀번호 </p>
         <input type="text" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
         <!-- <input type="submit" value="확인"> -->
         </label>
