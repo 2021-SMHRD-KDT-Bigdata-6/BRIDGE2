@@ -48,3 +48,12 @@ comment on column t_academy_video.av_category is '과목 명';
 --AUTO_INCREMENT 인식 못할 때 순서 지정해서 하면 됨
 INSERT t_qna(qna_content, qna_date, qna_file1, qna_file2, qna_open_yn,
 qna_subject, u_id) value('문의글 내용', NOW(), null, null, 'y', '문의글 제목', '회원정보수정');
+
+
+-- t_academy
+insert t_academy(edu_ceo, edu_email, edu_name, edu_phone, edu_url
+) value('스인재', 'smhrd@smhrd.or.kr', '스마트인재개발원', '062-655-3506', 'https://www.smhrd.or.kr/');
+
+-- t_academy_video
+insert t_academy_video(av_category, av_name, av_path, av_upload_date, edu_seq) 
+value ( '과목명', '영상 이름', '영상경로', NOW(), 1);
