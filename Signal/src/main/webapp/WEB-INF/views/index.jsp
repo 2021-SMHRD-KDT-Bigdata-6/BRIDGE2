@@ -221,7 +221,7 @@ content_icon{
                  <label>
                  <!-- <span>PW</span> -->
                  <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">Password </p>
-                 <input type="text" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
+                 <input type="password" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
                  <!-- <input type="submit" value="확인"> -->
                  </label>
          
