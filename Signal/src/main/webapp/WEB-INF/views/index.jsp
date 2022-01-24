@@ -368,7 +368,7 @@ content_icon{
 		<div class="url-container">
 			<h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
 			 <div class="bar-search">
-                                <form class="flex align-items-stretch">
+                                <form class="flex align-items-stretch" action="urlPage">
                                     <input type="search" placeholder="URL 주소 입력">
                                     <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form>

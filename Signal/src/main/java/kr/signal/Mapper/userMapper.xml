@@ -23,6 +23,12 @@
         u_email=#{u_email}, u_addr=#{u_addr} where u_id=#{u_id}
     </update>
     
+    
+    <insert id="qnaInsert" parameterType="kr.signal.domain.t_qna">
+        insert into t_qna(qna_seq, qna_subject, qna_content, qna_date, qna_file1, qna_file2, u_id, qna_open_yn)
+        values(AUTO_INCREMENT, #{qna_subject}, 	NOW(), #{qna_date}, null, null, #{u_id}, #{u_qna_open_yn})
+    </insert>
+    
     <!-- 
     <select id="t_userqna" resultType="kr.signal.domain.t_qna" parameterType="kr.signal.domain.t_user">
             select * from t_qna where u_id = (select u_id=
