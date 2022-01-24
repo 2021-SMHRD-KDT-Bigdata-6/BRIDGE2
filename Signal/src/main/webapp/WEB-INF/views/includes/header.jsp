@@ -47,6 +47,7 @@ function logoutdo(){
 }
 
 /* 강의 드롭타운 css */ 
+
 .dropdown-menu{ display:none; position: absolute !important; }
 
 #s:hover .dropdown-menu { display: inline; background: white; }
