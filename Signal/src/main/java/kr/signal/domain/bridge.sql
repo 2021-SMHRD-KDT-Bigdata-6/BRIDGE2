@@ -31,5 +31,15 @@ alter table t_community modify column commu_file2 VARCHAR(200);
 -- 모든 제약조건 확인하는 코드
 select * from information_schema.table_constraints;
 
+--제약조건 추가
 ALTER TABLE t_qna MODIFY qna_seq INT NOT NULL AUTO_INCREMENT;
 
+-- 컬럼 삭제
+ALTER TABLE t_academy_video DROP av_playtime;
+
+ALTER TABLE t_academy_video DROP av_sl_path;
+
+-- 코멘트 삭제, 수정
+comment on column t_academy_video.av_category is '';
+
+comment on column t_academy_video.av_category is '과목 명';
