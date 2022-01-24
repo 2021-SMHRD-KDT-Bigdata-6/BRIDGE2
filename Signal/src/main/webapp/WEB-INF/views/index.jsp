@@ -123,7 +123,6 @@ content_icon{
    </style>
    
 </head>
-
 <body>
 <!-- 문의 모달 -->
 	   <div class="quest">

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -92,7 +93,23 @@ public class page_test_Controller {
 		
 		return list;
 	}
-
+	
+	@PostMapping(value="/signup")
+	public String userlist(t_user vo) {
+		service.joinInsert(vo);
+		return "redirect:/";
+	}
+	
+	@RequestMapping("/userUpdatedo")
+	public String userUpdatedo(@ModelAttribute t_user vo) {
+		service.userUpdatedo(vo);
+		return "redirect:/";
+	}
+	
+	@GetMapping("/userUpdate")
+	public String userUpdate() {
+		return "userUpdate";
+	}
 	
 
 }

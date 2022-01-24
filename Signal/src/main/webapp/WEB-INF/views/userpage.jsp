@@ -11,7 +11,12 @@
     <title>문의내역 확인하기</title>
     <style>
         body{
-            background-color: rgb(231, 231, 231);
+            background-color: rgb(231, 231, 231);   
+		    height: 100vh;
+		    margin: 0;
+		    padding: 20px 0;
+		    box-sizing: border-box;
+            
         }
         .userbox{
             background-color: white;
@@ -84,7 +89,7 @@
             <a href="index.html"><img src="resources/images/signal1.png" title="Signal 홈페이지로 이동하기"></a>
             </div>
         <div>
-            <button class="button"><h3>개인정보수정 🔒</h3></button>
+            <button class="button"><a href="userUpdate"><h3>개인정보수정 🔒</h3></a></button>
         </div>
 
         <div class="qna">
