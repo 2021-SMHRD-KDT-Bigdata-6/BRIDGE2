@@ -43,3 +43,8 @@ ALTER TABLE t_academy_video DROP av_sl_path;
 comment on column t_academy_video.av_category is '';
 
 comment on column t_academy_video.av_category is '과목 명';
+
+
+--AUTO_INCREMENT 인식 못할 때 순서 지정해서 하면 됨
+INSERT t_qna(qna_content, qna_date, qna_file1, qna_file2, qna_open_yn,
+qna_subject, u_id) value('문의글 내용', NOW(), null, null, 'y', '문의글 제목', '회원정보수정');
