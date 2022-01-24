@@ -160,6 +160,10 @@ content_icon{
          <div class="modal-content">
            <form class="modal-form" style ="margin-left: 22px;">
              <div>
+               <label for="u_id">${t_user.u_id}님</label><br>
+               <input type="text"  for="u_id" name="u_id" class="form-input" style="width:90%; height:90%;"><br>
+             </div>
+             <div>
                <label for="name">제목</label><br>
                <input type="text" id="name" placeholder="제목을 입력해주세요" class="form-input" style="width:90%; height:90%;"><br>
              </div>
@@ -307,7 +311,7 @@ content_icon{
    </section>
     <!-- # url 업로드 창 end # -->
     
-   <!-- ##### 강의 목록 ##### -->
+   <!-- # 강의 목록 # -->
     <section class="featured-courses vertical-column courses-wrap">
         <div class="container">
             <div class="row mx-m-25">
