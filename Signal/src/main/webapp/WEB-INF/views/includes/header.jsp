@@ -52,6 +52,19 @@ function logoutdo(){
 
 #s:hover .dropdown-menu { display: inline; background: white; }
 
+button{
+	border: 0px;
+	background-color: white;
+	text-decoration: underline;
+	text-decoration: none;
+}
+button:hover,
+button:focus { text-decoration:underline; }
+
+#logout{
+	margin-left: 10px;
+}
+
 /* 강의 드롭타운 css 끝  */
 </style>
 </head>
@@ -78,7 +91,7 @@ function logoutdo(){
 							<c:if test="${empty t_user }">
                              <div class="header-bar-menu" id="logindo" action="logindo" >
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a class='login-modal'>로그인</a></li>
+                                    <li><a class='login-modal' href="#">로그인</a></li>
                                     <li><a href="signup">회원가입</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
