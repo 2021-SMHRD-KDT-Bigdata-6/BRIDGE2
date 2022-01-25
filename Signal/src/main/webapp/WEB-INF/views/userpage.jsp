@@ -73,7 +73,8 @@
     	$.each(list,(index,obj)=>{
     		qna +="<tr>"
     		qna +="<td>"
-    		qna+="<th><button class='button'>"+obj.qna_subject+"</button></th>"
+    		qna+="<th>"+obj.qna_subject+"</th>"
+    		qna+="<th>"+obj.qna_date+"</th>"
     		qna +="</tr>"
     	})
     	qna+="</table>"
@@ -94,8 +95,8 @@
 
         <div class="qna">
             <div>
-                <button class="button"><h3>문의내역 확인하기 💡✔</h3></button>
-                <button class="button"><h3>더 보기 > </h3></button>
+                <h4>문의내역 확인하기 💡✔</h4>
+                <h4>더 보기 > </h4>
             </div>
             <c:if test="${!empty t_user }">
             <div id="view">
@@ -105,7 +106,7 @@
             <c:if test="${empty t_user}">
 				<table>
                         <tr>
-                            <th><button class="button">작성된 게시글이 없습니다.</button></th>
+                            <th>작성된 게시글이 없습니다.</th>
                         </tr> 
                 </table>
                 </c:if>

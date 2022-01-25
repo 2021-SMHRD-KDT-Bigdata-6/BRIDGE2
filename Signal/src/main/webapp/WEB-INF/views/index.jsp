@@ -67,7 +67,9 @@ content_icon{
 #modal-content{
    top:50%;
 }
-
+.id{
+	border: 0px;
+}
 
 
 /* 문의 모달 end*/
@@ -106,8 +108,12 @@ content_icon{
      
     <!-- Modal CSS --> 
     <link rel="stylesheet" href="resources/css/modal.css">
-    
-    <script type="text/javascript">
+    <script type='text/javascript' src='resources/js/jquery.js'></script>
+   <script type='text/javascript' src='resources/js/swiper.js'></script>
+   <script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
+   <script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
+   <script type="text/javascript">
+    const $=jQuery.noConflict();
        function loginFn(){
         var u_id=$("#u_id").val();
         if(u_id==""){
@@ -125,7 +131,7 @@ content_icon{
      }
    </script>   
    
-   <script src="js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
+   <script src="resources/js/isotope.pkgd.min.js"></script> <!-- #데이터 필터 -->
    
    </style>
    
@@ -147,39 +153,35 @@ content_icon{
 <!-- 헤더 끝 -->
 
 <!-- 문의 모달 -->
+
    <div class="modal" id="myModal">
      <div class="modal-dialog">
        <div class="modal-content">
-   
          <!-- Modal Header -->
          <div class="modal-header">
            <h4 class="modal-title" style ="margin-left: 22px;">문의하기</h4>
            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
          </div>
         <!-- modal content -->
-         <div class="modal-content">
-           <form class="modal-form" style ="margin-left: 22px;">
+			<form id='qna' class="modal-form" style ="margin-left: 22px;" action="qnaInsert" method="get">
+           <div class="modal-content">
              <div>
-               <label for="u_id">${t_user.u_id}님</label><br>
-               <input type="text"  for="u_id" name="u_id" class="form-input" style="width:90%; height:90%;"><br>
+               <input type="text" name="u_id" value="${t_user.u_id}" class="form-input id" style="width:90%; height:90%;"readonly><br>
              </div>
              <div>
-               <label for="name">제목</label><br>
-               <input type="text" id="name" placeholder="제목을 입력해주세요" class="form-input" style="width:90%; height:90%;"><br>
+               <label for="qna_subject">제목</label><br>
+               <input type="text" name="qna_subject" placeholder="제목을 입력해주세요" class="form-input" style="width:90%; height:90%;"><br>
              </div>
              <div>
-               <label for="email">문의내용<br></label><br>
-               <input type="text" id="content_icon" placeholder="문의할 내용을 입력해 주세요" class="form-input" style="width:90%; height:200px;">
+               <label for="qna_content">문의내용<br></label><br>
+               <input type="text" name="qna_content" placeholder="문의할 내용을 입력해 주세요" class="form-input" style="width:90%; height:200px;">
              </div>
             <div>
-               <label for="yn">공개여부 <br> </label>  Y 
-               <input type="checkbox" value="Y" class="yn-input" style="padding-right: 10px"> &nbsp; N
-               <input type="checkbox" value="Y" class="yn-input" style="padding-right: 10px">
+               <label for="qna_open_yn">공개여부 : <br> </label>  공개 
+               <input type="checkbox" name="qna_open_yn" value="y" class="yn-input" style="padding-right: 10px"> &nbsp; 비공개
+               <input type="checkbox" name="qna_open_yn" value="n" class="yn-input" style="padding-right: 10px">
              </div>
-           </form>
          </div>
-   
-         <!-- Modal body -->
          <div class="modal-body">
          </div>
    
@@ -187,13 +189,15 @@ content_icon{
          <div class="modal-footer">
             <input type="submit" class="btn btn-outline-success">
            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">닫기</button>
-
-         </button>
-         </div>
+           </div>
+   </form>
+         <!-- Modal body -->
          
+         </div>
        </div>
      </div>
-   </div>
+   
+   
 <!-- 문의 모달 end -->
 
       <div class="black-background">
@@ -311,7 +315,7 @@ content_icon{
    </section>
     <!-- # url 업로드 창 end # -->
     
-   <!-- # 강의 목록 # -->
+     <!-- # 강의 목록 # -->
     <section class="featured-courses vertical-column courses-wrap">
         <div class="container">
             <div class="row mx-m-25">
@@ -552,18 +556,15 @@ content_icon{
                 </div><!-- .col -->
             
             
-                                         </div> 
-                                         <div class="courses-item js"> 
-                                         </div> 
-                                         <div class="courses-item python"> 
-                                         </div> 
-             <div class="courses-item machine">  
-                                         </div>
-              <div class="courses-item deep"> 
-                                         </div>     
-                            </div> 
+               </div> 
+           
+          </div> 
       </section>
- <!-- ##### 강의 목록 end ##### -->
+ <!-- # 강의 목록 end # -->
+    
+    
+    
+
 
     
    <!-- footer -->
@@ -572,48 +573,45 @@ content_icon{
 </div>
    <!-- footer -->
 
-   <script type='text/javascript' src='resources/js/jquery.js'></script>
-   <script type='text/javascript' src='resources/js/masonry.pkgd.min.js'></script>
-   <script type='text/javascript' src='resources/js/jquery.collapsible.min.js'></script>
+   
    <script type='text/javascript' src='resources/js/custom.js'></script>
-   <script type='text/javascript' src='resources/js/modal.js'></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
    
 <script type="text/javascript">
-
+		
 
 <!-- 로그인 모달 -->
 
-      var login = document.querySelector('.login-modal')
-      var background = document.querySelector('.black-background')
+      var login = document.querySelector('.login-modal');
+      var background = document.querySelector('.black-background');
       login.addEventListener('click',function(){
          background.style.display = "block";
-      })
+      });
       
       background.addEventListener('click',function(e){
          if(e.target == e.currentTarget){
             background.style.display = 'none';
          }
-      })
+      });
 
    
-   <!-- #데이터 필터-->
       
    $(document).ready( function() { 
-   $('.featured-courses vertical-column courses-wrap').isotope({ 
-          itemSelector: 'courses-item', 
+   $('.courses-item-wrap').isotope({ 
+          itemSelector: '.courses-item', 
    }); 
+   $('.featured-courses.vertical-column.courses-wrap').css({height:'unset'});
    // courses items on button click 
-   $('.flex flex-wrap justify-content-md-end align-items-center').on( 'click', 'li', function() { 
+   $('.flex.flex-wrap.justify-content-md-end.align-items-center').on( 'click', 'li', function() { 
          var filterValue = $(this).children().attr('data-filter'); 
-         $('.courses-item').isotope({ filter: filterValue });
-         $('.flex flex-wrap justify-content-md-end align-items-center li').removeClass('on'); 
+         $('.courses-item-wrap').isotope({ filter: filterValue });
+         $('.flex.flex-wrap.justify-content-md-end.align-items-center li').removeClass('on'); 
          $(this).addClass('on');
         });
-    })
+    });
    </script>
-    
-   
+  
 
 </body>
 </html>

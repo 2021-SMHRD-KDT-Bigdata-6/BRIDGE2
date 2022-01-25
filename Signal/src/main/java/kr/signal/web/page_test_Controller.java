@@ -41,28 +41,19 @@ public class page_test_Controller {
 		t_user t_user = service.login_test(vo);
 		if(t_user != null) { // 회원인증 성공
 			session.setAttribute("t_user", t_user);
-			
 		}
 		return "redirect:/";
 	}
 	
+	
 	@GetMapping("/logoutdo")
 	public String logoutdo(HttpSession session) {
 		// HttpSession session=request.getSession()
-		
 		session.invalidate(); // 세션무효화, 로그아웃
-		
 		return "redirect:/";
 	}
-	@GetMapping("/signup")
-	public String signup() {
-		return "signup";
-	}
 	
-	@GetMapping("/single-post")
-	public String post() {
-		return "single-post";
-	}
+
 	@GetMapping("/detailpage")
 	public String detailpage() {
 		return "detailpage";
@@ -101,8 +92,10 @@ public class page_test_Controller {
 	}
 	
 	@RequestMapping("/userUpdatedo")
-	public String userUpdatedo(@ModelAttribute t_user vo) {
-		service.userUpdatedo(vo);
+	public String userUpdatedo(@ModelAttribute t_user vo, HttpSession session) {
+		if(service.userUpdatedo(vo)==1) { // 회원인증 성공
+			session.setAttribute("t_user", vo);	
+		}
 		return "redirect:/";
 	}
 	
@@ -115,6 +108,12 @@ public class page_test_Controller {
 	public String urlPage() {
 		return "urlPage";
 	}
-	
+	@GetMapping("/qnaInsert")
+	public String qnaInsert(t_qna vo) {
+		System.out.println(vo.getU_id());
+		service.qnaInsert(vo);
+		return "redirect:/";
+	}
+
 
 }

@@ -36,8 +36,12 @@ public class loginService {
 	public void joinInsert(t_user vo) {
 		mapper.joinInsert(vo);
 	}
-	public void userUpdatedo(t_user vo) {
-		mapper.userUpdatedo(vo);
+	public int userUpdatedo(t_user vo) {
+		return mapper.userUpdatedo(vo);
+	}
+	public void qnaInsert(t_qna vo) {
+		System.out.println(vo.getU_id());
+		mapper.qnaInsert(vo);
 	}
 
 }
