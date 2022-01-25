@@ -25,14 +25,7 @@ public class loginService {
 		return t_user;
 	}
 	
-	
-	public List<t_qna> t_userqna(String u_id){
-		System.out.println("Service");
-		System.out.println(u_id);
-		List<t_qna> list = mapper.t_userqna(u_id);
-		return list;
-	}
-	
+
 	public void joinInsert(t_user vo) {
 		mapper.joinInsert(vo);
 	}
@@ -43,5 +36,7 @@ public class loginService {
 		System.out.println(vo.getU_id());
 		mapper.qnaInsert(vo);
 	}
+	
+	
 
 }

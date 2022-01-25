@@ -14,7 +14,7 @@
     </insert>
     
     <select id="t_userqna" resultType="kr.signal.domain.t_qna">
-        select * from t_qna where u_id=#{u_id}
+        select * from t_qna where qna_subject=#{qna_subject}
     </select>
     
     <update id="userUpdatedo" parameterType="kr.signal.domain.t_user">
@@ -28,6 +28,10 @@
         insert into t_qna(qna_subject, qna_date, qna_content,u_id, qna_open_yn)
         values(#{qna_subject}, 	NOW(), #{qna_content}, #{u_id}, #{qna_open_yn})
     </insert>
+    
+    <select id="detailqna" resultType="kr.signal.domain.t_qna">
+        select * from t_qna where qna_seq=#{qna_seq}
+    </select>
     
     <!-- 
     <select id="t_userqna" resultType="kr.signal.domain.t_qna" parameterType="kr.signal.domain.t_user">

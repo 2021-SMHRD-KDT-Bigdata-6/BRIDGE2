@@ -80,14 +80,14 @@ public class page_test_Controller {
 	public String userpage() {
 		return "userpage";
 	}
-	@PostMapping("/t_userqna")
-	public @ResponseBody List<t_qna> t_userqna(String u_id){
-		System.out.println("controller");
-		System.out.println(u_id);
-		List<t_qna> list = service.t_userqna(u_id);
-		
-		return list;
-	}
+//	//
+//	@PostMapping("/t_userqna")
+//	public @ResponseBody List<t_qna> t_userqna(String u_id){
+//		System.out.println("controller");
+//		System.out.println(u_id);
+//		List<t_qna> list = service.t_userqna(u_id);
+//		return list;
+//	}
 	
 	@PostMapping(value="/signup")
 	public String userlist(t_user vo) {
@@ -118,6 +118,7 @@ public class page_test_Controller {
 		service.qnaInsert(vo);
 		return "redirect:/";
 	}
+
 
 
 }

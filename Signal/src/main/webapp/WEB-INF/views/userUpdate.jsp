@@ -62,7 +62,7 @@
         <!-- <span>ID</span> -->
         <p style="text-align: left; font-size:12px; color:black;">username</p>
         <div style="display: flex;">
-        <h3 class="size" style="text-align: left;">아이디 : &nbsp<input readonly="readonly"  name="u_id" value="${t_user.u_id }" class="inputid"></h3>
+        <h3 class="size" style="text-align: left;">아이디 : &nbsp<input name="u_id" value="${t_user.u_id }" class="inputid" disabled></h3>
         </div>
         <p></p> 
         </label>

@@ -27,5 +27,6 @@ public interface userMapper {
 	
 	public void qnaInsert(t_qna vo);  // 문의하기
 	
+	public List<t_qna> detailqna(String qna_subject); // 문의내용 상세페이지 출력
 	
 }
