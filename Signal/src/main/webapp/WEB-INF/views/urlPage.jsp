@@ -154,11 +154,11 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
         <div class="row">
   			<!--  유투브 -->
             <div class="col-lg-9">
-                <div class="urlbox">영상 나오는 존</div>
+                <div class="urlbox">영상 나오는 존 ${param.yt}</div>
             </div>
-            <div class="col-lg-3 hvideo" style="display: none; object-fit:contain;">
-					<video muted autoplay controls class="handvideo">
-						<source src="resources/pythonhvideo/pythonhvideo.mp4" type="video/mp4">
+            <div class="col-lg-3 hvideo" style="display: block; object-fit:contain;">
+					<video controls loop class="handvideo">
+						<source src="resources/pythonhvideo/${param.link}" type="video/mp4">
 					</video>
 		       
             <!-- 자동 스크롤 -->
