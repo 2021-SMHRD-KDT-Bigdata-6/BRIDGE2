@@ -323,233 +323,1149 @@ content_icon{
                        <header class="heading flex flex-wrap justify-content-between align-items-center">
                         <h2 class="entry-title">번역된 코딩강의</h2>
                         <nav class="courses-menu mt-3 mt-lg-0">
-                            <ul class="flex flex-wrap justify-content-md-end align-items-center">   
-                           <li class="active"><a href="#" data-filter=".java">자바</a></li>
-                                   <li><a href="#" data-filter=".js">자바스크립트</a></li>
-                                   <li><a href="#" data-filter=".python">파이썬</a></li>
-                                   <li><a href="#" data-filter=".machine">머신러닝</a></li>
-                                   <li><a href="#" data-filter=".deep">딥러닝</a></li>
+                            <ul class="btn_set flex flex-wrap justify-content-md-end align-items-center">   
+                           <li class="on"><a href="javascript:void(0);" data-filter="*">모든 강의</a></li>
+                           		   <li><a href="javascript:void(0);" data-filter=".java">자바</a></li>
+                                   <li><a href="javascript:void(0);" data-filter=".js">자바스크립트</a></li>
+                                   <li><a href="javascript:void(0);" data-filter=".python">파이썬</a></li>
+                                   <li><a href="javascript:void(0);" data-filter=".machine">머신러닝</a></li>
+                                   <li><a href="javascript:void(0);" data-filter=".deep">딥러닝</a></li>
                             </ul>
                         </nav><!-- .courses-menu -->
                     </header><!-- .heading -->
                 </div><!-- .col -->
-                 
-         <div class="col-12 col-md-6 col-lg-4 px-25">
                 
-                    <div class="course-content">
-                        <figure class="course-thumbnail">
-                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.1 환경구축 및 사용법</a></h2>
-
-                                <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">채수민 연구원 </a></div>
-
-                                    <div class="course-date">스마트인재개발원</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                     <span class="price-drop"></span>
-                                </div><!-- .course-cost -->
-
-                                <div class="course-ratings flex justify-content-end align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(좋아요 4)</span>
-                                </div><!-- .course-ratings -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 px-25">
-                    <div class="course-content">
-                        <figure class="course-thumbnail">
-                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java02.png" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.2 변수와 자료형</a></h2>
-
-                                <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
-
-                                    <div class="course-date">스마트인재개발원</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                    <span class="free-cost"></span>
-                                </div><!-- .price-drop -->
-
-                                <div class="course-ratings flex justify-content-end align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(좋아요 4)</span>
-                                </div><!-- .course-ratings -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 px-25">
-                    <div class="course-content">
-                        <figure class="course-thumbnail">
-                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java03.png" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.3 연산자 6가지!</a></h2>
-
-                                <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
-
-                                    <div class="course-date">스마트인재개발원</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                    <span class="price-drop"></span>
-                                </div><!-- .course-cost -->
-
-                                <div class="course-ratings flex justify-content-end align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(좋아요 4)</span>
-                                </div><!-- .course-ratings -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 px-25">
-                    <div class="course-content">
-                        <figure class="course-thumbnail">
-                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java04.png" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.4 입출력 </a></h2>
-
-                                <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
-
-                                    <div class="course-date">스마트인재개발원</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                    <span class="free-cost"></span>
-                                </div><!-- .course-cost -->
-
-                                <div class="course-ratings flex justify-content-end align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(좋아요 4)</span>
-                                </div><!-- .course-ratings -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 px-25">
-                    <div class="course-content">
-                        <figure class="course-thumbnail">
-                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java05.png" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.5 if문 & if-else문</a></h2>
-
-                                <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
-
-                                    <div class="course-date">스마트인재개발원</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                     <span class="price-drop"></span>
-                                </div><!-- .course-cost -->
-
-                                <div class="course-ratings flex justify-content-end align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(좋아요 4)</span>
-                                </div><!-- .course-ratings -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
-
-                <div class="col-12 col-md-6 col-lg-4 px-25">
-                    <div class="course-content">
-                        <figure class="course-thumbnail">
-                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java06.png" alt=""></a>
-                        </figure><!-- .course-thumbnail -->
-
-                        <div class="course-content-wrap">
-                            <header class="entry-header">
-                                <h2 class="entry-title"><a href="detailpage">[자바] NO.6 반복문(for문) </a></h2>
-
-                                <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="">채수민 연구원</a></div>
-
-                                    <div class="course-date">스마트인재개발원</div>
-                                </div><!-- .course-date -->
-                            </header><!-- .entry-header -->
-
-                            <footer class="entry-footer flex justify-content-between align-items-center">
-                                <div class="course-cost">
-                                    <span class="free-cost"></span>
-                                </div><!-- .course-cost -->
-
-                                <div class="course-ratings flex justify-content-end align-items-center">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star-o"></span>
-
-                                    <span class="course-ratings-count">(좋아요 4)</span>
-                                </div><!-- .course-ratings -->
-                            </footer><!-- .entry-footer -->
-                        </div><!-- .course-content-wrap -->
-                    </div><!-- .course-content -->
-                </div><!-- .col -->
+                
+                <div class="course-item-wrap">
+                	<div class="course-item java row">
+		                	
+		              <div class="col-12 col-md-6 col-lg-4 px-25">  
+		                    <div class="course-content">
+		                        <figure class="course-thumbnail">
+		                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
+		                        </figure><!-- .course-thumbnail -->
+		
+		                        <div class="course-content-wrap">
+		                            <header class="entry-header">
+		                                <h2 class="entry-title"><a href="detailpage">[자바] NO.1 환경구축 및 사용법</a></h2>
+		
+		                                <div class="entry-meta flex align-items-center">
+		                                    <div class="course-author"><a href="#">채수민 연구원 </a></div>
+		
+		                                    <div class="course-date">스마트인재개발원</div>
+		                                </div><!-- .course-date -->
+		                            </header><!-- .entry-header -->
+		
+		                            <footer class="entry-footer flex justify-content-between align-items-center">
+		                                <div class="course-cost">
+		                                     <span class="price-drop"></span>
+		                                </div><!-- .course-cost -->
+		
+		                                <div class="course-ratings flex justify-content-end align-items-center">
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                   
+		
+		                                    <span class="course-ratings-count">(좋아요 5)</span>
+		                                </div><!-- .course-ratings -->
+		                            </footer><!-- .entry-footer -->
+		                        </div><!-- .course-content-wrap -->
+		                    </div><!-- .course-content -->
+		                </div><!-- .col -->
+		
+		                <div class="col-12 col-md-6 col-lg-4 px-25">
+		                    <div class="course-content">
+		                        <figure class="course-thumbnail">
+		                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java02.png" alt=""></a>
+		                        </figure><!-- .course-thumbnail -->
+		
+		                        <div class="course-content-wrap">
+		                            <header class="entry-header">
+		                                <h2 class="entry-title"><a href="detailpage">[자바] NO.2 변수와 자료형</a></h2>
+		
+		                                <div class="entry-meta flex align-items-center">
+		                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
+		
+		                                    <div class="course-date">스마트인재개발원</div>
+		                                </div><!-- .course-date -->
+		                            </header><!-- .entry-header -->
+		
+		                            <footer class="entry-footer flex justify-content-between align-items-center">
+		                                <div class="course-cost">
+		                                    <span class="free-cost"></span>
+		                                </div><!-- .price-drop -->
+		
+		                                <div class="course-ratings flex justify-content-end align-items-center">
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star-o"></span>
+		
+		                                    <span class="course-ratings-count">(좋아요 4)</span>
+		                                </div><!-- .course-ratings -->
+		                            </footer><!-- .entry-footer -->
+		                        </div><!-- .course-content-wrap -->
+		                    </div><!-- .course-content -->
+		                </div><!-- .col -->
+		
+		                <div class="col-12 col-md-6 col-lg-4 px-25">
+		                    <div class="course-content">
+		                        <figure class="course-thumbnail">
+		                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java03.png" alt=""></a>
+		                        </figure><!-- .course-thumbnail -->
+		
+		                        <div class="course-content-wrap">
+		                            <header class="entry-header">
+		                                <h2 class="entry-title"><a href="detailpage">[자바] NO.3 연산자 6가지!</a></h2>
+		
+		                                <div class="entry-meta flex align-items-center">
+		                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
+		
+		                                    <div class="course-date">스마트인재개발원</div>
+		                                </div><!-- .course-date -->
+		                            </header><!-- .entry-header -->
+		
+		                            <footer class="entry-footer flex justify-content-between align-items-center">
+		                                <div class="course-cost">
+		                                    <span class="price-drop"></span>
+		                                </div><!-- .course-cost -->
+		
+		                                <div class="course-ratings flex justify-content-end align-items-center">
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star-o"></span>
+		
+		                                    <span class="course-ratings-count">(좋아요 4)</span>
+		                                </div><!-- .course-ratings -->
+		                            </footer><!-- .entry-footer -->
+		                        </div><!-- .course-content-wrap -->
+		                    </div><!-- .course-content -->
+		                </div><!-- .col -->
+		
+		                <div class="col-12 col-md-6 col-lg-4 px-25">
+		                    <div class="course-content">
+		                        <figure class="course-thumbnail">
+		                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java04.png" alt=""></a>
+		                        </figure><!-- .course-thumbnail -->
+		
+		                        <div class="course-content-wrap">
+		                            <header class="entry-header">
+		                                <h2 class="entry-title"><a href="detailpage">[자바] NO.4 입출력 </a></h2>
+		
+		                                <div class="entry-meta flex align-items-center">
+		                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
+		
+		                                    <div class="course-date">스마트인재개발원</div>
+		                                </div><!-- .course-date -->
+		                            </header><!-- .entry-header -->
+		
+		                            <footer class="entry-footer flex justify-content-between align-items-center">
+		                                <div class="course-cost">
+		                                    <span class="free-cost"></span>
+		                                </div><!-- .course-cost -->
+		
+		                                <div class="course-ratings flex justify-content-end align-items-center">
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                  
+		
+		                                    <span class="course-ratings-count">(좋아요 5)</span>
+		                                </div><!-- .course-ratings -->
+		                            </footer><!-- .entry-footer -->
+		                        </div><!-- .course-content-wrap -->
+		                    </div><!-- .course-content -->
+		                </div><!-- .col -->
+		
+		                <div class="col-12 col-md-6 col-lg-4 px-25">
+		                    <div class="course-content">
+		                        <figure class="course-thumbnail">
+		                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java05.png" alt=""></a>
+		                        </figure><!-- .course-thumbnail -->
+		
+		                        <div class="course-content-wrap">
+		                            <header class="entry-header">
+		                                <h2 class="entry-title"><a href="detailpage">[자바] NO.5 if문 & if-else문</a></h2>
+		
+		                                <div class="entry-meta flex align-items-center">
+		                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
+		
+		                                    <div class="course-date">스마트인재개발원</div>
+		                                </div><!-- .course-date -->
+		                            </header><!-- .entry-header -->
+		
+		                            <footer class="entry-footer flex justify-content-between align-items-center">
+		                                <div class="course-cost">
+		                                     <span class="price-drop"></span>
+		                                </div><!-- .course-cost -->
+		
+		                                <div class="course-ratings flex justify-content-end align-items-center">
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                              
+		
+		                                    <span class="course-ratings-count">(좋아요 5)</span>
+		                                </div><!-- .course-ratings -->
+		                            </footer><!-- .entry-footer -->
+		                        </div><!-- .course-content-wrap -->
+		                    </div><!-- .course-content -->
+		                </div><!-- .col -->
+		
+		                <div class="col-12 col-md-6 col-lg-4 px-25">
+		                    <div class="course-content">
+		                        <figure class="course-thumbnail">
+		                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java06.png" alt=""></a>
+		                        </figure><!-- .course-thumbnail -->
+		
+		                        <div class="course-content-wrap">
+		                            <header class="entry-header">
+		                                <h2 class="entry-title"><a href="detailpage">[자바] NO.6 반복문(for문) </a></h2>
+		
+		                                <div class="entry-meta flex align-items-center">
+		                                    <div class="course-author"><a href="">채수민 연구원</a></div>
+		
+		                                    <div class="course-date">스마트인재개발원</div>
+		                                </div><!-- .course-date -->
+		                            </header><!-- .entry-header -->
+		
+		                            <footer class="entry-footer flex justify-content-between align-items-center">
+		                                <div class="course-cost">
+		                                    <span class="free-cost"></span>
+		                                </div><!-- .course-cost -->
+		
+		                                <div class="course-ratings flex justify-content-end align-items-center">
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star checked"></span>
+		                                    <span class="fa fa-star-o"></span>
+		
+		                                    <span class="course-ratings-count">(좋아요 4)</span>
+		                                </div><!-- .course-ratings -->
+		                            </footer><!-- .entry-footer -->
+		                        </div><!-- .course-content-wrap -->
+		                    </div><!-- .course-content -->
+		                </div><!-- .col -->
+                	
+                	
+                	</div>
+                	
+                	<!-- # js 카테고리 # -->
+                	<div class="course-item js row">
+                	
+                				  
+			                <div class="col-12 col-md-6 col-lg-4 px-25">  
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/JS/JS1-1.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[자바스크립트] NO.1-1 입력과 출력</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">강예진 연구원 </a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                             
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/JS/JS1-2.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[자바스크립트] NO.1-2 입력과 출력 응용실습</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">강예진 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .price-drop -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/JS/JS2-1.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[자바스크립트] NO.2-1 출력/ 변수</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">강예진 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/JS/JS2-2.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[자바스크립트] NO.2-2 변수 응용실습 </a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">강예진 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/JS/JS3-1.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[자바스크립트] NO.3-1 연산자</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">강예진 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/JS/JS3-2.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[자바스크립트] NO.3-2 실행위치</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="">채수민 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                               
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			                
+                	</div>
+                	
+                	<!-- # 파이썬 카테고리 # -->
+                	<div class="course-item python row">
+                	        <div class="col-12 col-md-6 col-lg-4 px-25">  
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python1.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.1 산술 연산자</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">이명호 연구원 </a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                             
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python2.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.2 연산자 응용</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .price-drop -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python3.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.3 조건문</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                            
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python4.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.4 조건문 응용</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                  
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python5.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.5 리스트 개념</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python6.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.6 리스트 함수</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="">이명호 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                            
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+                
+                	</div>
+                	
+                	<!-- # machine 카테고리 # -->
+                	<div class="course-item machine row">
+                				<div class="col-12 col-md-6 col-lg-4 px-25">  
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Machine/machine1.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[머신러닝] NO.1 개요 part1  </h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">황해도 팀장</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                   
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Machine/machine2.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[머신러닝] NO.2 개요 part2</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">황해도 팀장</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .price-drop -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Machine/machine3.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[머신러닝] NO.3 실습 part1</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">황해도 팀장</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                            
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Machine/machine4.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[머신러닝] NO.4 실습 part2 </a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">황해도 팀장</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Machine/machine5.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[머신러닝] NO.5 실습 part5</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">황해도 팀장</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                 
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Machine/machine6.jpg" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[머신러닝] NO.6 실습 part6 </a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="">황해도 팀장</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+    
+                	</div>
+                	
+                	<div class="course-item deep row">
+                				<div class="col-12 col-md-6 col-lg-4 px-25">  
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Deep/deep1.png" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[딥러닝] NO.1 안녕하세연이 알려주는 딥러닝 개요!</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">정세연 연구원 </a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                               
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Deep/deep2.png" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[딥러닝] NO.2 안녕하세연이 알려주는 딥러닝 개요!</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">정세연 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .price-drop -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Deep/deep3.png" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[딥러닝] NO.3 안녕하세연이 알려주는 딥러닝 개요!</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">정세연 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Deep/deep4.png" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[딥러닝] NO.4 안녕하세연이 알려주는 딥러닝 개요!</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">정세연 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star-o"></span>
+			
+			                                    <span class="course-ratings-count">(좋아요 4)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Deep/deep5.png" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[딥러닝] NO.5 안녕하세연이 알려주는 딥러닝 개요!</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="#">정세연 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                     <span class="price-drop"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                             
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+			
+			                <div class="col-12 col-md-6 col-lg-4 px-25">
+			                    <div class="course-content">
+			                        <figure class="course-thumbnail">
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Deep/deep6.png" alt=""></a>
+			                        </figure><!-- .course-thumbnail -->
+			
+			                        <div class="course-content-wrap">
+			                            <header class="entry-header">
+			                                <h2 class="entry-title"><a href="detailpage">[딥러닝] NO.6 안녕하세연이 알려주는 딥러닝 개요!</a></h2>
+			
+			                                <div class="entry-meta flex align-items-center">
+			                                    <div class="course-author"><a href="">정세연 연구원</a></div>
+			
+			                                    <div class="course-date">스마트인재개발원</div>
+			                                </div><!-- .course-date -->
+			                            </header><!-- .entry-header -->
+			
+			                            <footer class="entry-footer flex justify-content-between align-items-center">
+			                                <div class="course-cost">
+			                                    <span class="free-cost"></span>
+			                                </div><!-- .course-cost -->
+			
+			                                <div class="course-ratings flex justify-content-end align-items-center">
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                                    <span class="fa fa-star checked"></span>
+			                             
+			
+			                                    <span class="course-ratings-count">(좋아요 5)</span>
+			                                </div><!-- .course-ratings -->
+			                            </footer><!-- .entry-footer -->
+			                        </div><!-- .course-content-wrap -->
+			                    </div><!-- .course-content -->
+			                </div><!-- .col -->
+ 
+                	</div>
+                
+                
+                
+                </div>
+                 
+             
+                
+              
+                
+                
+                
+                
 
                 <div class="col-12 px-25 flex justify-content-center">
                     <a class="btn" href="#">더보기</a>
@@ -578,7 +1494,7 @@ content_icon{
    
    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
    
-<script type="text/javascript">
+<script>
 		
 
 <!-- 로그인 모달 -->
@@ -596,22 +1512,22 @@ content_icon{
       });
 
    
-      
+<!-- 데이터 필터 -->    
    $(document).ready( function() { 
-   $('.courses-item-wrap').isotope({ 
-          itemSelector: '.courses-item', 
+   $('.course-item-wrap').isotope({ 
+          itemSelector: '.course-item', 
    }); 
    $('.featured-courses.vertical-column.courses-wrap').css({height:'unset'});
    // courses items on button click 
-   $('.flex.flex-wrap.justify-content-md-end.align-items-center').on( 'click', 'li', function() { 
+   $('.btn_set').on('click', 'li', function() { 
          var filterValue = $(this).children().attr('data-filter'); 
-         $('.courses-item-wrap').isotope({ filter: filterValue });
-         $('.flex.flex-wrap.justify-content-md-end.align-items-center li').removeClass('on'); 
+         $('.course-item-wrap').isotope({ filter: filterValue });
+         $('.btn_set li').removeClass('on'); 
          $(this).addClass('on');
         });
     });
+    
    </script>
   
-
 </body>
 </html>
