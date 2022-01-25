@@ -34,13 +34,22 @@
     
     <!-- Signup CSS -->
     <link rel="stylesheet" href="resources/css/signup.css">
+    <style>
+    input{
+    	border: 0px;
+    }
+    .inputid{
+    	text-align:right;
+    	width: 60%;
+    }
+    </style>
 </head>
 <body>
     <div id="con">
     <div id="login">
     <div id="login_form"><!--로그인 폼-->
     <form action="userUpdatedo" method="post">
-        <h3 class="login" style="letter-spacing:-1px;">회원정보수정</h3>
+        <a href="index"><h3 class="login" style="letter-spacing:-1px;" title="Signal 홈페이지로 이동하기">회원정보수정</h3></a>
 
         <!-- <p>
             <input type="submit" value="Sign in with Google" class="btn" style="background-color:#217Af0">
@@ -49,11 +58,12 @@
         <hr>
 		<!--아이디-->
 		<div>
-		<label>
-        <!-- <span>ID</span> 
-        <p style="text-align: left; font-size:12px; color:black;">username</p>-->
-        
-        <h3 class="size"><input readonly="readonly"  name="u_id" value="${t_user.u_id }">${t_user.u_id }님 </h3>
+		<label >
+        <!-- <span>ID</span> -->
+        <p style="text-align: left; font-size:12px; color:black;">username</p>
+        <div style="display: flex;">
+        <h3 class="size" style="text-align: left;">아이디 : &nbsp<input readonly="readonly"  name="u_id" value="${t_user.u_id }" class="inputid"></h3>
+        </div>
         <p></p> 
         </label>
 		</div>
