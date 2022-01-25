@@ -159,25 +159,25 @@ content_icon{
        <div class="modal-content">
          <!-- Modal Header -->
          <div class="modal-header">
-           <h4 class="modal-title" style ="margin-left: 22px;">문의하기</h4>
+           <h4 class="modal-title" style ="margin-left: 15px; color : #19c980;">문의하기</h4>
            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
          </div>
         <!-- modal content -->
-			<form id='qna' class="modal-form" style ="margin-left: 22px;" action="qnaInsert" method="get">
+			<form id='qna' class="modal-form" style ="margin-left: 22px;  margin-right: 22px;" action="qnaInsert" method="get">
            <div class="modal-content">
              <div>
-               <input type="text" name="u_id" value="${t_user.u_id}" class="form-input id" style="width:90%; height:90%;"readonly><br>
+               <input type="text" name="u_id" value="${t_user.u_id}" class="form-input id" style="width:90%; height:90%; margin-left: 10px;"readonly><br>
              </div>
              <div>
-               <label for="qna_subject">제목</label><br>
-               <input type="text" name="qna_subject" placeholder="제목을 입력해주세요" class="form-input" style="width:90%; height:90%;"><br>
+               <label for="qna_subject" style ="margin-left: 10px;" >제목</label><br>
+               <input type="text" name="qna_subject" placeholder="제목을 입력해주세요" class="form-input" style="margin-left: 10px; width:90%; height:90%;"><br>
              </div>
              <div>
-               <label for="qna_content">문의내용<br></label><br>
-               <input type="text" name="qna_content" placeholder="문의할 내용을 입력해 주세요" class="form-input" style="width:90%; height:200px;">
+               <label for="qna_content" style ="margin-left: 10px;">문의내용<br></label><br>
+               <input type="text" name="qna_content" placeholder="문의할 내용을 입력해 주세요" class="form-input" style=" margin-left: 10px; width:90%; height:200px;">
              </div>
             <div>
-               <label for="qna_open_yn">공개여부 : <br> </label>  공개 
+               <label for="qna_open_yn" style ="margin-left: 10px;">공개여부 : <br> </label>  공개 
                <input type="checkbox" name="qna_open_yn" value="y" class="yn-input" style="padding-right: 10px"> &nbsp; 비공개
                <input type="checkbox" name="qna_open_yn" value="n" class="yn-input" style="padding-right: 10px">
              </div>
