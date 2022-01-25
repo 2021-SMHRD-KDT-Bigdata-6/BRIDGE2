@@ -39,6 +39,11 @@
         .video-wrap iframe,
         .video-wrap object,
         .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+        
+         .nonevideo {position:relative; padding-bottom:56.2%; padding-top:30px; height:0; overflow:hidden;}
+        .nonevideo iframe,
+        .nonevideo object,
+        .nonevideo embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
          .hvideo{
              border-radius: 1px;
@@ -57,14 +62,16 @@
          .thumbnail{
             margin-top: 10px;
             background-color: rgb(231, 231, 231);
-            border: black solid 0.5px;
+            border: gray solid 0.5px;
             left: 10px; 
             padding-right: 0px; 
             padding-left: 0px;
             text-align: center;
+            height: 60%;
          }
          hr{
              background-color: gray;
+                 
          }
          body{
              font-size: 1.65rem;
@@ -78,6 +85,7 @@
              border: aliceblue;
              border-bottom: black solid 0.3px;
          }
+
 
 
          /*Object-fit 속성으로
@@ -118,6 +126,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 }
 .card{
 	margin-bottom: 20px;
+	margin-top: 10px;
 }
 .handvideo{
          
@@ -126,7 +135,9 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
             border:1px solid #ccc;
             object-fit:contain;
             }
-
+.blockvideo{
+			display: none;
+}
 
      </style>
 </head>
@@ -144,8 +155,8 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <div class="container">
         <div class="row">
             <!-- hr : 한줄 긋기-->
-            <div class="col-lg-12">
-            	<hr class="col-lg-12" style="padding-left: 0px;">
+            <div class="col-lg-12" style="padding-left: 0px; padding-right: 0px;">
+            	<hr class="col-lg-12" style="padding-left: 0px; padding-right: 0px;">
             </div>
             
         </div>
@@ -157,7 +168,10 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <div class="container"  style = "margin-bottom: 30px;" >
         <div class="row">
   			<!--  유투브 -->
-            <div class="col-lg-8 video-wrap">
+            <div class="col-lg-8 video-wrap blockvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-12 video-wrap nonevideo">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-lg-4 hvideo" style="display: none; object-fit:contain;">
@@ -292,7 +306,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
                 <button  type="button" class="choice3 button4 btn btn-outline-success btn-lg float-right"> 모두 닫기</button>
                 
                 <hr>
-                <b>
+                <div>
                     <br>
                     자바와 자바스크립트 같은듯하지만 전혀 다른 두가지 매력을 가진 언어!👩 🏫 <br>
                     홈페이지에 들어가면 애니메이션이 화려하고 부드럽지 않나요? <br>
@@ -305,19 +319,19 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
                     <a href="https://www.smhrd.or.kr" target=”_blank”> https://www.smhrd.or.kr </a><br><br>
                     #빅데이터   #머신러닝   #무료인강   #파이썬   #프로그래밍   #스마트인재개발원   #인쌤TV
                     <br><br>
-                </b>
+                </div>
             </div>
             <div class="col-lg-4 thumbnail">
                 <div>
                     <img src="resources/images/thumbnail/Python/python_03.jpg"  class="thumbnailPython">
                 </div>
                 <div>
-                    <h5>[파이썬 기초] NO3.변수</h5>
+                    <h3><strong>[파이썬 기초] NO3.변수</strong></h3>
                 </div>
                 <div>
-                    <strong>강의 날짜 : 2021. 10. 19.<br></strong>
-                        <stron>스마트인재개발원 <br></stron>
-                            <stron>이명호 강사</stron>
+                    <div>강의 날짜 : 2021. 10. 19.<br></div>
+                        <div>스마트인재개발원 <br></div>
+                            <div>이명호 강사</div>
                     
                 </div>
             </div>
@@ -380,20 +394,29 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     	$(".button1").on('click',function (){
       	$(".hvideo").css('display', 'block');
       	$(".card").css('display', 'none');
+      	$(".blockvideo").css('display', 'block');
+      	$(".nonevideo").css('display', 'none');
+      	
       });
     	
     	$(".button2").on('click',function (){
           	$(".card").css('display', 'block');
           	$(".hvideo").css('display', 'none');
+          	$(".blockvideo").css('display', 'block');
+          	$(".nonevideo").css('display', 'none');
           });
     	
     	$(".button3").on('click',function (){
     		$(".hvideo").css('display', 'block');
     		$(".card").css('display', 'block');
+    		$(".blockvideo").css('display', 'block');
+          	$(".nonevideo").css('display', 'none');
           });
     	$(".button4").on('click',function (){
     		$(".hvideo").css('display', 'none');
     		$(".card").css('display', 'none');
+    		$(".blockvideo").css('display', 'none');
+          	$(".nonevideo").css('display', 'block');
           });
     </script>
     

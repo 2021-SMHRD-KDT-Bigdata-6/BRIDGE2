@@ -338,7 +338,7 @@ content_icon{
                 
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
+                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java_thumbnail01.jpg" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
@@ -374,12 +374,12 @@ content_icon{
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/Java/java02.png" alt=""></a>
+                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java02.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">[자바] NO.2 변수와 자료형</a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.2 변수와 자료형</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원</a></div>
@@ -410,12 +410,12 @@ content_icon{
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/Java/java03.png" alt=""></a>
+                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java03.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">[자바] NO.3 연산자 6가지!</a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.3 연산자 6가지!</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원</a></div>
@@ -446,12 +446,12 @@ content_icon{
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/Java/java04.png" alt=""></a>
+                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java04.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">[자바] NO.4 입출력 </a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.4 입출력 </a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원</a></div>
@@ -482,12 +482,12 @@ content_icon{
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/Java/java05.png" alt=""></a>
+                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java05.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">[자바] NO.5 if문 & if-else문</a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.5 if문 & if-else문</a></h2>
 
                                 <div class="entry-meta flex align-items-center">
                                     <div class="course-author"><a href="#">채수민 연구원</a></div>
@@ -518,15 +518,15 @@ content_icon{
                 <div class="col-12 col-md-6 col-lg-4 px-25">
                     <div class="course-content">
                         <figure class="course-thumbnail">
-                            <a href="#"><img src="resources/images/thumbnail/Java/java06.png" alt=""></a>
+                            <a href="detailpage"><img src="resources/images/thumbnail/Java/java06.png" alt=""></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="course-content-wrap">
                             <header class="entry-header">
-                                <h2 class="entry-title"><a href="#">[자바] NO.6 반복문(for문) </a></h2>
+                                <h2 class="entry-title"><a href="detailpage">[자바] NO.6 반복문(for문) </a></h2>
 
                                 <div class="entry-meta flex align-items-center">
-                                    <div class="course-author"><a href="#">채수민 연구원</a></div>
+                                    <div class="course-author"><a href="">채수민 연구원</a></div>
 
                                     <div class="course-date">스마트인재개발원</div>
                                 </div><!-- .course-date -->

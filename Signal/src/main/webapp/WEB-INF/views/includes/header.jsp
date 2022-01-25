@@ -147,7 +147,7 @@ button:focus { text-decoration:underline; }
                         <nav class="site-navigation flex justify-content-around align-items-center">
                           <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
                             <li class="current-menu-item"><a href="index.html">홈</a></li>
-                            <li><a href="myclass">마이클래스</a></li>
+                            <li><a href="userpage">마이클래스</a></li>
                           	<li id = "s" class = data-bs-toggle="dropdown"><a href="#">강의</a>
 	                           <ul class="dropdown-menu">
 	                             <li><a href="#">자바</a></li>
