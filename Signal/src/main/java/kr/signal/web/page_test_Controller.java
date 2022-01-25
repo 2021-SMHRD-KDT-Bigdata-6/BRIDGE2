@@ -58,6 +58,10 @@ public class page_test_Controller {
 	public String detailpage() {
 		return "detailpage";
 	}
+	@GetMapping("/signup")
+	public String signup() {
+		return "signup";
+	}
 	
 	@GetMapping("/java_page")
 	public String java_page() {
