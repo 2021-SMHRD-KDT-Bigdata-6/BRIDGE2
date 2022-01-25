@@ -4,9 +4,13 @@
 <html lang="en">
 <head>
     <title>상세페이지</title>
+    
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="resources/css/themify-icons.css" rel="stylesheet">
 
-    <!--glyphicons-->
-    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--glyphicons
+    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +18,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 
-    <!-- FontAwesome CSS 
-    <link rel="stylesheet" href="resources/css/font-awesome.min.css">-->
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
 
     <!-- ElegantFonts CSS -->
     <link rel="stylesheet" href="resources/css/elegant-fonts.css"> 
@@ -23,8 +27,6 @@
     <!-- InfinitySans-fonts CSS 메인폰트 -->
     <link rel="stylesheet" href="resources/css/InfinitySans-fonts.css" type="text/css">
 
-    <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="resources/css/themify-icons.css">
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="resources/css/swiper.min.css">
@@ -74,17 +76,20 @@
                  
          }
          body{
-             font-size: 1.65rem;
+             font-size: 1rem;
          }
          .nickname{
             text-align: center;
             padding-top: 10px;
             padding-bottom: 10px;
+            font-size: 1.65rem;
          }
          .form-control{
              border: aliceblue;
              border-bottom: black solid 0.3px;
          }
+         .fontsize{
+         font-size: 1.65rem;}
 
 
 
@@ -138,6 +143,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 .blockvideo{
 			display: none;
 }
+
 
      </style>
 </head>
@@ -350,7 +356,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
             <div class="col-lg-12">
                 <div>
                     <hr class="col-lg-12" style="padding-left: 0px;">
-                    <h2>댓글 5개</h2>
+                    <h5>댓글 5개</h5>
                 </div>
             </div>
         </div>
@@ -359,14 +365,14 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <div class="container">
         <div class="row">
             <div class="col-lg-2 nickname">
-                <i class="glyphicon glyphicon-user" aria-hidden="true" style="font-size: 2rem;"></i>
-                <span>${t_user.u_nickname}</span>
+                <i class="ti-reddit" aria-hidden="true"></i>
+                <span class="fontsize">${t_user.u_nickname}</span>
             </div>
             <div class="col-lg-8" style="padding-top: 10px;">
-                <input class="form-control" placeholder="댓글을 입력해 주세요." style="height: 30px; font-size: 1.65rem;">
+                <input class="form-control" placeholder="댓글을 입력해 주세요." style="height: 30px;">
             </div>
             <div class="col-lg-2">
-                <button type="text" path="content" class="btn btn-link" type="button" style="font-size: 2rem;">등록</button>
+                <button type="text" path="content" class="btn btn-link" type="button">등록</button>
             </div>
         </div>
     </div>
