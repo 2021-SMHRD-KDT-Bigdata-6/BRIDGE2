@@ -175,14 +175,23 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
         <div class="row">
             <div class="col-lg-9 detail">
  
-                <Strong style = 'font-size : 25px'>영상 제목</Strong>
+                <Strong style = 'font-size : 25px'>[파이썬 기초] NO.3변수</Strong>
 
                 <hr>
-                <b>
+                <div>
                     <br>
-						영상 내용
+                    자바와 자바스크립트 같은듯하지만 전혀 다른 두가지 매력을 가진 언어!👩 🏫 <br>
+                    홈페이지에 들어가면 애니메이션이 화려하고 부드럽지 않나요? <br>
+                    그건바로 자바스크립트로 만든답니다. <br>
+                    스마트인재개발원의 고퀄리티 무료강의로 지금 시작해볼까요? <br> <br>
+
+                    *네이버에 스마트인재개발원을 검색하세요!👆* <br><br>
+                    [공식 홈페이지] <br>
+                    <!--target=”_blank” : 새 창에서 열기-->
+                    <a href="https://www.smhrd.or.kr" target=”_blank”> https://www.smhrd.or.kr </a><br><br>
+                    #빅데이터   #머신러닝   #무료인강   #파이썬   #프로그래밍   #스마트인재개발원   #인쌤TV
                     <br><br>
-                </b>
+                </div>
             </div>
             
             
