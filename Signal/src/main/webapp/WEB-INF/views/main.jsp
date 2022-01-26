@@ -154,7 +154,7 @@ content_icon{
 
 <!-- 문의 모달 -->
 
-   <div class="modal" id="myModal">
+   <div class="modal qnamodal" id="myModal">
      <div class="modal-dialog">
        <div class="modal-content">
          <!-- Modal Header -->
@@ -1451,51 +1451,24 @@ content_icon{
 			                        </div><!-- .course-content-wrap -->
 			                    </div><!-- .course-content -->
 			                </div><!-- .col -->
- 
                 	</div>
-                
-                
-                
                 </div>
-                 
-             
-                
-              
-                
-                
-                
-                
-
                 <div class="col-12 px-25 flex justify-content-center">
                     <a class="btn" href="#">더보기</a>
                 </div><!-- .col -->
-            
-            
-               </div> 
-           
+               </div>   
           </div> 
       </section>
  <!-- # 강의 목록 end # -->
     
-    
-    
-
-
-    
    <!-- footer -->
-         <div>
-   <%@include file="includes/footer.jsp" %>
-</div>
+  <div>
+    <%@include file="includes/footer.jsp" %>
+  </div>
    <!-- footer -->
-
-   
    <script type='text/javascript' src='resources/js/custom.js'></script>
-   
    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-   
 <script>
-		
-
 <!-- 로그인 모달 -->
 
       var login = document.querySelector('.login-modal');
@@ -1509,8 +1482,13 @@ content_icon{
             background.style.display = 'none';
          }
       });
+      
+      <!-- url 모달-->
+		function urlmodal(){
+			$('#urlModal').css("display","block");
+			}
 
-   
+
 <!-- 데이터 필터 -->
 
    $(document).ready( function() { 

@@ -152,13 +152,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     <!-- 영상 존-->
     <div class="container"  style = "margin-bottom: 30px;" >
         <div class="row">
-  			<!--  유투브 -->
-            <!--   유튜브 영상 부분
-            <div class="col-lg-9">
-                <div class="urlbox">영상 나오는 존 ${param.yt}</div>
-            </div>
-            
-            -->
+
             <div class="col-lg-12 hvideo" style="display: block; object-fit:contain;">
 					<video controls loop class="handvideo">
 						<source src="resources/pythonhvideo/${param.link}" type="video/mp4">

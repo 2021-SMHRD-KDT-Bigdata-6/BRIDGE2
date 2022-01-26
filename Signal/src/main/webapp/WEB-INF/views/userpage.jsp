@@ -111,15 +111,12 @@
     	$.each(list,(index,obj)=>{
 
     		qna +="<div class='title'>";
-//    		qna +="<p id='i"+index+"'>"+obj.qna_seq+"</p>";
     		qna+="<button class='qnatitle' id='detailview"+obj.qna_seq+"'>"+obj.qna_subject+"</button>";
-//    		qna+="<p class='date'>"+obj.qna_date+"</p>";
     		qna+="<div class='container cv'id='cv"+index+"'style='display:none'>";
     		qna +="<div class='toast show'>";
     		qna +="<div class='toast-header'>";
     		qna +="<strong class='me-auto'>제목</strong>";
     		qna +="<strong class='me-auto'>"+obj.qna_subject+"</strong>";
-//    		qna +="<button type='button' data-bs-dismiss='toast' ></button>";
     		qna +="</div>";
     		qna +="<div class='toast-body'>";
     		qna +="<p>"+obj.qna_content+"</p>";
@@ -134,10 +131,7 @@
     		qna +="</div>";
     	})
     	$('#view').html(qna);
-//      	$(document).ready(()=>{
-      		//상세내용
-  //    		detailqna()
-    //  	})
+
         $('.qnatitle').on('click',function(){
     	$(this).next().toggle();
     })
