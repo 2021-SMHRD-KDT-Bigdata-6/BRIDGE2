@@ -29,7 +29,7 @@ public class page_test_Controller {
 	
 	@GetMapping("/")
 	public String main() { // Http://127.0.0.1:8081/web/
-		return "index";
+		return "main";
 	}
 	@RequestMapping("/login_test")
 	public String login_test(){

@@ -250,7 +250,7 @@ content_icon{
       </div>
    </div><!-- 로그인 모달  end-->
    
-         <!--  <div class="container"> -->
+<!-- 배너 슬라이드 -->
          <div class="slidebox"> 
              <div class="row">
                <div class="col-12">
@@ -261,7 +261,7 @@ content_icon{
                      <input type="radio" name="slide" id="slide02">
                      <input type="radio" name="slide" id="slide03">
                      <input type="radio" name="slide" id="slide04">
-                     <ul class="slidelist">
+ 					 <ul class="slidelist">
                         <li class="slideitem">
                            <div>
                               <label for="slide04" class="left"></label>
@@ -273,14 +273,14 @@ content_icon{
                            <div>
                               <label for="slide01" class="left"></label>
                               <label for="slide03" class="right"></label>
-                              <a><img src="resources/images/banner4.gif"></a>
+                              <a><img src="resources/images/banner6.gif"></a>
                            </div>
                         </li>
                         <li class="slideitem">
                            <div>
                               <label for="slide02" class="left"></label>
                               <label for="slide04" class="right"></label>
-                              <a><img src="resources/images/banner6.gif"></a>
+                              <a><img src="resources/images/banner4.gif"></a>
                            </div>
                         </li>
                         <li class="slideitem">
@@ -291,8 +291,6 @@ content_icon{
                            </div>
                         </li>
                      </ul>
-                      <div class="entry-content">
-                      </div><!-- .entry-content -->
                   </div><!-- .hero-content-wrap -->
                 </div><!-- .col -->
               </div><!-- .row -->
