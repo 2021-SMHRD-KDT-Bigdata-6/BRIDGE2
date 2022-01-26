@@ -174,9 +174,6 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
             
         </div>
     </div>
-    
-
-
         <!-- 영상 존-->
     <div class="container"  style = "margin-bottom: 30px;" >
         <div class="row">
@@ -187,7 +184,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
             <div class="col-lg-4 hvideo" style="display: none; object-fit:contain;">
                <video muted autoplay controls class="handvideo">
-                  <source src="resources/pythonhvideo/pythonhvideo.mp4" type="video/mp4">
+                  <source src="resources/pythonhvideo/smartsign.mp4" type="video/mp4">
                </video>
              
             <!-- 자동 스크롤 -->

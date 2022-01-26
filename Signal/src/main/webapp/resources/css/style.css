@@ -18,11 +18,6 @@ img {
   font-size: 16px; /* Set a font-size */
 }
 
-/* Add a right margin to each icon */
-.fa {
-  margin-left: -12px;
-  margin-right: 8px;
-}
 /*.dropdown{
 	position: relative;
 	display: inline-block;

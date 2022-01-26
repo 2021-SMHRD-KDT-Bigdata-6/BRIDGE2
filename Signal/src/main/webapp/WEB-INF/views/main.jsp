@@ -1367,12 +1367,6 @@
          }
       });
       
-      <!-- url 모달-->
-		function urlmodal(){
-			$('#urlModal').css("display","block");
-			}
-
-
 <!-- 데이터 필터 -->
 
    $(document).ready( function() { 
