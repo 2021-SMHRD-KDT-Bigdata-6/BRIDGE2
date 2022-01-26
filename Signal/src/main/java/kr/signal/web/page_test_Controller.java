@@ -67,9 +67,9 @@ public class page_test_Controller {
 	public String java_page() {
 		return "java_page";
 	}
-	@GetMapping("/index")
+	@GetMapping("/main")
 	public String index() {
-		return "index";
+		return "main";
 	}
 	@GetMapping("/js_page")
 	public String js_page() {

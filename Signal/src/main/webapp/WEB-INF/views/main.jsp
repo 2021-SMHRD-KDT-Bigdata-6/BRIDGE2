@@ -154,7 +154,7 @@ content_icon{
 
 <!-- 문의 모달 -->
 
-   <div class="modal" id="myModal">
+   <div class="modal qnamodal" id="myModal">
      <div class="modal-dialog">
        <div class="modal-content">
          <!-- Modal Header -->
@@ -304,15 +304,39 @@ content_icon{
       <div class="url-container">
          <h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
           <div class="bar-search">
-                                <form class="flex align-items-stretch" action="urlPage">
-                                    <input type="search" placeholder="URL 주소 입력">
-                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
+                                <form class="flex align-items-stretch" action="http://211.107.188.144:3306/post" method="post">
+                                    <input type="search" placeholder="URL 주소 입력" name="link">
+                                    <button type="submit" click="urlmodal()" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form>
                             
                             </div><!-- .header-bar-search -->
          </div>         
    </section>
     <!-- # url 업로드 창 end # -->
+    <!-- 문의 모달
+      <div class="quest">
+        <button type="button" id = "quest_btn" data-bs-toggle="modal" data-bs-target="#urlModal">
+        <img id = 'questimg' src="resources/images/q&a.png">  
+        </button>
+           
+      </div> -->
+<!-- 문의 모달 end -->
+    
+    <!--  url 로딩 모달창 -->
+   <div class=" urlmodal" id="urlmodal" style="display:none;">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <h4 class="modal-title" style ="margin-left: 15px; color : #19c980;">번역 진행중입니다. 잠시만 기다려 주세요.</h4>
+           <button class="buttonload">
+  	<i class="fa fa-spinner fa-spin"></i>Loading
+			</button>
+         </div>
+         </div>
+       </div>
+     </div>    
+    <!--  url 로딩 모달창 -->
     
      <!-- # 강의 목록 # -->
     <section class="featured-courses vertical-column courses-wrap">
@@ -1451,51 +1475,24 @@ content_icon{
 			                        </div><!-- .course-content-wrap -->
 			                    </div><!-- .course-content -->
 			                </div><!-- .col -->
- 
                 	</div>
-                
-                
-                
                 </div>
-                 
-             
-                
-              
-                
-                
-                
-                
-
                 <div class="col-12 px-25 flex justify-content-center">
                     <a class="btn" href="#">더보기</a>
                 </div><!-- .col -->
-            
-            
-               </div> 
-           
+               </div>   
           </div> 
       </section>
  <!-- # 강의 목록 end # -->
     
-    
-    
-
-
-    
    <!-- footer -->
-         <div>
-   <%@include file="includes/footer.jsp" %>
-</div>
+  <div>
+    <%@include file="includes/footer.jsp" %>
+  </div>
    <!-- footer -->
-
-   
    <script type='text/javascript' src='resources/js/custom.js'></script>
-   
    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-   
 <script>
-		
-
 <!-- 로그인 모달 -->
 
       var login = document.querySelector('.login-modal');
@@ -1509,8 +1506,13 @@ content_icon{
             background.style.display = 'none';
          }
       });
+      
+      <!-- url 모달-->
+		function urlmodal(){
+			$('#urlModal').css("display","block");
+			}
 
-   
+
 <!-- 데이터 필터 -->
 
    $(document).ready( function() { 
