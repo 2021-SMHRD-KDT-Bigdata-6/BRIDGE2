@@ -36,6 +36,7 @@ public class loginService {
 		System.out.println(vo.getU_id());
 		mapper.qnaInsert(vo);
 	}
+
 	
 	
 

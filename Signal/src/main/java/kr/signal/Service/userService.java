@@ -2,6 +2,7 @@ package kr.signal.Service;
 
 import java.util.List;
 
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,8 @@ public class userService {
 	@Autowired
 	userMapper mapper;
 	
+	public SqlSessionTemplate sqlsession;
+
 	public List<t_qna> t_userqna(String u_id){ // 문의내역 리스트 불러오기
 		System.out.println("Service");
 		System.out.println(u_id);

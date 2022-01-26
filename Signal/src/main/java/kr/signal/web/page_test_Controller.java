@@ -80,7 +80,7 @@ public class page_test_Controller {
 	public String userpage() {
 		return "userpage";
 	}
-//	//
+
 //	@PostMapping("/t_userqna")
 //	public @ResponseBody List<t_qna> t_userqna(String u_id){
 //		System.out.println("controller");

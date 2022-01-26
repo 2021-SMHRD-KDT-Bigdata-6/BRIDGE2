@@ -14,7 +14,7 @@
     </insert>
     
     <select id="t_userqna" resultType="kr.signal.domain.t_qna">
-        select * from t_qna where qna_subject=#{qna_subject}
+        select * from t_qna where u_id=#{u_id}
     </select>
     
     <update id="userUpdatedo" parameterType="kr.signal.domain.t_user">
@@ -30,7 +30,7 @@
     </insert>
     
     <select id="detailqna" resultType="kr.signal.domain.t_qna">
-        select * from t_qna where qna_seq=#{qna_seq}
+        select * from t_qna where qna_subject=#{qna_subject}
     </select>
     
     <!-- 
