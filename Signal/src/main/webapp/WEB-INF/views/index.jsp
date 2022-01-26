@@ -200,8 +200,9 @@ content_icon{
    
 <!-- 문의 모달 end -->
 
-      <div class="black-background">
-      <div class="white-modal">
+<!-- 로그인 모달 -->
+    <div class="black-background">
+       <div class="white-modal">
           <div id="login_form">  <!--로그인 폼-->
     
              <c:if test="${empty users}">
@@ -247,7 +248,7 @@ content_icon{
              </p>
              </div>   
       </div>
-   </div>
+   </div><!-- 로그인 모달  end-->
    
          <!--  <div class="container"> -->
          <div class="slidebox"> 
@@ -325,9 +326,9 @@ content_icon{
                         <nav class="courses-menu mt-3 mt-lg-0">
                             <ul class="btn_set flex flex-wrap justify-content-md-end align-items-center">   
                            <li class="on"><a href="javascript:void(0);" data-filter="*">모든 강의</a></li>
-                           		   <li><a href="javascript:void(0);" data-filter=".java">자바</a></li>
+                           		   <li><a href="javascript:void(0);" data-filter=".python">파이썬</a></li>
+                                   <li><a href="javascript:void(0);" data-filter=".java">자바</a></li>
                                    <li><a href="javascript:void(0);" data-filter=".js">자바스크립트</a></li>
-                                   <li><a href="javascript:void(0);" data-filter=".python">파이썬</a></li>
                                    <li><a href="javascript:void(0);" data-filter=".machine">머신러닝</a></li>
                                    <li><a href="javascript:void(0);" data-filter=".deep">딥러닝</a></li>
                             </ul>
@@ -791,12 +792,12 @@ content_icon{
                 	        <div class="col-12 col-md-6 col-lg-4 px-25">  
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
-			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python1.jpg" alt=""></a>
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python01.jpg" alt=""></a>
 			                        </figure><!-- .course-thumbnail -->
 			
 			                        <div class="course-content-wrap">
 			                            <header class="entry-header">
-			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.1 산술 연산자</a></h2>
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.1 파이썬 개요 및 아나콘다 설치</a></h2>
 			
 			                                <div class="entry-meta flex align-items-center">
 			                                    <div class="course-author"><a href="#">이명호 연구원 </a></div>
@@ -828,12 +829,12 @@ content_icon{
 			                <div class="col-12 col-md-6 col-lg-4 px-25">
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
-			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python2.jpg" alt=""></a>
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python02.jpg" alt=""></a>
 			                        </figure><!-- .course-thumbnail -->
 			
 			                        <div class="course-content-wrap">
 			                            <header class="entry-header">
-			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.2 연산자 응용</a></h2>
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.2 주피터 노트북 사용법</a></h2>
 			
 			                                <div class="entry-meta flex align-items-center">
 			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
@@ -864,12 +865,12 @@ content_icon{
 			                <div class="col-12 col-md-6 col-lg-4 px-25">
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
-			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python3.jpg" alt=""></a>
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python03.jpg" alt=""></a>
 			                        </figure><!-- .course-thumbnail -->
 			
 			                        <div class="course-content-wrap">
 			                            <header class="entry-header">
-			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.3 조건문</a></h2>
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.3 변수</a></h2>
 			
 			                                <div class="entry-meta flex align-items-center">
 			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
@@ -901,12 +902,12 @@ content_icon{
 			                <div class="col-12 col-md-6 col-lg-4 px-25">
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
-			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python4.jpg" alt=""></a>
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python04.jpg" alt=""></a>
 			                        </figure><!-- .course-thumbnail -->
 			
 			                        <div class="course-content-wrap">
 			                            <header class="entry-header">
-			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.4 조건문 응용</a></h2>
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.4 문자열 자료형 Part.1</a></h2>
 			
 			                                <div class="entry-meta flex align-items-center">
 			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
@@ -938,12 +939,12 @@ content_icon{
 			                <div class="col-12 col-md-6 col-lg-4 px-25">
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
-			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python5.jpg" alt=""></a>
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python05.jpg" alt=""></a>
 			                        </figure><!-- .course-thumbnail -->
 			
 			                        <div class="course-content-wrap">
 			                            <header class="entry-header">
-			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.5 리스트 개념</a></h2>
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.5 문자열 자료형 Part.2</a></h2>
 			
 			                                <div class="entry-meta flex align-items-center">
 			                                    <div class="course-author"><a href="#">이명호 연구원</a></div>
@@ -974,12 +975,12 @@ content_icon{
 			                <div class="col-12 col-md-6 col-lg-4 px-25">
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
-			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python6.jpg" alt=""></a>
+			                            <a href="detailpage"><img src="resources/images/thumbnail/Python/python1.jpg" alt=""></a>
 			                        </figure><!-- .course-thumbnail -->
 			
 			                        <div class="course-content-wrap">
 			                            <header class="entry-header">
-			                                <h2 class="entry-title"><a href="detailpage">[파이썬] NO.6 리스트 함수</a></h2>
+			                                <h2 class="entry-title"><a href="detailpage">[파이썬] no.6 산술 연산자    Part.1</a></h2>
 			
 			                                <div class="entry-meta flex align-items-center">
 			                                    <div class="course-author"><a href="">이명호 연구원</a></div>
@@ -1512,7 +1513,8 @@ content_icon{
       });
 
    
-<!-- 데이터 필터 -->    
+<!-- 데이터 필터 -->
+
    $(document).ready( function() { 
    $('.course-item-wrap').isotope({ 
           itemSelector: '.course-item', 

@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>page header</title>
 <script type="text/javascript">
-//삭제?
+
 function logindo(){
 		if(${!empty t_user}) { // 회원인증 성공
 			$("#logindo").style.display("none");
@@ -91,7 +91,7 @@ button:focus { text-decoration:underline; }
 							<c:if test="${empty t_user }">
                              <div class="header-bar-menu" id="logindo" action="logindo" >
                                 <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a class='login-modal' href="#">로그인</a></li>
+                                    <li><a class="login-modal" href="javascript:void(0);">로그인</a></li>
                                     <li><a href="signup">회원가입</a></li>
                                 </ul>
                             </div><!-- .header-bar-menu -->
@@ -142,25 +142,23 @@ button:focus { text-decoration:underline; }
 									        <li><a href="#">딥러닝</a></li>
 									      </div>
 								</ul>  -->
-								<!--  가영 드롭다운 제작  -->
+								<!-- 가영 드롭다운 제작  -->
                      <div class="col-3 col-lg-9 flex justify-content-around align-content-center"> 
                         <nav class="site-navigation flex justify-content-around align-items-center">
                           <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
-                            <li class="current-menu-item"><a href="index.html">홈</a></li>
+                            <li class="current-menu-item"><a href="index">홈</a></li>
                             <li><a href="userpage">마이클래스</a></li>
-                          	<li id = "s" class = data-bs-toggle="dropdown"><a href="#">강의</a>
+                          	<li id = "s" class = data-bs-toggle="dropdown"><a href="javascript:void(0);">강의</a>
 	                           <ul class="dropdown-menu">
-	                             <li><a href="#">자바</a></li>
-	                             <li><a href="#">자바스크립트</a></li>
-	                             <li><a href="#">파이썬</a></li>
-	                             <li><a  href="#">머신러닝</a></li>
-	                             <li><a href="#">딥러닝</a></li>
+	                             <li><a href="javascript:void(0);">자바</a></li>
+	                             <li><a href="javascript:void(0);">자바스크립트</a></li>
+	                             <li><a href="javascript:void(0);">파이썬</a></li>
+	                             <li><a href="javascript:void(0);">머신러닝</a></li>
+	                             <li><a href="javascript:void(0);">딥러닝</a></li>
 	                           </ul>
                            </li>
                         </ul> 
-						<!--  가영 드롭다운 제작 끝 -->		  
-									                                   
-                              
+						<!-- 가영 드롭다운 제작 끝 -->		  
 
                                 <div class="hamburger-menu d-lg-none">
                                     <span></span>

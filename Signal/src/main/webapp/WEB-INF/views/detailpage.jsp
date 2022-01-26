@@ -170,24 +170,22 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
     
 
 
-    <!-- 영상 존-->
+        <!-- 영상 존-->
     <div class="container"  style = "margin-bottom: 30px;" >
         <div class="row">
-  			<!--  유투브 -->
+           <!--  유투브 -->
             <div class="col-lg-8 video-wrap blockvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
             <div class="col-lg-12 video-wrap nonevideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
             <div class="col-lg-4 hvideo" style="display: none; object-fit:contain;">
-					<video muted autoplay controls class="handvideo">
-						<source src="resources/pythonhvideo/pythonhvideo.mp4" type="video/mp4">
-					</video>
-		       
+               <video muted autoplay controls class="handvideo">
+                  <source src="resources/pythonhvideo/pythonhvideo.mp4" type="video/mp4">
+               </video>
+             
             <!-- 자동 스크롤 -->
-			<!--  <div style="text-align: center;margin: auto; padding-top: 10px"></div>-->
-			<!--  자동 스크롤 끝 -->
+         <!--  <div style="text-align: center;margin: auto; padding-top: 10px"></div>-->
+         <!--  자동 스크롤 끝 -->
             </div>
         </div>
     </div>
@@ -344,11 +342,11 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
         </div>
     </div>
      
-    <!-- 상세 내용  + 썸네일 존 끝-->
+    <!-- 상세 내용  + 썸네일 존 끝
 	<video style="margin-left: 20%;" width="250px" height="250px" controls loop muted>
            <source src="/pythonhvideo/${param.link }" type="video/mp4">
 
-      </video>
+      </video>-->
 
     <!-- 댓글 존-->
     <div class="container">

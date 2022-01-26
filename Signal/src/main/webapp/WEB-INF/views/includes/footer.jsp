@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>page footer</title>
 </head>
 <body>
 <div class="clients-logo">
@@ -26,10 +26,7 @@
                     <div class="logo-wrap">
                         <img src="resources/images/sl.png" alt="">
                     </div><!-- .logo-wrap -->
-
-                    <div class="logo-wrap">
-                        <img src="resources/images/.png" alt="">
-                    </div><!-- .logo-wrap -->
+                    
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -42,9 +39,7 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="foot-about">
                             <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
-
-
-                        </div><!-- .foot-about -->
+             </div><!-- .foot-about -->
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
@@ -64,10 +59,10 @@
                             <h2></h2>
 
                             <ul class="follow-us flex flex-wrap align-items-center">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://ko-kr.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.google.co.kr/"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
                             </ul>
                         </div><!-- .quick-links -->
                     </div><!-- .col -->
