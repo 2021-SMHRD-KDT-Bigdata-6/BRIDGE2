@@ -3,13 +3,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<head>
     <title>상세페이지</title>
     
     <!-- themify-icons CSS -->
     <link rel="stylesheet" href="resources/css/themify-icons.css" rel="stylesheet">
-
-    <!--glyphicons
-    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -26,7 +29,6 @@
         
     <!-- InfinitySans-fonts CSS 메인폰트 -->
     <link rel="stylesheet" href="resources/css/InfinitySans-fonts.css" type="text/css">
-
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="resources/css/swiper.min.css">
@@ -154,9 +156,14 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 	<div>
    <%@include file="includes/header.jsp" %>
 	</div>
-    <!-- 헤더 끝-->
-    
+<!-- 헤더 끝-->
 
+<!-- 모달 -->
+	<div>
+   <%@include file="includes/modal.jsp"%>
+	</div>
+<!-- 모달 끝-->
+    
     <!-- 버튼 창 : 수어만, 한글자막만, 둘 다-->
     <div class="container">
         <div class="row">
@@ -175,7 +182,7 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
         <div class="row">
            <!--  유투브 -->
             <div class="col-lg-8 video-wrap blockvideo">
-<iframe width="560" height="315" src="https://youtu.be/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
             <div class="col-lg-12 video-wrap nonevideo">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4G8XOcxQWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
             <div class="col-lg-4 hvideo" style="display: none; object-fit:contain;">

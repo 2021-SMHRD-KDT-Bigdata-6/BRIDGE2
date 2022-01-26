@@ -3,10 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-   <!--glyphicons-->
-    <link href="resources/css/bootstrap-glyphicons/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<title>url페이지</title>
+  
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +20,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 
-    <!-- FontAwesome CSS 
-    <link rel="stylesheet" href="resources/css/font-awesome.min.css">-->
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
 
     <!-- ElegantFonts CSS -->
     <link rel="stylesheet" href="resources/css/elegant-fonts.css"> 
@@ -23,18 +29,13 @@
     <!-- InfinitySans-fonts CSS 메인폰트 -->
     <link rel="stylesheet" href="resources/css/InfinitySans-fonts.css" type="text/css">
 
-    <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="resources/css/themify-icons.css">
-
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="resources/css/swiper.min.css">
 
     <!-- Styles -->
     <link rel="stylesheet" href="resources/css/style.css">
     
-
-
-     <style>
+    <style>
 
 
          .hvideo{
@@ -63,7 +64,7 @@
              background-color: gray;
          }
          body{
-             font-size: 1.65rem;
+             font-size: 1rem;
          }
          .nickname{
             text-align: center;
@@ -131,10 +132,15 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
 
 <!-- 헤더 -->
 	<div>
-   <%@include file="includes/header.jsp" %>
+   <%@include file="includes/header.jsp"%>
 	</div>
-    <!-- 헤더 끝-->
+<!-- 헤더 끝-->
     
+<!-- 모달 -->
+	<div>
+   <%@include file="includes/modal.jsp"%>
+	</div>
+<!-- 모달 끝-->
 
     <!-- 버튼 창 : 수어만, 한글자막만, 둘 다-->
     <div class="container">
