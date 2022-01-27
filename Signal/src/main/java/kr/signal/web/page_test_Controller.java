@@ -97,13 +97,17 @@ public class page_test_Controller {
 	
 	@RequestMapping("/userUpdatedo")
 	public String userUpdatedo(@ModelAttribute t_user vo, HttpSession session) {
+		System.out.println("가져와져");
+		System.out.println(vo.getU_id());
+		service.userUpdatedo(vo);
 		if(service.userUpdatedo(vo)==1) { // 회원인증 성공
+			System.out.println("=============================");
 			session.setAttribute("t_user", vo);	
 		}
 		return "redirect:/";
 	}
 	
-	@GetMapping("/userUpdate")
+	@RequestMapping("/userUpdate")
 	public String userUpdate() {
 		return "userUpdate";
 	}

@@ -69,7 +69,7 @@ button:focus { text-decoration:underline; }
 </style>
 </head>
 <body>
- <div class="hero-content login-modal" >
+ <div class="hero-content" >
         <header class="site-header">
             <div class="top-header-bar">
                 <div class="container-fluid">
@@ -148,7 +148,7 @@ button:focus { text-decoration:underline; }
                           <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
                             <li class="current-menu-item"><a href="main">홈</a></li>
                             <li><a href="userpage">마이클래스</a></li>
-                          	<li id = "s" data-bs-toggle="dropdown"><a href="#java">강의</a>
+                          	<li id = "s" data-bs-toggle="dropdown"><a href="#">강의</a>
 	                           <ul class="dropdown-menu">
 	                             <li><a href="#java">자바</a></li>
 	                             <li><a href="#js">자바스크립트</a></li>
