@@ -78,62 +78,18 @@
       </div>
 <!-- 헤더 끝 -->
 
-<!-- 모달 -->
-      <div>
-         <%@include file="includes/modal.jsp" %>
-      </div>
-<!-- 모달 끝 -->
-
 <!-- 로그인 모달 -->
-    <div class="black-background">
-       <div class="white-modal">
-          <div id="login_form">  <!--로그인 폼-->
-    
-             <c:if test="${empty users}">
-             <form action="loginGO" method="post">
-                 <h3 class="login" style="letter-spacing:-1px;">
-                    <a class="foot-logo" href="#"><img src="resources/images/signal1.png" alt=""></a>
-                 </h3>
-         
-                 <!--<p>
-                     <input type="submit" value=" 간편로그인 Kakao" class="btn" style="background-color:#19c880">
-                     <input type="submit" value=" 간편로그인 Naver" class="btn" style="background-color:#19c880">
-                 </p>
-                 
-                 -->
-         
-                 <hr>
-                 <label>
-                 <!-- <span>ID</span> -->
-                 <p style="text-align: left; font-size:12px; color:#666" for="u_id">Username</p>
-                 <input type="text" placeholder="아이디 입력" class="size" name="u_id" id="u_id">
-                 <!-- <input type="submit" value="확인"> -->
-                 <p></p>
-                 </label>
-         
-                 <label>
-                 <!-- <span>PW</span> -->
-                 <p style="text-align: left; font-size:12px; color:#666" for="u_pwd">Password </p>
-                 <input type="password" placeholder="비밀번호" class="size" name="u_pwd" id="u_pwd">
-                 <!-- <input type="submit" value="확인"> -->
-                 </label>
-         
-                 <p>
-                     <input type="submit" value="로그인" class="btn" onclick="logindo()">
-                 </p>
-             </form>
-             </c:if>
-            
-             <hr>
-             <p class="find">
-                 <span><a href="">아이디 찾기</a></span>
-                 <span><a href="">비밀번호 찾기</a></span>
-                 <span><a href="signup" >회원가입</a></span>
-             </p>
-             </div>   
+      <div>
+         <%@include file="includes/login_modal.jsp" %>
       </div>
-   </div><!-- 로그인 모달  end-->
-   
+<!-- 로그인 모달 끝 -->
+
+<!-- 문의 모달 -->
+      <div>
+         <%@include file="includes/qa_modal.jsp" %>
+      </div>
+<!-- 문의 모달 끝 -->
+
 <!-- 배너 슬라이드 -->
          <div class="slidebox"> 
              <div class="row">
@@ -183,20 +139,20 @@
           </div><!-- .hero-content-hero-content-overlay -->
     </div><!-- .hero-content -->
       
-    <!-- # url 업로드 창 #  --> 
-    <section class ="search">
+    <!-- url 업로드 창 --> 
+   <section class ="search">
       <div class="url-container">
          <h1 class="search-title">배우고 싶은 강의를 입력해보세요!</h1>
           <div class="bar-search">
-                                <form class="flex align-items-stretch" action="http://211.107.188.144:3306/post" method="post">
-                                    <input type="search" placeholder="URL 주소 입력" name="link">
-                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
-                                </form>
-                            
-                            </div><!-- .header-bar-search -->
-         </div>         
+              <form class="flex align-items-stretch" action="http://211.107.188.144:3306/post" method="post">
+                  <input type="search" placeholder="URL 주소 입력" name="link">
+                  <button type="submit" value="" class="flex justify-content-center align-items-center">
+                  <i class="fa fa-search"></i></button>
+              </form>
+          </div><!-- .header-bar-search -->
+       </div>         
    </section>
-    <!-- # url 업로드 창 end # -->
+    <!-- url 업로드 창 end -->
     
      <!-- # 강의 목록 # -->
     <section class="featured-courses vertical-column courses-wrap">
@@ -207,12 +163,12 @@
                         <h2 class="entry-title">번역된 코딩강의</h2>
                         <nav class="courses-menu mt-3 mt-lg-0">
                             <ul class="btn_set flex flex-wrap justify-content-md-end align-items-center">   
-                           <li class="on"><a href="javascript:void(0);" data-filter="*">모든 강의</a></li>
-                           		   <li><a href="javascript:void(0);" data-filter=".python">파이썬</a></li>
-                                   <li><a href="javascript:void(0);" data-filter=".java">자바</a></li>
-                                   <li><a href="javascript:void(0);" data-filter=".js">자바스크립트</a></li>
-                                   <li><a href="javascript:void(0);" data-filter=".machine">머신러닝</a></li>
-                                   <li><a href="javascript:void(0);" data-filter=".deep">딥러닝</a></li>
+                           <li class="on"><a href="javascript:video(0);" data-filter="*">모든 강의</a></li>
+                           		   <li><a href="javascript:video(0);" data-filter=".python">파이썬</a></li>
+                                   <li><a href="javascript:video(0);" data-filter=".java">자바</a></li>
+                                   <li><a href="javascript:video(0);" data-filter=".js">자바스크립트</a></li>
+                                   <li><a href="javascript:video(0);" data-filter=".machine">머신러닝</a></li>
+                                   <li><a href="javascript:video(0);" data-filter=".deep">딥러닝</a></li>
                             </ul>
                         </nav><!-- .courses-menu -->
                     </header><!-- .heading -->
@@ -220,7 +176,7 @@
                 
                 
                 <div class="course-item-wrap">
-                	<div class="course-item java row">
+                	<div class="course-item java row" id="java">
 		                	
 		              <div class="col-12 col-md-6 col-lg-4 px-25">  
 		                    <div class="course-content">
@@ -445,7 +401,7 @@
                 	</div>
                 	
                 	<!-- # js 카테고리 # -->
-                	<div class="course-item js row">
+                	<div class="course-item js row" id="js">
                 	
                 				  
 			                <div class="col-12 col-md-6 col-lg-4 px-25">  
@@ -670,7 +626,7 @@
                 	</div>
                 	
                 	<!-- # 파이썬 카테고리 # -->
-                	<div class="course-item python row">
+                	<div class="course-item python row" id="python">
                 	        <div class="col-12 col-md-6 col-lg-4 px-25">  
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
@@ -894,7 +850,7 @@
                 	</div>
                 	
                 	<!-- # machine 카테고리 # -->
-                	<div class="course-item machine row">
+                	<div class="course-item machine row" id="machine">
                 				<div class="col-12 col-md-6 col-lg-4 px-25">  
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
@@ -1116,7 +1072,7 @@
     
                 	</div>
                 	
-                	<div class="course-item deep row">
+                	<div class="course-item deep row" id="deep">
                 				<div class="col-12 col-md-6 col-lg-4 px-25">  
 			                    <div class="course-content">
 			                        <figure class="course-thumbnail">
@@ -1355,17 +1311,7 @@
 <script>
 <!-- 로그인 모달 -->
 
-      var login = document.querySelector('.login-modal');
-      var background = document.querySelector('.black-background');
-      login.addEventListener('click',function(){
-         background.style.display = "block";
-      });
-      
-      background.addEventListener('click',function(e){
-         if(e.target == e.currentTarget){
-            background.style.display = 'none';
-         }
-      });
+
       
 <!-- 데이터 필터 -->
 

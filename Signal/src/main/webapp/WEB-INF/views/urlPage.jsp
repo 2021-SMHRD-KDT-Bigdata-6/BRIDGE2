@@ -128,19 +128,23 @@ scale-down = 원본보다 작아지며 contain과 비슷한 결과가 보여진�
      </style>
 </head>
 <body>
-
-
 <!-- 헤더 -->
 	<div>
-   <%@include file="includes/header.jsp"%>
+   		<%@include file="includes/header.jsp"%>
 	</div>
 <!-- 헤더 끝-->
-    
-<!-- 모달 -->
+
+<!-- 로그인 모달 -->
 	<div>
-   <%@include file="includes/modal.jsp"%>
+   		<%@include file="includes/login_modal.jsp" %>
 	</div>
-<!-- 모달 끝-->
+<!-- 로그인 모달 끝-->
+
+<!-- 문의 모달 -->
+	<div>
+   		<%@include file="includes/qa_modal.jsp"%>
+	</div>
+<!-- 문의 모달 끝-->
 
     <!-- 버튼 창 : 수어만, 한글자막만, 둘 다-->
     <div class="container">

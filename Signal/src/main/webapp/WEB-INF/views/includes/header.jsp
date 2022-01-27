@@ -146,15 +146,15 @@ button:focus { text-decoration:underline; }
                      <div class="col-3 col-lg-9 flex justify-content-around align-content-center"> 
                         <nav class="site-navigation flex justify-content-around align-items-center">
                           <ul class="flex flex-column flex-lg-row justify-content-around align-content-center">
-                            <li class="current-menu-item"><a href="index">홈</a></li>
+                            <li class="current-menu-item"><a href="main">홈</a></li>
                             <li><a href="userpage">마이클래스</a></li>
-                          	<li id = "s" class = data-bs-toggle="dropdown"><a href="javascript:void(0);">강의</a>
+                          	<li id = "s" data-bs-toggle="dropdown"><a href="#java">강의</a>
 	                           <ul class="dropdown-menu">
-	                             <li><a href="javascript:void(0);">자바</a></li>
-	                             <li><a href="javascript:void(0);">자바스크립트</a></li>
-	                             <li><a href="javascript:void(0);">파이썬</a></li>
-	                             <li><a href="javascript:void(0);">머신러닝</a></li>
-	                             <li><a href="javascript:void(0);">딥러닝</a></li>
+	                             <li><a href="#java">자바</a></li>
+	                             <li><a href="#js">자바스크립트</a></li>
+	                             <li><a href="#python">파이썬</a></li>
+	                             <li><a href="#machine">머신러닝</a></li>
+	                             <li><a href="#deep">딥러닝</a></li>
 	                           </ul>
                            </li>
                         </ul> 
